@@ -7,4 +7,12 @@ class Software < ApplicationRecord
   def name
     title
   end
+
+  rails_admin do
+    list do
+      field :title
+      field :description
+      field :courses
+    end
+  end
 end

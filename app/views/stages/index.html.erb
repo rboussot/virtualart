@@ -1,0 +1,5 @@
+<h1>Tous mes stages</h1>
+<% @stages.each do |stage| %>
+  <%= stage.stagetype.title %> -
+  <%= stage.timeslot %><br><br>
+<% end %>

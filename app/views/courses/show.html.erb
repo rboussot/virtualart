@@ -1,0 +1,9 @@
+<h1><%= @course.title %></h1>
+
+<% @courses_softwares.each do |courses_software| %>
+  <%= courses_software.software.title %><br>
+  <% lectures = Lecture.where(software: courses_software.software) %>
+    <% lectures.each do |lecture| %>
+      - <%= lecture.title %><br>
+    <% end %><br>
+<% end %>

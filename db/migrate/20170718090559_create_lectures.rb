@@ -7,7 +7,7 @@ class CreateLectures < ActiveRecord::Migration[5.0]
       t.string :video
       t.text :description
       t.string :order
-      t.boolean :visible, default: false, null: false
+      t.boolean :visible, default: true, null: false
 
       t.timestamps
     end

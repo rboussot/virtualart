@@ -4,4 +4,11 @@ class Timeslot < ApplicationRecord
   def name
     title
   end
+
+  rails_admin do
+    list do
+      field :title
+      field :visible
+    end
+  end
 end

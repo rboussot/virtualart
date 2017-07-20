@@ -12,4 +12,16 @@ class CreateBlocks < ActiveRecord::Migration[5.0]
       t.timestamps
     end
   end
+
+  rails_admin do
+    list do
+      field :tag
+      field :title
+      field :description
+      field :visible
+      field :footer
+      field :picture
+      field :link
+    end
+  end
 end

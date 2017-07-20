@@ -10,4 +10,13 @@ class Course < ApplicationRecord
   def name
     title
   end
+
+  rails_admin do
+    list do
+      field :title
+      field :description
+      field :picture
+      field :visible
+    end
+  end
 end

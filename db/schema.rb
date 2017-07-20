@@ -52,9 +52,9 @@ ActiveRecord::Schema.define(version: 20170719081918) do
     t.string   "video"
     t.text     "description"
     t.string   "order"
-    t.boolean  "visible",     default: false, null: false
-    t.datetime "created_at",                  null: false
-    t.datetime "updated_at",                  null: false
+    t.boolean  "visible",     default: true, null: false
+    t.datetime "created_at",                 null: false
+    t.datetime "updated_at",                 null: false
     t.index ["course_id"], name: "index_lectures_on_course_id", using: :btree
     t.index ["software_id"], name: "index_lectures_on_software_id", using: :btree
   end
@@ -89,9 +89,11 @@ ActiveRecord::Schema.define(version: 20170719081918) do
 
   create_table "stagetypes", force: :cascade do |t|
     t.string   "title"
-    t.boolean  "visible",    default: false, null: false
-    t.datetime "created_at",                 null: false
-    t.datetime "updated_at",                 null: false
+    t.string   "picture"
+    t.text     "description"
+    t.boolean  "visible",     default: false, null: false
+    t.datetime "created_at",                  null: false
+    t.datetime "updated_at",                  null: false
   end
 
   create_table "timeslots", force: :cascade do |t|

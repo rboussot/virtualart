@@ -4,4 +4,16 @@ class Block < ApplicationRecord
   def name
     tag
   end
+
+  rails_admin do
+    list do
+      field :tag
+      field :title
+      field :visible
+      field :footer
+      field :picture
+      field :link
+      field :description
+    end
+  end
 end
