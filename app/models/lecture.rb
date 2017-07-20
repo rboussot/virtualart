@@ -6,6 +6,20 @@ class Lecture < ApplicationRecord
   validates :title, presence: true
 
   def name
-  order+") "+self.software.title+" - "+title
+    if order && software && title
+      order+") "+self.software.title+" - "+title
+    end
+  end
+
+  rails_admin do
+    list do
+      field :order
+      field :title
+      field :course
+      field :software
+      field :visible
+      field :video
+      field :description
+    end
   end
 end

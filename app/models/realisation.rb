@@ -7,4 +7,15 @@ class Realisation < ApplicationRecord
   def name
     title
   end
+
+  rails_admin do
+    list do
+      field :id
+      field :course
+      field :user
+      field :title
+      field :link
+      field :thumbnail
+    end
+  end
 end
