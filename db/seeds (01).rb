@@ -123,19 +123,19 @@ l0 = Lecture.create!(
   title: "Atelier Animation gratuit",
   video: "Hp-TCNuBtuc",
   description: "...",
-  order: "000",
+  order: "1",
   visible: true)
 p l0
 #
-ll1 = Lecture.create!(
+l1 = Lecture.create!(
   software: ph, # On réutilise le software défini plus haut.
   course: m2d,
   title: "Photoshop - interface",
   video: "6O2qmXxMfEk",
   description: "découverte de l'interface pour une bonne organisation.",
-  order: "001",
+  order: "1",
   visible: true)
-p ll1
+p l1
 #
 l2 = Lecture.create!(
   software: ph, # On réutilise le software défini plus haut.
@@ -143,7 +143,7 @@ l2 = Lecture.create!(
   title: "Photoshop - les calques",
   video: "CKhaqZpBij0",
   description: "la gestion des calques, pour une grande souplesse de travail.",
-  order: "002",
+  order: "1",
   visible: true)
 p l2
 #
@@ -153,7 +153,7 @@ l3 = Lecture.create!(
   title: "Photoshop - les sélections",
   video: "PoNJ2z3eKcM",
   description: "Apprenons à sélectionner pour découper, remplir et transformer.",
-  order: "003",
+  order: "1",
   visible: true)
 p l3
 #
@@ -164,7 +164,7 @@ l1 = Lecture.create!(
   title: "Moho - interface",
   video: "Hp-TCNuBtuc",
   description: "Découvrez les fonctionnalités de Moho",
-  order: "001",
+  order: "1",
   visible: true)
 p l1
 #
@@ -174,7 +174,7 @@ l2 = Lecture.create!(
   title: "Moho - l'animation",
   video: "Hp-TCNuBtuc",
   description: "décrire la vidéo ici.",
-  order: "002",
+  order: "1",
   visible: true)
 p l2
 #
@@ -184,7 +184,7 @@ l3 = Lecture.create!(
   title: "Moho - la création",
   video: "Hp-TCNuBtuc",
   description: "décrire la vidéo ici.",
-  order: "003",
+  order: "1",
   visible: true)
 p l3
 #
@@ -195,7 +195,7 @@ l1 = Lecture.create!(
   title: "Dessin - le corps",
   video: "Hp-TCNuBtuc",
   description: "...",
-  order: "001",
+  order: "1",
   visible: true)
 p l1
 #
@@ -205,7 +205,7 @@ l2 = Lecture.create!(
   title: "Dessin - deuxieme",
   video: "Hp-TCNuBtuc",
   description: "...",
-  order: "002",
+  order: "1",
   visible: true)
 p l2
 #
@@ -215,7 +215,7 @@ l3 = Lecture.create!(
   title: "Dessins - troisième",
   video: "Hp-TCNuBtuc",
   description: "...",
-  order: "003",
+  order: "1",
   visible: true)
 p l3
 #
@@ -226,7 +226,7 @@ l1 = Lecture.create!(
   title: "After Effects - pinceaux et formes",
   video: "gO7kBCQX7nI",
   description: "Le dessin dans After Effects.",
-  order: "001",
+  order: "1",
   visible: true)
 p l1
 #
@@ -236,7 +236,7 @@ l2 = Lecture.create!(
   title: "After Effects - principes d'animation",
   video: "veDstKBvStg ",
   description: "Animation d'une balle pour bien commencer.",
-  order: "002",
+  order: "1",
   visible: true)
 p l2
 #
@@ -246,7 +246,7 @@ l3 = Lecture.create!(
   title: "After Effects - les effets",
   video: "Qbvs4Xd5WfU",
   description: "La liste d'effets, dont les réglages classiques.",
-  order: "003",
+  order: "1",
   visible: true)
 p l3
 #
@@ -259,7 +259,7 @@ l0 = Lecture.create!(
   title: "Atelier 3D gratuit",
   video: "Hp-TCNuBtuc",
   description: "...",
-  order: "000",
+  order: "1",
   visible: true)
 p l0
 #
@@ -269,7 +269,7 @@ l1 = Lecture.create!(
   title: "Maya - interface",
   video: "iP8tSY0neXU",
   description: "L'organisation et les possibilités qu'offre Maya.",
-  order: "001",
+  order: "1",
   visible: true)
 p l1
 #
@@ -279,7 +279,7 @@ l2 = Lecture.create!(
   title: "Maya - créations de base",
   video: "qSZXDT7Al_A",
   description: "Bien créer et manipuler ses objets.",
-  order: "002",
+  order: "1",
   visible: true)
 p l2
 #
@@ -289,7 +289,7 @@ l3 = Lecture.create!(
   title: "Maya - les sélections",
   video: "NAtOqeAjigg",
   description: "Les solutions de sélections pour faciliter la modélisations.",
-  order: "003",
+  order: "1",
   visible: true)
 p l3
 #
@@ -300,7 +300,7 @@ l1 = Lecture.create!(
   title: "Photoshop - interface",
   video: "6O2qmXxMfEk",
   description: "découverte de l'interface pour une bonne organisation.",
-  order: "001",
+  order: "1",
   visible: true)
 p l1
 #
@@ -310,7 +310,7 @@ l2 = Lecture.create!(
   title: "Photoshop - les calques",
   video: "CKhaqZpBij0",
   description: "la gestion des calques, pour une grande souplesse de travail.",
-  order: "002",
+  order: "1",
   visible: true)
 p l2
 #
@@ -320,7 +320,7 @@ l3 = Lecture.create!(
   title: "Photoshop - les sélections",
   video: "PoNJ2z3eKcM",
   description: "Apprenons à sélectionner pour découper, remplir et transformer.",
-  order: "003",
+  order: "1",
   visible: true)
 p l3
 #
@@ -331,7 +331,7 @@ l1 = Lecture.create!(
   title: "Mudbox - interface",
   video: "IRT2Q8tBGOw",
   description: "Découvrez Mudbox.",
-  order: "001",
+  order: "1",
   visible: true)
 p l1
 #
@@ -341,7 +341,7 @@ l2 = Lecture.create!(
   title: "Mudbox - gestions des couches",
   video: "9iszhenGJ68",
   description: "Faites des détails grâce aux couches.",
-  order: "002",
+  order: "1",
   visible: true)
 p l2
 #
@@ -351,7 +351,7 @@ l3 = Lecture.create!(
   title: "Mudbox - sculpting",
   video: "mettre un ID youtube ici",
   description: "C'est parti pour sculpter les détails !",
-  order: "003",
+  order: "1",
   visible: true)
 p l3
 #
@@ -362,7 +362,7 @@ l1 = Lecture.create!(
   title: "After Effects - principes d'animation",
   video: "veDstKBvStg ",
   description: "Animation d'une balle pour bien commencer.",
-  order: "001",
+  order: "1",
   visible: true)
 p l1
 #
@@ -372,7 +372,7 @@ l2 = Lecture.create!(
   title: "After Effects - principes d'animation",
   video: "veDstKBvStg ",
   description: "Animation d'une balle pour bien commencer.",
-  order: "002",
+  order: "1",
   visible: true)
 p l2
 #
@@ -382,7 +382,7 @@ l3 = Lecture.create!(
   title: "After Effects - les effets",
   video: "Qbvs4Xd5WfU",
   description: "La liste d'effets, dont les réglages classiques.",
-  order: "003",
+  order: "1",
   visible: true)
 p l3
 #
@@ -393,7 +393,7 @@ l1 = Lecture.create!(
   title: "Dessin - le corps",
   video: "Hp-TCNuBtuc",
   description: "...",
-  order: "001",
+  order: "1",
   visible: true)
 p l1
 #
@@ -403,7 +403,7 @@ l2 = Lecture.create!(
   title: "Dessin - deuxieme",
   video: "Hp-TCNuBtuc",
   description: "...",
-  order: "002",
+  order: "1",
   visible: true)
 p l2
 #
@@ -413,7 +413,7 @@ l3 = Lecture.create!(
   title: "Dessins - troisième",
   video: "Hp-TCNuBtuc",
   description: "...",
-  order: "003",
+  order: "1",
   visible: true)
 p l3
 #
@@ -426,7 +426,7 @@ l0 = Lecture.create!(
   title: "Atelier BD gratuit",
   video: "Hp-TCNuBtuc",
   description: "...",
-  order: "000",
+  order: "1",
   visible: true)
 p l0
 #
@@ -436,7 +436,7 @@ l1 = Lecture.create!(
   title: "Clip Studio Paint - interface",
   video: "Hp-TCNuBtuc",
   description: "décrire la vidéo ici.",
-  order: "001",
+  order: "1",
   visible: true)
 p l1
 #
@@ -446,7 +446,7 @@ l2 = Lecture.create!(
   title: "Clip Studio Paint - deuxieme",
   video: "Hp-TCNuBtuc",
   description: "décrire la vidéo ici.",
-  order: "002",
+  order: "1",
   visible: true)
 p l2
 #
@@ -456,38 +456,38 @@ l3 = Lecture.create!(
   title: "Clip Studio Paint - troisieme",
   video: "Hp-TCNuBtuc",
   description: "décrire la vidéo ici.",
-  order: "003",
+  order: "1",
   visible: true)
 p l3
 #
 # --- BD NUMERIQUE --- PHOTOSHOP
 l1 = Lecture.create!(
-  software: ph, # On réutilise le software défini plus haut.
+  software: ps, # On réutilise le software défini plus haut.
   course: bd,
   title: "Photoshop - interface",
   video: "6O2qmXxMfEk",
   description: "découverte de l'interface pour une bonne organisation.",
-  order: "001",
+  order: "1",
   visible: true)
 p l1
 #
 l2 = Lecture.create!(
-  software: ph, # On réutilise le software défini plus haut.
+  software: ps, # On réutilise le software défini plus haut.
   course: bd,
   title: "Photoshop - les calques",
   video: "CKhaqZpBij0",
   description: "la gestion des calques, pour une grande souplesse de travail.",
-  order: "002",
+  order: "1",
   visible: true)
 p l2
 #
 l3 = Lecture.create!(
-  software: ph, # On réutilise le software défini plus haut.
+  software: ps, # On réutilise le software défini plus haut.
   course: bd,
   title: "Photoshop - les sélections",
   video: "PoNJ2z3eKcM",
   description: "Apprenons à sélectionner pour découper, remplir et transformer.",
-  order: "003",
+  order: "1",
   visible: true)
 p l3
 #
@@ -498,7 +498,7 @@ l1 = Lecture.create!(
   title: "Dessin - le corps",
   video: "Hp-TCNuBtuc",
   description: "...",
-  order: "001",
+  order: "1",
   visible: true)
 p l1
 #
@@ -508,7 +508,7 @@ l2 = Lecture.create!(
   title: "Dessin - deuxieme",
   video: "Hp-TCNuBtuc",
   description: "...",
-  order: "002",
+  order: "1",
   visible: true)
 p l2
 #
@@ -518,7 +518,7 @@ l3 = Lecture.create!(
   title: "Dessin - troisième",
   video: "Hp-TCNuBtuc",
   description: "...",
-  order: "003",
+  order: "1",
   visible: true)
 p l3
 #
@@ -530,37 +530,37 @@ l0 = Lecture.create!(
   title: "Atelier infographie gratuit",
   video: "Hp-TCNuBtuc",
   description: "...",
-  order: "000",
+  order: "1",
   visible: true)
 p l0
 #
 l1 = Lecture.create!(
-  software: ph, # On réutilise le software défini plus haut.
+  software: ps, # On réutilise le software défini plus haut.
   course: pr,
   title: "Photoshop - interface",
   video: "6O2qmXxMfEk",
   description: "découverte de l'interface pour une bonne organisation.",
-  order: "001",
+  order: "1",
   visible: true)
 p l1
 #
 l2 = Lecture.create!(
-  software: ph, # On réutilise le software défini plus haut.
+  software: ps, # On réutilise le software défini plus haut.
   course: pr,
   title: "Photoshop - les calques",
   video: "CKhaqZpBij0",
   description: "la gestion des calques, pour une grande souplesse de travail.",
-  order: "002",
+  order: "1",
   visible: true)
 p l2
 #
 l3 = Lecture.create!(
-  software: ph, # On réutilise le software défini plus haut.
+  software: ps, # On réutilise le software défini plus haut.
   course: pr,
   title: "Photoshop - les sélections",
   video: "PoNJ2z3eKcM",
   description: "Apprenons à sélectionner pour découper, remplir et transformer.",
-  order: "003",
+  order: "1",
   visible: true)
 p l3
 #
@@ -571,7 +571,7 @@ l1 = Lecture.create!(
   title: "Illustrator - interface",
   video: "GDVXPKUujOs",
   description: "Découverte de la logique du dessin vectoriel et d'Illustrator.",
-  order: "001",
+  order: "1",
   visible: true)
 p l1
 #
@@ -581,7 +581,7 @@ l2 = Lecture.create!(
   title: "Illutrator - création de base",
   video: "G3b4KNLQobE",
   description: "Bien débuter la création et manipulation de formes.",
-  order: "002",
+  order: "1",
   visible: true)
 p l2
 #
@@ -591,7 +591,7 @@ l3 = Lecture.create!(
   title: "Illustrator - gestions des couleurs",
   video: "fKfvNN65sv8",
   description: "Mettez de la couleur dans vos dessins !",
-  order: "003",
+  order: "1",
   visible: true)
 p l3
 #
@@ -602,7 +602,7 @@ l1 = Lecture.create!(
   title: "Indesign - interface",
   video: "uQC96z7znPc",
   description: "découvrez l'interface d'Indesign.",
-  order: "001",
+  order: "1",
   visible: true)
 p l1
 #
@@ -612,7 +612,7 @@ l2 = Lecture.create!(
   title: "Indesign - blocs de base",
   video: "-y6HZNIQjUc",
   description: "L'utilisation des blocs dans une mise en pages.",
-  order: "002",
+  order: "1",
   visible: true)
 p l2
 #
@@ -622,7 +622,7 @@ l3 = Lecture.create!(
   title: "Indesign - blocs d'images",
   video: "oLDHUhWyUe4",
   description: "Tout ce qu'il faut savoir sur les images dans Indesign.",
-  order: "003",
+  order: "1",
   visible: true)
 p l3
 #
@@ -633,7 +633,7 @@ l1 = Lecture.create!(
   title: "Print - les couleurs",
   video: "Hp-TCNuBtuc",
   description: "...",
-  order: "001",
+  order: "1",
   visible: true)
 p l1
 #
@@ -643,7 +643,7 @@ l2 = Lecture.create!(
   title: "Print - le papier",
   video: "Hp-TCNuBtuc",
   description: "...",
-  order: "002",
+  order: "1",
   visible: true)
 p l2
 #
@@ -653,7 +653,7 @@ l3 = Lecture.create!(
   title: "DPrint - troisième",
   video: "Hp-TCNuBtuc",
   description: "...",
-  order: "003",
+  order: "1",
   visible: true)
 p l3
 #
@@ -663,20 +663,8 @@ p l3
 ul1 = UsersLecture.create!(
   user: u1,
   lecture: l1,
-  note: "Appréciation.")
+  notes: "Appréciation.")
 p ul1
-#
-ul2 = UsersLecture.create!(
-  user: u2,
-  lecture: ll1,
-  note: "Appréciation.")
-p ul2
-#
-ul3 = UsersLecture.create!(
-  user: u2,
-  lecture: ll1,
-  note: "Appréciation.")
-p ul3
 #
 # ==================== Realisation ====================
 # === Au moins 3 dans chaque cours
@@ -684,7 +672,7 @@ p ul3
 r1 = Realisation.create!(
   course: m2d,
   user: u1,
-  title: "Dessin de guerrier",
+  title: "Anonyme",
   link: "http://www.virtualart.pro/images/realisations/eleves/2d/combat.jpg",
   thumbnail: "http://www.virtualart.pro/images/realisations/eleves/icone 2d/combat.jpg")
 p r1
@@ -692,7 +680,7 @@ p r1
 r2 = Realisation.create!(
   course: m2d,
   user: u2,
-  title: "Graphisme plaquette 2D",
+  title: "Anonyme",
   link: "http://www.virtualart.pro/images/realisations/eleves/2d/couverture1.jpg",
   thumbnail: "http://www.virtualart.pro/images/realisations/eleves/icone 2d/couverture1.jpg")
 p r2
@@ -700,15 +688,15 @@ p r2
 r3 = Realisation.create!(
   course: m2d,
   user: u3,
-  title: "Logo transparent",
+  title: "Anonyme",
   link: "http://www.virtualart.pro/images/realisations/eleves/2d/couverture2.jpg",
   thumbnail: "http://www.virtualart.pro/images/realisations/eleves/icone 2d/couverture2.jpg")
 p r3
 #
 r4 = Realisation.create!(
   course: m2d,
-  user: u1,
-  title: "Plongeuse animée en 2D",
+  user: u4,
+  title: "Plongeuse",
   link: "https://www.youtube.com/watch?v=lR7n4zTqgX0",
   thumbnail: "http://www.virtualart.pro/images/realisations/eleves/icone 2d/2danim1.jpg")
 p r4
@@ -717,7 +705,7 @@ p r4
 r1 = Realisation.create!(
   course: m3d,
   user: u1,
-  title: "Engrenages 3D",
+  title: "Anonyme",
   link: "http://www.virtualart.pro/images/realisations/eleves/3d/eng.jpg",
   thumbnail: "http://www.virtualart.pro/images/realisations/eleves/icone 3d/eng.jpg")
 p r1
@@ -725,7 +713,7 @@ p r1
 r2 = Realisation.create!(
   course: m3d,
   user: u2,
-  title: "Modélisation de moulins",
+  title: "Anonyme",
   link: "http://www.virtualart.pro/images/realisations/eleves/3d/moulin2.jpg",
   thumbnail: "http://www.virtualart.pro/images/realisations/eleves/icone 3d/moulin2.jpg")
 p r2
@@ -733,7 +721,7 @@ p r2
 r3 = Realisation.create!(
   course: m3d,
   user: u3,
-  title: "Robot",
+  title: "Anonyme",
   link: "http://www.virtualart.pro/images/realisations/eleves/3d/crobot1.jpg",
   thumbnail: "http://www.virtualart.pro/images/realisations/eleves/icone 3d/robot1.jpg")
 p r3
@@ -742,7 +730,7 @@ p r3
 r1 = Realisation.create!(
   course: bd,
   user: u1,
-  title: "Aventures de l'asticot",
+  title: "Anonyme",
   link: "http://www.virtualart.pro/images/realisations/eleves/bd/asticot.jpg",
   thumbnail: "http://www.virtualart.pro/images/realisations/eleves/icone bd/asticot.jpg")
 p r1
@@ -750,7 +738,7 @@ p r1
 r2 = Realisation.create!(
   course: bd,
   user: u2,
-  title: "Une vache dans la ville",
+  title: "Anonyme",
   link: "http://www.virtualart.pro/images/realisations/eleves/bd/bd1.jpg",
   thumbnail: "http://www.virtualart.pro/images/realisations/eleves/icone bd/bd1.jpg")
 p r2
@@ -758,7 +746,7 @@ p r2
 r3 = Realisation.create!(
   course: bd,
   user: u3,
-  title: "Un matin...",
+  title: "Anonyme",
   link: "http://www.virtualart.pro/images/realisations/eleves/bd/bd2.jpg",
   thumbnail: "http://www.virtualart.pro/images/realisations/eleves/icone bd/bd2.jpg")
 p r3
@@ -996,7 +984,7 @@ p t8
 #
 uc1 = UsersCourse.create!(
   user: u1,
-  course: m2d,
+  course: ph,
   timeslot: t1,
   confirmed: true)
 p uc1
@@ -1005,7 +993,7 @@ p uc1
 # === Créer tous les blocs sachant qu'il y a des champs facultatifs
 #
 # --- PAGE ACCUEIL
-carousel1 = Block.create!(
+b2 = Block.create!(
   tag: "carousel1",
   title: "Carousel",
   description: "",
@@ -1013,9 +1001,9 @@ carousel1 = Block.create!(
   link: "",
   visible: true,
   footer: false)
-p carousel1
+p b2
 #
-carousel2 = Block.create!(
+b2 = Block.create!(
   tag: "carousel2",
   title: "Carousel",
   description: "",
@@ -1023,9 +1011,9 @@ carousel2 = Block.create!(
   link: "",
   visible: true,
   footer: false)
-p carousel2
+p b2
 #
-carousel3 = Block.create!(
+b2 = Block.create!(
   tag: "carousel3",
   title: "Carousel",
   description: "",
@@ -1033,9 +1021,9 @@ carousel3 = Block.create!(
   link: "",
   visible: true,
   footer: false)
-p carousel3
+p b2
 #
-carousel4 = Block.create!(
+b2 = Block.create!(
   tag: "carousel4",
   title: "Carousel",
   description: "",
@@ -1043,9 +1031,9 @@ carousel4 = Block.create!(
   link: "",
   visible: true,
   footer: false)
-p carousel4
+p b2
 #
-carousel5 = Block.create!(
+b2 = Block.create!(
   tag: "carousel5",
   title: "Carousel",
   description: "",
@@ -1053,9 +1041,9 @@ carousel5 = Block.create!(
   link: "",
   visible: true,
   footer: false)
-p carousel5
+p b2
 #
-carousel6 = Block.create!(
+b2 = Block.create!(
   tag: "carousel6",
   title: "Carousel",
   description: "",
@@ -1063,49 +1051,50 @@ carousel6 = Block.create!(
   link: "",
   visible: true,
   footer: false)
-p carousel6
+p b2
 #
-accueil_logiciels = Block.create!(
-  tag: "accueil_logiciels",
+b2 = Block.create!(
+  tag: "accueil1",
   title: "Plongez avec nous dans le monde de l'image numérique !",
   description: "Vous avez toujours eu envie de mettre en image vos univers ? que ce soit pour le loisir ou parce que vous vous destinez aux metiers de l'infographie, nous sommes là pour vous enseigner ces techniques ! vous pourrez créer des illustrations, des BDs, des animation 2D et 3D, ou encore des logos et flyers. Sur ordinateur, bien sûr, avec des logiciels pro comme Photoshop, Maya et d'autres encore :",
-  picture: "",
+  picture: "http://www.virtualart.pro/images/interface/logiciels.png",
   link: "",
   visible: true,
   footer: false)
-p accueil_logiciels
+p b2
 #
-accueil_video = Block.create!(
-  tag: "accueil_video",
-  title: "Un enseignement 2.0",
-  description: "L'enseignement aussi est 2.0 ! Vous aurez accès à tous les cours en vidéos sur notre site et pendant les séances nous feront des applications ou vos projets, en avançant à votre rythme.",
+b2 = Block.create!(
+  tag: "accueil2",
+  title: "vidéo",
+  description: "",
   picture: "",
   link: "Hp-TCNuBtuc",
   visible: true,
   footer: false)
-p accueil_video
+p b2
 #
-accueil_espace = Block.create!(
-  tag: "accueil_espace",
-  title: "Un espace convivial",
-  description: "Nous vous accueillons dans un atelier extra scolaire dans le coeur de Toulouse à 2 pas du métro Jean Jaurès. tout humanoïde entre 8 et 888ans,  peut venir apprendre les arcanes de l'infographie et donner vie à son imagination !",
-  picture: "http://www.virtualart.pro/images/interface/local.jpg",
+b2 = Block.create!(
+  tag: "accueil3",
+  title: "",
+  description: "Nous vous accueillons dans un atelier extra scolaire dans le coeur de Toulouse à 2 pas du métro Jean Jaurès. tout humanoïde entre 8 et 888ans,  peut venir apprendre les arcanes de l'infographie et donner vie à son imagination !
+L'enseignement aussi est 2.0 ! Vous aurez accès à tous les cours en vidéos sur notre site et pendant les séances nous feront des applications ou vos projets, en avançant à votre rythme.",
+  picture: "",
   link: "",
   visible: true,
   footer: false)
-p accueil_espace
+p b2
 #
-accueil_materiel = Block.create!(
-  tag: "accueil_materiel",
-  title: "Sur place, nous sommes équipés d'un matériel pro :",
-  description: "Vous pourrez utiliser nos PCs, les logiciels, les tablettes graphiques (dont une cintiq dont nous ne sommes pas peu fiers), un scanner A3 pour ceux qui voit grand, des tablettes lumineuse toujours utile de nos jours, un micro pour les bruitages de vos films, et même un fond vert pour vous filmer entre amis. On a aussi un peu de matériel de dessin, la base.",
+b2 = Block.create!(
+  tag: "accueil4",
+  title: "Sur place, nous sommes tout équipé :",
+  description: "Vous pourrez utiliser nos PCs, les logiciels, les tablette graphique (dont une cintiq dont nous ne sommes pas peu fière), un scanner A3 pour ceux qui voit grand, des tablettes lumineuse toujours utile de nos jours, un micro pour les bruitages de vos films, et même un fond vert pour vous filmer entre amis. On a aussi un peu de matériel de dessin, la base.",
   picture: "http://www.virtualart.pro/images/interface/materiels.png",
   link: "",
   visible: true,
   footer: false)
-p accueil_materiel
+p b2
 #
-news = Block.create!(
+b2 = Block.create!(
   tag: "news",
   title: "News",
   description: "Les inscriptions sont ouvertes ! Les cours reprennent la semaine du 25 septembre, n'hésitez pas à m'appeler pour toutes questions :)",
@@ -1113,9 +1102,9 @@ news = Block.create!(
   link: "", # Pas besoin de lien non plus
   visible: true,
   footer: false)
-p news
+p b2
 #
-post = Block.create!(
+b3 = Block.create!(
   tag: "post",
   title: "Dernière réalisation",
   description: "", # Pas besoin de description pour le dernier post l'image parle d'elle-même
@@ -1123,9 +1112,9 @@ post = Block.create!(
   link: "lien vers le post",
   visible: true,
   footer: false)
-p post
+p b3
 #
-coeur = Block.create!(
+b26 = Block.create!(
   tag:"coeur",
   title:"Coup de coeur", # Il faudra réfléchir à l'organisation de la page d'accueil >> NE PAS METTRE
   description: "",
@@ -1133,9 +1122,9 @@ coeur = Block.create!(
   link: "",
   visible: true,
   footer: false)
-p coeur
+p b26
 #
-livredor = Block.create!(
+b4 = Block.create!(
   tag: "livredor",
   title: "Livre d’Or",
   description: "Venez commenter :)",
@@ -1143,10 +1132,10 @@ livredor = Block.create!(
   link: "",
   visible: false, # Invisible pour l'instant : à développer plus tard.
   footer: false)
-p livredor
+p b4
 #
 # --- PAGE CONTACT
-lieu = Block.create!(
+b5 = Block.create!(
   tag: "lieu",
   title: "Lieu",
   description: "",
@@ -1154,9 +1143,9 @@ lieu = Block.create!(
   link: "https://maps.google.fr/maps?f=q&amp;source=s_q&amp;hl=fr&amp;geocode=&amp;q=virtual+art&amp;aq=&amp;sll=43.604652,1.444209&amp;sspn=0.20659,0.528374&amp;ie=UTF8&amp;hq=virtual+art&amp;hnear=&amp;t=m&amp;cid=4733741065628515629&amp;ll=43.606624,1.448779&amp;spn=0.002719,0.00456&amp;z=17&amp;output=embed",
   visible: true,
   footer: false)
-p lieu
+p b5
 #
-coo = Block.create!(
+b6 = Block.create!(
   tag: "coo",
   title: "Coordonnées",
   description: "8 rue Dalayrac
@@ -1170,9 +1159,9 @@ coo = Block.create!(
   link: "",
   visible: true,
   footer: false)
-p coo
+p b6
 #
-ouverture = Block.create!(
+b7 = Block.create!(
   tag: "ouverture",
   title: "Horaires d'ouverture",
   description: "L’atelier est ouvert selon les inscriptions aux cours.
@@ -1182,19 +1171,19 @@ Une permanence est assurée les mercredis et samedis de 13h30 à 19h30 hors vaca
   link: "",
   visible: true,
   footer: false)
-p ouverture
+p b7
 #
 # --- PAGE COURS
-inscription_cours = Block.create!(
+b1 = Block.create!(
   tag: "inscription_cours",
   title: "Inscription Cours",
   description: "Vous souhaitez vous inscrire à un cours ? Accédez ici au formulaire.",
   link: "",
   visible: true,
   footer: false)
-p inscription_cours
+p b1
 #
-planning = Block.create!(
+b8 = Block.create!(
   tag: "planning",
   title: "Planning",
   description: "Choisissez un de ces créneaux, au choix !
@@ -1208,9 +1197,9 @@ planning = Block.create!(
   link: "",
   visible: true,
   footer: false)
-p planning
+p b8
 #
-tarifs1 = Block.create!(
+b9 = Block.create!(
   tag: "tarifs1",
   title: "Tarifs",
   description: "VIDEOS + SEANCES 1H30
@@ -1219,9 +1208,9 @@ tarifs1 = Block.create!(
   link: "",
   visible: true,
   footer: false)
-p tarifs1
+p b9
 #
-tarifs2 = Block.create!(
+b10 = Block.create!(
   tag: "tarifs2",
   title: "",
   description: "UNIQUEMENT VIDEOS :
@@ -1231,10 +1220,10 @@ tarifs2 = Block.create!(
   link: "",
   visible: true,
   footer: false)
-p tarifs2
+p b10
 #
 # --- PAGE PROFIL
-prof1 = Block.create!(
+b11 = Block.create!(
   tag:"prof1",
   title:"Professeur", # faire un blox texte + image a chaque fois x4
   description:"Estelle BOUSSOT",
@@ -1242,9 +1231,9 @@ prof1 = Block.create!(
   link: "",
   visible: true,
   footer: false)
-p prof1
+p b11
 #
-prof2 = Block.create!(
+b12 = Block.create!(
   tag:"prof2",
   title:"",
   description:"Passionnée par le dessin, j'ai intégré, après le baccalauréat, LISAA (L'Institut Supérieur des Arts Appliqués) à Paris, dont j'ai été diplômée en animation 2D avec mention. Puis, pour compléter mes connaissances, j'ai poursuivi mes études à A.T.I. (Art et Technologie de l'Image) où j'ai pu apprendre la 3D et les bases de la programmation.",
@@ -1252,9 +1241,9 @@ prof2 = Block.create!(
   link: "",
   visible: true,
   footer: false)
-p prof2
+p b12
 #
-prof3 = Block.create!(
+b13 = Block.create!(
   tag:"prof3",
   title:"",
   description:"Après avoir travaillé dans une agence de communication, puis en freelance, j'ai découvert l’enseignement en animant des ateliers de bandes dessinées et de flip book en école primaire puis en école d’art appliqué.",
@@ -1262,9 +1251,9 @@ prof3 = Block.create!(
   link: "",
   visible: true,
   footer: false)
-p prof3
+p b13
 #
-prof4 = Block.create!(
+b14 = Block.create!(
   tag:"prof4",
   title:"",
   description:"J’ai naturellement voulu continuer dans cette voie en créant Virtual Art. Je propose au grand public, sous forme de cours extra scolaire et de stages,  des formations sur les logiciels d’infographie et d’acompagner chacun dans la mise en place de projets personnels. L’art et l’infographie sont pour moi étroitement lié, le choix du média étant au service d’une idée, et non l’inverse. ",
@@ -1272,9 +1261,9 @@ prof4 = Block.create!(
   link: "",
   visible: true,
   footer: false)
-p prof4
+p b14
 #
-parcours = Block.create!(
+b15 = Block.create!(
   tag: "parcours",
   title: "Parcours",
   description: "Création de Virtual Art en 2011 jusqu’à nos jours
@@ -1292,9 +1281,9 @@ Diplôme en Animation 2D à LISAA de 2003 à 2006",
   link: "",
   visible: true,
   footer: false)
-p parcours
+p b15
 #
-travail = Block.create!(
+b16 = Block.create!(
   tag:"travail",
   title:"Mon travail",
   description:"Consulter mes travaux :
@@ -1303,10 +1292,10 @@ travail = Block.create!(
   link: "http://boussotestelle.free.fr/",
   visible: true,
   footer: false)
-p travail
+p b16
 #
 # --- PAGE REALISATION
-propos = Block.create!(
+b17 = Block.create!(
   tag:"propos",
   title:"A propos",
   description:"Pour vous donner une idée, voici une séléction des travaux d’élèves réalisés pendants les cours ou les stages. L’âge et le niveaux des élèves est mélangé.",
@@ -1314,20 +1303,19 @@ propos = Block.create!(
   link: "",
   visible: true,
   footer: false)
-p propos
+p b17
 #
 # --- PAGE STAGES
-inscription_stage = Block.create!(
+b1 = Block.create!(
   tag: "inscription_stage",
   title: "Inscription Stages",
   description: "Vous souhaitez vous inscrire à un stage ? Accédez ici au formulaire.",
-  picture:"", # pas d'image
   link: "",
   visible: true,
   footer: false)
-p inscription_stage
+p b1
 #
-infos = Block.create!(
+b18 = Block.create!(
   tag:"infos",
   title:"Infos pratique",
   description:"Horaires :
@@ -1344,10 +1332,10 @@ Le repas se prend en général à l’exterieur, mais nous mettons à dispositio
   link: "",
   visible: true,
   footer: false)
-p infos
+p b18
 #
 # --- FOOTER
-deviantart = Block.create!(
+b19 = Block.create!(
   tag:"deviantart",
   title:"Mon Deviant Art",
   description:"Consulter mes travaux ...",
@@ -1355,9 +1343,9 @@ deviantart = Block.create!(
   link: "",
   visible: true,
   footer: true)
-p deviantart
+p b19
 #
-webtoon = Block.create!(
+b20 = Block.create!(
   tag:"webtoon",
   title:"Mes Webtoons",
   description:"",
@@ -1365,9 +1353,9 @@ webtoon = Block.create!(
   link: "",
   visible: false, # Pour l'instant on ne l'affiche pas
   footer: false)
-p webtoon
+p b20
 #
-twitter = Block.create!(
+b21 = Block.create!(
   tag: "twitter",
   title: "Mon fil Twitter",
   description: "",
@@ -1375,9 +1363,9 @@ twitter = Block.create!(
   link: "",
   visible: true,
   footer: true)
-p twitter
+p b21
 #
-facebook = Block.create!(
+b22 = Block.create!(
   tag: "facebook",
   title: "Ma page facebook",
   description: "",
@@ -1385,9 +1373,9 @@ facebook = Block.create!(
   link: "",
   visible: true,
   footer: true)
-p facebook
+p b22
 #
-youtube = Block.create!(
+b23 = Block.create!(
   tag: "youtube",
   title: "Ma chaîne Youtube",
   description: "",
@@ -1395,9 +1383,9 @@ youtube = Block.create!(
   link: "",
   visible: true,
   footer: true)
-p youtube
+p b23
 #
-instagram = Block.create!(
+b24 = Block.create!(
   tag: "instagram",
   title: "Mon Instagram",
   description: "",
@@ -1405,98 +1393,23 @@ instagram = Block.create!(
   link: "",
   visible: true,
   footer: true)
-p instagram
+p b24
 #
 #copyright en dur
-copyright = Block.create!(
+b25 = Block.create!(
   tag: "copyright",
   title: "Mentions légales",
   description: "Tous droits réservés,",
   picture: "",
   link: "http://virtualart.pro/pages/mentions.html",
   visible: true,
-  footer: false)
-p copyright
+  footer: true)
+p b25
 #
 # ==================== CoursesSoftware ====================
 # === On en crée 1 seul pour tester
 #
-m2dph = CoursesSoftware.create!(
+cph = CourseSoftware.create!(
   course: m2d,
   software: ph)
-p m2dph
-#
-m2dmo = CoursesSoftware.create!(
-  course: m2d,
-  software: mo)
-p m2dmo
-#
-m2ae = CoursesSoftware.create!(
-  course: m2d,
-  software: ae)
-p m2ae
-#
-m2gra = CoursesSoftware.create!(
-  course: m2d,
-  software: gra)
-p m2gra
-#
-m3dma = CoursesSoftware.create!(
-  course: m3d,
-  software: ma)
-p m3dma
-#
-m3dmu = CoursesSoftware.create!(
-  course: m3d,
-  software: mu)
-p m3dmu
-#
-m3dph = CoursesSoftware.create!(
-  course: m3d,
-  software: ph)
-p m3dph
-#
-m3dae = CoursesSoftware.create!(
-  course: m3d,
-  software: ae)
-p m3dae
-#
-m3dgra = CoursesSoftware.create!(
-  course: m3d,
-  software: gra)
-p m3dgra
-#
-bdcsp = CoursesSoftware.create!(
-  course: bd,
-  software: csp)
-p bdcsp
-#
-bdph = CoursesSoftware.create!(
-  course: bd,
-  software: ph)
-p bdph
-#
-bdgra = CoursesSoftware.create!(
-  course: bd,
-  software: gra)
-p bdgra
-#
-prph = CoursesSoftware.create!(
-  course: pr,
-  software: ph)
-p prph
-#
-prai = CoursesSoftware.create!(
-  course: pr,
-  software: ai)
-p prai
-#
-prind = CoursesSoftware.create!(
-  course: pr,
-  software: ind)
-p prind
-#
-prgra = CoursesSoftware.create!(
-  course: pr,
-  software: gra)
-p prgra
+p cph

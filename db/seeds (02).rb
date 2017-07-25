@@ -127,7 +127,7 @@ l0 = Lecture.create!(
   visible: true)
 p l0
 #
-ll1 = Lecture.create!(
+l1 = Lecture.create!(
   software: ph, # On réutilise le software défini plus haut.
   course: m2d,
   title: "Photoshop - interface",
@@ -135,7 +135,7 @@ ll1 = Lecture.create!(
   description: "découverte de l'interface pour une bonne organisation.",
   order: "001",
   visible: true)
-p ll1
+p l1
 #
 l2 = Lecture.create!(
   software: ph, # On réutilise le software défini plus haut.
@@ -462,7 +462,7 @@ p l3
 #
 # --- BD NUMERIQUE --- PHOTOSHOP
 l1 = Lecture.create!(
-  software: ph, # On réutilise le software défini plus haut.
+  software: ps, # On réutilise le software défini plus haut.
   course: bd,
   title: "Photoshop - interface",
   video: "6O2qmXxMfEk",
@@ -472,7 +472,7 @@ l1 = Lecture.create!(
 p l1
 #
 l2 = Lecture.create!(
-  software: ph, # On réutilise le software défini plus haut.
+  software: ps, # On réutilise le software défini plus haut.
   course: bd,
   title: "Photoshop - les calques",
   video: "CKhaqZpBij0",
@@ -482,7 +482,7 @@ l2 = Lecture.create!(
 p l2
 #
 l3 = Lecture.create!(
-  software: ph, # On réutilise le software défini plus haut.
+  software: ps, # On réutilise le software défini plus haut.
   course: bd,
   title: "Photoshop - les sélections",
   video: "PoNJ2z3eKcM",
@@ -535,7 +535,7 @@ l0 = Lecture.create!(
 p l0
 #
 l1 = Lecture.create!(
-  software: ph, # On réutilise le software défini plus haut.
+  software: ps, # On réutilise le software défini plus haut.
   course: pr,
   title: "Photoshop - interface",
   video: "6O2qmXxMfEk",
@@ -545,7 +545,7 @@ l1 = Lecture.create!(
 p l1
 #
 l2 = Lecture.create!(
-  software: ph, # On réutilise le software défini plus haut.
+  software: ps, # On réutilise le software défini plus haut.
   course: pr,
   title: "Photoshop - les calques",
   video: "CKhaqZpBij0",
@@ -555,7 +555,7 @@ l2 = Lecture.create!(
 p l2
 #
 l3 = Lecture.create!(
-  software: ph, # On réutilise le software défini plus haut.
+  software: ps, # On réutilise le software défini plus haut.
   course: pr,
   title: "Photoshop - les sélections",
   video: "PoNJ2z3eKcM",
@@ -663,20 +663,8 @@ p l3
 ul1 = UsersLecture.create!(
   user: u1,
   lecture: l1,
-  note: "Appréciation.")
+  notes: "Appréciation.")
 p ul1
-#
-ul2 = UsersLecture.create!(
-  user: u2,
-  lecture: ll1,
-  note: "Appréciation.")
-p ul2
-#
-ul3 = UsersLecture.create!(
-  user: u2,
-  lecture: ll1,
-  note: "Appréciation.")
-p ul3
 #
 # ==================== Realisation ====================
 # === Au moins 3 dans chaque cours
@@ -684,7 +672,7 @@ p ul3
 r1 = Realisation.create!(
   course: m2d,
   user: u1,
-  title: "Dessin de guerrier",
+  title: "Anonyme",
   link: "http://www.virtualart.pro/images/realisations/eleves/2d/combat.jpg",
   thumbnail: "http://www.virtualart.pro/images/realisations/eleves/icone 2d/combat.jpg")
 p r1
@@ -692,7 +680,7 @@ p r1
 r2 = Realisation.create!(
   course: m2d,
   user: u2,
-  title: "Graphisme plaquette 2D",
+  title: "Anonyme",
   link: "http://www.virtualart.pro/images/realisations/eleves/2d/couverture1.jpg",
   thumbnail: "http://www.virtualart.pro/images/realisations/eleves/icone 2d/couverture1.jpg")
 p r2
@@ -700,15 +688,15 @@ p r2
 r3 = Realisation.create!(
   course: m2d,
   user: u3,
-  title: "Logo transparent",
+  title: "Anonyme",
   link: "http://www.virtualart.pro/images/realisations/eleves/2d/couverture2.jpg",
   thumbnail: "http://www.virtualart.pro/images/realisations/eleves/icone 2d/couverture2.jpg")
 p r3
 #
 r4 = Realisation.create!(
   course: m2d,
-  user: u1,
-  title: "Plongeuse animée en 2D",
+  user: u4,
+  title: "Plongeuse",
   link: "https://www.youtube.com/watch?v=lR7n4zTqgX0",
   thumbnail: "http://www.virtualart.pro/images/realisations/eleves/icone 2d/2danim1.jpg")
 p r4
@@ -717,7 +705,7 @@ p r4
 r1 = Realisation.create!(
   course: m3d,
   user: u1,
-  title: "Engrenages 3D",
+  title: "Anonyme",
   link: "http://www.virtualart.pro/images/realisations/eleves/3d/eng.jpg",
   thumbnail: "http://www.virtualart.pro/images/realisations/eleves/icone 3d/eng.jpg")
 p r1
@@ -725,7 +713,7 @@ p r1
 r2 = Realisation.create!(
   course: m3d,
   user: u2,
-  title: "Modélisation de moulins",
+  title: "Anonyme",
   link: "http://www.virtualart.pro/images/realisations/eleves/3d/moulin2.jpg",
   thumbnail: "http://www.virtualart.pro/images/realisations/eleves/icone 3d/moulin2.jpg")
 p r2
@@ -733,7 +721,7 @@ p r2
 r3 = Realisation.create!(
   course: m3d,
   user: u3,
-  title: "Robot",
+  title: "Anonyme",
   link: "http://www.virtualart.pro/images/realisations/eleves/3d/crobot1.jpg",
   thumbnail: "http://www.virtualart.pro/images/realisations/eleves/icone 3d/robot1.jpg")
 p r3
@@ -742,7 +730,7 @@ p r3
 r1 = Realisation.create!(
   course: bd,
   user: u1,
-  title: "Aventures de l'asticot",
+  title: "Anonyme",
   link: "http://www.virtualart.pro/images/realisations/eleves/bd/asticot.jpg",
   thumbnail: "http://www.virtualart.pro/images/realisations/eleves/icone bd/asticot.jpg")
 p r1
@@ -750,7 +738,7 @@ p r1
 r2 = Realisation.create!(
   course: bd,
   user: u2,
-  title: "Une vache dans la ville",
+  title: "Anonyme",
   link: "http://www.virtualart.pro/images/realisations/eleves/bd/bd1.jpg",
   thumbnail: "http://www.virtualart.pro/images/realisations/eleves/icone bd/bd1.jpg")
 p r2
@@ -758,7 +746,7 @@ p r2
 r3 = Realisation.create!(
   course: bd,
   user: u3,
-  title: "Un matin...",
+  title: "Anonyme",
   link: "http://www.virtualart.pro/images/realisations/eleves/bd/bd2.jpg",
   thumbnail: "http://www.virtualart.pro/images/realisations/eleves/icone bd/bd2.jpg")
 p r3
@@ -996,7 +984,7 @@ p t8
 #
 uc1 = UsersCourse.create!(
   user: u1,
-  course: m2d,
+  course: ph,
   timeslot: t1,
   confirmed: true)
 p uc1
@@ -1065,45 +1053,45 @@ carousel6 = Block.create!(
   footer: false)
 p carousel6
 #
-accueil_logiciels = Block.create!(
-  tag: "accueil_logiciels",
+accueil1 = Block.create!(
+  tag: "accueil1",
   title: "Plongez avec nous dans le monde de l'image numérique !",
   description: "Vous avez toujours eu envie de mettre en image vos univers ? que ce soit pour le loisir ou parce que vous vous destinez aux metiers de l'infographie, nous sommes là pour vous enseigner ces techniques ! vous pourrez créer des illustrations, des BDs, des animation 2D et 3D, ou encore des logos et flyers. Sur ordinateur, bien sûr, avec des logiciels pro comme Photoshop, Maya et d'autres encore :",
-  picture: "",
+  picture: "http://www.virtualart.pro/images/interface/logiciels.png",
   link: "",
   visible: true,
   footer: false)
-p accueil_logiciels
+p accueil1
 #
-accueil_video = Block.create!(
-  tag: "accueil_video",
+accueil2 = Block.create!(
+  tag: "accueil2",
   title: "Un enseignement 2.0",
   description: "L'enseignement aussi est 2.0 ! Vous aurez accès à tous les cours en vidéos sur notre site et pendant les séances nous feront des applications ou vos projets, en avançant à votre rythme.",
   picture: "",
   link: "Hp-TCNuBtuc",
   visible: true,
   footer: false)
-p accueil_video
+p accueil2
 #
-accueil_espace = Block.create!(
-  tag: "accueil_espace",
+accueil3 = Block.create!(
+  tag: "accueil3",
   title: "Un espace convivial",
   description: "Nous vous accueillons dans un atelier extra scolaire dans le coeur de Toulouse à 2 pas du métro Jean Jaurès. tout humanoïde entre 8 et 888ans,  peut venir apprendre les arcanes de l'infographie et donner vie à son imagination !",
-  picture: "http://www.virtualart.pro/images/interface/local.jpg",
+  picture: "",
   link: "",
   visible: true,
   footer: false)
-p accueil_espace
+p accueil3
 #
-accueil_materiel = Block.create!(
-  tag: "accueil_materiel",
+accueil4 = Block.create!(
+  tag: "accueil4",
   title: "Sur place, nous sommes équipés d'un matériel pro :",
-  description: "Vous pourrez utiliser nos PCs, les logiciels, les tablettes graphiques (dont une cintiq dont nous ne sommes pas peu fiers), un scanner A3 pour ceux qui voit grand, des tablettes lumineuse toujours utile de nos jours, un micro pour les bruitages de vos films, et même un fond vert pour vous filmer entre amis. On a aussi un peu de matériel de dessin, la base.",
+  description: "Vous pourrez utiliser nos PCs, les logiciels, les tablette graphique (dont une cintiq dont nous ne sommes pas peu fière), un scanner A3 pour ceux qui voit grand, des tablettes lumineuse toujours utile de nos jours, un micro pour les bruitages de vos films, et même un fond vert pour vous filmer entre amis. On a aussi un peu de matériel de dessin, la base.",
   picture: "http://www.virtualart.pro/images/interface/materiels.png",
   link: "",
   visible: true,
   footer: false)
-p accueil_materiel
+p accueil4
 #
 news = Block.create!(
   tag: "news",
@@ -1321,7 +1309,6 @@ inscription_stage = Block.create!(
   tag: "inscription_stage",
   title: "Inscription Stages",
   description: "Vous souhaitez vous inscrire à un stage ? Accédez ici au formulaire.",
-  picture:"", # pas d'image
   link: "",
   visible: true,
   footer: false)
@@ -1421,82 +1408,7 @@ p copyright
 # ==================== CoursesSoftware ====================
 # === On en crée 1 seul pour tester
 #
-m2dph = CoursesSoftware.create!(
+cph = CourseSoftware.create!(
   course: m2d,
   software: ph)
-p m2dph
-#
-m2dmo = CoursesSoftware.create!(
-  course: m2d,
-  software: mo)
-p m2dmo
-#
-m2ae = CoursesSoftware.create!(
-  course: m2d,
-  software: ae)
-p m2ae
-#
-m2gra = CoursesSoftware.create!(
-  course: m2d,
-  software: gra)
-p m2gra
-#
-m3dma = CoursesSoftware.create!(
-  course: m3d,
-  software: ma)
-p m3dma
-#
-m3dmu = CoursesSoftware.create!(
-  course: m3d,
-  software: mu)
-p m3dmu
-#
-m3dph = CoursesSoftware.create!(
-  course: m3d,
-  software: ph)
-p m3dph
-#
-m3dae = CoursesSoftware.create!(
-  course: m3d,
-  software: ae)
-p m3dae
-#
-m3dgra = CoursesSoftware.create!(
-  course: m3d,
-  software: gra)
-p m3dgra
-#
-bdcsp = CoursesSoftware.create!(
-  course: bd,
-  software: csp)
-p bdcsp
-#
-bdph = CoursesSoftware.create!(
-  course: bd,
-  software: ph)
-p bdph
-#
-bdgra = CoursesSoftware.create!(
-  course: bd,
-  software: gra)
-p bdgra
-#
-prph = CoursesSoftware.create!(
-  course: pr,
-  software: ph)
-p prph
-#
-prai = CoursesSoftware.create!(
-  course: pr,
-  software: ai)
-p prai
-#
-prind = CoursesSoftware.create!(
-  course: pr,
-  software: ind)
-p prind
-#
-prgra = CoursesSoftware.create!(
-  course: pr,
-  software: gra)
-p prgra
+p cph

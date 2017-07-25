@@ -7,7 +7,7 @@ class Lecture < ApplicationRecord
 
   def name
     if order && software && title
-      order+") "+self.software.title+" - "+title
+      order+") "+course.title+" - "+title
     end
   end
 

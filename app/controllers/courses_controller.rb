@@ -8,16 +8,16 @@ class CoursesController < ApplicationController
   end
 
   def show
-    @courses = Course.all
-    @lectures = Lecture.where(course_id: params[:id])
+    @lectures = Lecture.where(course: @course).where(visible: true)
     @softwares = Software.where(course: @course)
+    @users_lectures = UsersLecture.where(user: current_user)
     # cf before_action
   end
 
   private
 
   def find_course
-    @course = Course.find(params[:id])
+    @course = Course.where(visible: true).find(params[:id])
   end
 
   def find_softwares
