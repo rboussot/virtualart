@@ -1,20 +1,48 @@
-<div class="navbar-virtualart">
-
-  <!-- Right Navigation -->
-  <div class="navbar-virtualart-right hidden-xs hidden-sm">
-
-    <!-- logo -->
-    <%= image_tag "logovirtualart.png", class: "navbar-logo" %>
-    <!-- Links -->
-
-    <%= link_to t(".sign_in", default: "Accueil"), root_path %> |
-    <%= link_to t(".sign_in", default: "Cours"), courses_path %> |
-    <%= link_to t(".sign_in", default: "Stages"), stages_path %> |
-    <%= link_to t(".sign_in", default: "Qui suis-je"), profile_path %> |
-    <%= link_to t(".sign_in", default: "Réalisations"), realisations_path %> |
-
+<!-- ========== LOGIN OR NOT ========== -->
+<% if user_signed_in? %>
+  <!-- Profile picture and dropdown -->
+  <div class="navbar-virtualart-item">
     <div class="dropdown">
-      <a data-toggle="dropdown">Vidéos</a>
+      <a data-toggle="dropdown" class="navbar-login"><%= current_user.email %></a>
+      <ul class="dropdown-menu dropdown-menu-right navbar-login-dropdown-menu">
+        <% if current_user && current_user.admin %>
+          <li>
+            <%= link_to rails_admin_path do %>
+              <%= t(".sign_in", default: "Admin") %>
+            <% end %>
+          </li>
+        <% end %>
+        <li>
+          <%= link_to("Mon profil", edit_user_path(current_user)) %>
+        </li>
+        <li>
+          <%= link_to destroy_user_session_path, method: :delete do %>
+            </i>  <%= t(".sign_out", default: "Déconnexion") %>
+          <% end %>
+        </li>
+      </ul>
+    </div>
+  </div>
+<% else %>
+  <!-- Login text link -->
+  <%= link_to "Connexion / Inscription", new_user_session_path, class: "navbar-login" %>
+<% end %>
+
+<!-- ========== LARGE SCREEN ========== -->
+
+<div class="navbar-virtualart">
+  <!-- ===== RESPONSIVE ===== -->
+  <div class="navbar-virtualart-right hidden-xs hidden-sm">
+    <!-- ===== LOGO ===== -->
+    <%= image_tag "logovirtualart-v3.png", class: "navbar-logo" %>
+    <!-- ===== LIENS ===== -->
+    <%= link_to "Accueil", root_path, class: "navbar-link" %>
+    <%= link_to "Cours", courses_path, class: "navbar-link"  %>
+    <%= link_to "Stages", stages_path, class: "navbar-link"  %>
+    <%= link_to "Profil", profile_path, class: "navbar-link"  %>
+    <%= link_to "Réalisations", realisations_path, class: "navbar-link"  %>
+    <div class="dropdown">
+      <a data-toggle="dropdown" class="navbar-link">Vidéos</a>
       <ul class="dropdown-menu dropdown-menu-right navbar-virtualart-dropdown-menu">
       <% @courses = Course.all %>
         <% @courses.each do |course| %>
@@ -23,48 +51,12 @@
           </li>
         <% end %>
       </ul>
-    </div> |
-
-    <%= link_to t(".sign_in", default: "Contact"), contact_path %> |
-
-    <!-- Different navigation if login or not -->
-    <% if user_signed_in? %>
-
-      <!-- Profile picture and dropdown -->
-      <div class="navbar-virtualart-item">
-        <div class="dropdown">
-          <a data-toggle="dropdown"><%= current_user.email %></a>
-          <ul class="dropdown-menu dropdown-menu-right navbar-virtualart-dropdown-menu">
-            <% if current_user && current_user.admin %>
-              <li>
-                <%= link_to rails_admin_path do %>
-                  <%= t(".sign_in", default: "Admin") %>
-                <% end %>
-              </li>
-            <% end %>
-
-            <li>
-              <%= link_to("Mon profil", edit_user_path(current_user)) %>
-            </li>
-
-            <li>
-              <%= link_to destroy_user_session_path, method: :delete do %>
-                </i>  <%= t(".sign_out", default: "Déconnexion") %>
-              <% end %>
-            </li>
-          </ul>
-        </div>
-      </div>
-
-    <% else %>
-
-      <!-- Login text link -->
-      <%= link_to t(".sign_in", default: "Login"), new_user_session_path %>
-
-    <% end %>
+    </div>
+    <%= link_to "Contact", contact_path, class: "navbar-link" %>
   </div>
 
-  <!-- Dropdown list appearing on mobile only -->
+  <!-- ========== MOBILE ONLY ========== -->
+
   <div class="navbar-virtualart-item hidden-md hidden-lg">
     <div class="dropdown">
       <i class="fa fa-bars dropdown-toggle" data-toggle="dropdown"></i>
