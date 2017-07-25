@@ -2,9 +2,10 @@
  * Fonts
  * ------------------------------------- */
 // Google fonts
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,300,700|Raleway:400,100,300,700,500");
-$base-font: "Open Sans", "Helvetica", "sans-serif";
-$header-font: "Raleway", "Helvetica", "sans-serif";
+@import url("https://fonts.googleapis.com/css?family=Carrois+Gothic+SC|Teko:300");
+$base-font: "Tahoma", "sans-serif";
+$header-font: "Carrois Gothic SC", "serif";
+$navbar-font: 'Teko', 'sans-serif';
 
 // Local fonts (uncomment following lines)
 // @font-face {
@@ -32,3 +33,21 @@ $yellow: #FDB631;
 $orange: #E67E22;
 $green: #32B796;
 $gray: #000000;
+
+$color-navbar: #0d3827;
+$color-light: #ffcc66;
+$color-background: #061912;
+$color-base: #339966;
+$color-3d: #33cc66;
+$color-2d: #99ff99;
+$color-print: #ffff99;
+$color-text: #ccffcc;
+$color-highlight: #ff9900;
+
+// Gray scale
+$grey-darker:  #222222;
+$grey-dark:    #333333;
+$grey:        #bbbbbb;
+$grey-light:   #e5e5e5;
+$grey-lighter: #e9e9e9;
+$grey-white:   #f6f6f6;
