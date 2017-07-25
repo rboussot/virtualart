@@ -3,6 +3,7 @@ class RealisationsController < ApplicationController
 
   def index
     @realisations = Realisation.all
+    @courses = Course.where(visible: true)
   end
 
 end

@@ -1,4 +1,8 @@
 <h1>Réalisations d'élèves</h1>
-<% @realisations.each do |realisation| %>
-  <%= realisation.title %><br>
+<% @courses.each do |course| %>
+  <h3><%= course.title %></h3>
+  <% realisations = Realisation.where(course: course) %>
+  <% realisations.each do |realisation| %>
+    <%= link_to image_tag(realisation.thumbnail), realisation.link %> -
+  <% end %>
 <% end %>

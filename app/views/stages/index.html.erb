@@ -1,5 +1,9 @@
 <h1>Tous mes stages</h1>
-<% @stages.each do |stage| %>
-  <%= stage.stagetype.title %> -
-  <%= stage.timeslot %><br><br>
+<% @stagetypes.each do |stagetype| %>
+  <h4><%= stagetype.title %></h4>
+  <%= image_tag(stagetype.picture) %><br>
+  <% stages = Stage.where(stagetype: stagetype) %>
+  <% stages.each do |stage| %>
+    <em><%= stage.timeslot %></em><br>
+  <% end %><br>
 <% end %>

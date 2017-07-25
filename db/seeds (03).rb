@@ -127,7 +127,7 @@ l0 = Lecture.create!(
   visible: true)
 p l0
 #
-ll1 = Lecture.create!(
+l1 = Lecture.create!(
   software: ph, # On réutilise le software défini plus haut.
   course: m2d,
   title: "Photoshop - interface",
@@ -135,7 +135,7 @@ ll1 = Lecture.create!(
   description: "découverte de l'interface pour une bonne organisation.",
   order: "001",
   visible: true)
-p ll1
+p l1
 #
 l2 = Lecture.create!(
   software: ph, # On réutilise le software défini plus haut.
@@ -462,7 +462,7 @@ p l3
 #
 # --- BD NUMERIQUE --- PHOTOSHOP
 l1 = Lecture.create!(
-  software: ph, # On réutilise le software défini plus haut.
+  software: ps, # On réutilise le software défini plus haut.
   course: bd,
   title: "Photoshop - interface",
   video: "6O2qmXxMfEk",
@@ -472,7 +472,7 @@ l1 = Lecture.create!(
 p l1
 #
 l2 = Lecture.create!(
-  software: ph, # On réutilise le software défini plus haut.
+  software: ps, # On réutilise le software défini plus haut.
   course: bd,
   title: "Photoshop - les calques",
   video: "CKhaqZpBij0",
@@ -482,7 +482,7 @@ l2 = Lecture.create!(
 p l2
 #
 l3 = Lecture.create!(
-  software: ph, # On réutilise le software défini plus haut.
+  software: ps, # On réutilise le software défini plus haut.
   course: bd,
   title: "Photoshop - les sélections",
   video: "PoNJ2z3eKcM",
@@ -535,7 +535,7 @@ l0 = Lecture.create!(
 p l0
 #
 l1 = Lecture.create!(
-  software: ph, # On réutilise le software défini plus haut.
+  software: ps, # On réutilise le software défini plus haut.
   course: pr,
   title: "Photoshop - interface",
   video: "6O2qmXxMfEk",
@@ -545,7 +545,7 @@ l1 = Lecture.create!(
 p l1
 #
 l2 = Lecture.create!(
-  software: ph, # On réutilise le software défini plus haut.
+  software: ps, # On réutilise le software défini plus haut.
   course: pr,
   title: "Photoshop - les calques",
   video: "CKhaqZpBij0",
@@ -555,7 +555,7 @@ l2 = Lecture.create!(
 p l2
 #
 l3 = Lecture.create!(
-  software: ph, # On réutilise le software défini plus haut.
+  software: ps, # On réutilise le software défini plus haut.
   course: pr,
   title: "Photoshop - les sélections",
   video: "PoNJ2z3eKcM",
@@ -663,20 +663,8 @@ p l3
 ul1 = UsersLecture.create!(
   user: u1,
   lecture: l1,
-  note: "Appréciation.")
+  notes: "Appréciation.")
 p ul1
-#
-ul2 = UsersLecture.create!(
-  user: u2,
-  lecture: ll1,
-  note: "Appréciation.")
-p ul2
-#
-ul3 = UsersLecture.create!(
-  user: u2,
-  lecture: ll1,
-  note: "Appréciation.")
-p ul3
 #
 # ==================== Realisation ====================
 # === Au moins 3 dans chaque cours
@@ -684,7 +672,7 @@ p ul3
 r1 = Realisation.create!(
   course: m2d,
   user: u1,
-  title: "Dessin de guerrier",
+  title: "Anonyme",
   link: "http://www.virtualart.pro/images/realisations/eleves/2d/combat.jpg",
   thumbnail: "http://www.virtualart.pro/images/realisations/eleves/icone 2d/combat.jpg")
 p r1
@@ -692,7 +680,7 @@ p r1
 r2 = Realisation.create!(
   course: m2d,
   user: u2,
-  title: "Graphisme plaquette 2D",
+  title: "Anonyme",
   link: "http://www.virtualart.pro/images/realisations/eleves/2d/couverture1.jpg",
   thumbnail: "http://www.virtualart.pro/images/realisations/eleves/icone 2d/couverture1.jpg")
 p r2
@@ -700,15 +688,15 @@ p r2
 r3 = Realisation.create!(
   course: m2d,
   user: u3,
-  title: "Logo transparent",
+  title: "Anonyme",
   link: "http://www.virtualart.pro/images/realisations/eleves/2d/couverture2.jpg",
   thumbnail: "http://www.virtualart.pro/images/realisations/eleves/icone 2d/couverture2.jpg")
 p r3
 #
 r4 = Realisation.create!(
   course: m2d,
-  user: u1,
-  title: "Plongeuse animée en 2D",
+  user: u4,
+  title: "Plongeuse",
   link: "https://www.youtube.com/watch?v=lR7n4zTqgX0",
   thumbnail: "http://www.virtualart.pro/images/realisations/eleves/icone 2d/2danim1.jpg")
 p r4
@@ -717,7 +705,7 @@ p r4
 r1 = Realisation.create!(
   course: m3d,
   user: u1,
-  title: "Engrenages 3D",
+  title: "Anonyme",
   link: "http://www.virtualart.pro/images/realisations/eleves/3d/eng.jpg",
   thumbnail: "http://www.virtualart.pro/images/realisations/eleves/icone 3d/eng.jpg")
 p r1
@@ -725,7 +713,7 @@ p r1
 r2 = Realisation.create!(
   course: m3d,
   user: u2,
-  title: "Modélisation de moulins",
+  title: "Anonyme",
   link: "http://www.virtualart.pro/images/realisations/eleves/3d/moulin2.jpg",
   thumbnail: "http://www.virtualart.pro/images/realisations/eleves/icone 3d/moulin2.jpg")
 p r2
@@ -733,7 +721,7 @@ p r2
 r3 = Realisation.create!(
   course: m3d,
   user: u3,
-  title: "Robot",
+  title: "Anonyme",
   link: "http://www.virtualart.pro/images/realisations/eleves/3d/crobot1.jpg",
   thumbnail: "http://www.virtualart.pro/images/realisations/eleves/icone 3d/robot1.jpg")
 p r3
@@ -742,7 +730,7 @@ p r3
 r1 = Realisation.create!(
   course: bd,
   user: u1,
-  title: "Aventures de l'asticot",
+  title: "Anonyme",
   link: "http://www.virtualart.pro/images/realisations/eleves/bd/asticot.jpg",
   thumbnail: "http://www.virtualart.pro/images/realisations/eleves/icone bd/asticot.jpg")
 p r1
@@ -750,7 +738,7 @@ p r1
 r2 = Realisation.create!(
   course: bd,
   user: u2,
-  title: "Une vache dans la ville",
+  title: "Anonyme",
   link: "http://www.virtualart.pro/images/realisations/eleves/bd/bd1.jpg",
   thumbnail: "http://www.virtualart.pro/images/realisations/eleves/icone bd/bd1.jpg")
 p r2
@@ -758,7 +746,7 @@ p r2
 r3 = Realisation.create!(
   course: bd,
   user: u3,
-  title: "Un matin...",
+  title: "Anonyme",
   link: "http://www.virtualart.pro/images/realisations/eleves/bd/bd2.jpg",
   thumbnail: "http://www.virtualart.pro/images/realisations/eleves/icone bd/bd2.jpg")
 p r3
@@ -996,7 +984,7 @@ p t8
 #
 uc1 = UsersCourse.create!(
   user: u1,
-  course: m2d,
+  course: ph,
   timeslot: t1,
   confirmed: true)
 p uc1
@@ -1421,82 +1409,7 @@ p copyright
 # ==================== CoursesSoftware ====================
 # === On en crée 1 seul pour tester
 #
-m2dph = CoursesSoftware.create!(
+cph = CourseSoftware.create!(
   course: m2d,
   software: ph)
-p m2dph
-#
-m2dmo = CoursesSoftware.create!(
-  course: m2d,
-  software: mo)
-p m2dmo
-#
-m2ae = CoursesSoftware.create!(
-  course: m2d,
-  software: ae)
-p m2ae
-#
-m2gra = CoursesSoftware.create!(
-  course: m2d,
-  software: gra)
-p m2gra
-#
-m3dma = CoursesSoftware.create!(
-  course: m3d,
-  software: ma)
-p m3dma
-#
-m3dmu = CoursesSoftware.create!(
-  course: m3d,
-  software: mu)
-p m3dmu
-#
-m3dph = CoursesSoftware.create!(
-  course: m3d,
-  software: ph)
-p m3dph
-#
-m3dae = CoursesSoftware.create!(
-  course: m3d,
-  software: ae)
-p m3dae
-#
-m3dgra = CoursesSoftware.create!(
-  course: m3d,
-  software: gra)
-p m3dgra
-#
-bdcsp = CoursesSoftware.create!(
-  course: bd,
-  software: csp)
-p bdcsp
-#
-bdph = CoursesSoftware.create!(
-  course: bd,
-  software: ph)
-p bdph
-#
-bdgra = CoursesSoftware.create!(
-  course: bd,
-  software: gra)
-p bdgra
-#
-prph = CoursesSoftware.create!(
-  course: pr,
-  software: ph)
-p prph
-#
-prai = CoursesSoftware.create!(
-  course: pr,
-  software: ai)
-p prai
-#
-prind = CoursesSoftware.create!(
-  course: pr,
-  software: ind)
-p prind
-#
-prgra = CoursesSoftware.create!(
-  course: pr,
-  software: gra)
-p prgra
+p cph
