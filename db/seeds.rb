@@ -1361,7 +1361,7 @@ deviantart = Block.create!(
   description:"Consulter mes travaux ...",
   picture:"http....jpg",
   link: "",
-  visible: true,
+  visible: false,
   footer: true)
 p deviantart
 #
