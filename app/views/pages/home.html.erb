@@ -11,7 +11,7 @@
         <div class= "block">
         <%= image_tag "puce-v5.png", class: "puce" %>
           <h4><%= @home_logiciel.title %></h4>
-          <p><%= @home_logiciel.description %></p>
+          <p><%= @home_logiciel.description.gsub("\n", "<br/>").html_safe %></p>
           <% @softwares.each do |software| %>
             <div class= "home-logo">
               <%= image_tag software.logo %><br>
@@ -29,7 +29,7 @@
               <div class="embed-responsive embed-responsive-16by9 home-video">
               <iframe width="854" height="480" src= "https://www.youtube.com/embed/<%= @home_video.link %>?showinfo=0&rel=0" frameborder="1" allowfullscreen></iframe>
               </div>
-              <p><%= @home_video.description %></p>
+              <p><%= @home_video.description.gsub("\n", "<br/>").html_safe %></p>
           </div>
         </div>
       <% end %>
@@ -43,7 +43,7 @@
               <%= image_tag @home_espace.picture %>
             </div>
             <div class= "home-espace col-sm-4">
-              <p><%= @home_espace.description %></p>
+              <p><%= @home_espace.description.gsub("\n", "<br/>").html_safe %></p>
             </div>
           </div>
         </div>
@@ -55,7 +55,7 @@
           <div class= "home-materiel">
             <h4><%= @home_materiel.title %></h4>
             <%= image_tag @home_materiel.picture %>
-            <p><%= @home_materiel.description %></p>
+            <p><%= @home_materiel.description.gsub("\n", "<br/>").html_safe %></p>
           </div>
         </div>
       <% end %>
@@ -69,7 +69,7 @@
         <%= image_tag "puce-v5.png", class: "puce" %>
           <div class="home-news">
             <h4><%= @news.title %></h4>
-            <p><%= @news.description %></p>
+            <p><%= @news.description.gsub("\n", "<br/>").html_safe %></p>
           </div>
           <div class= "inscription">
             <% if current_user %>
