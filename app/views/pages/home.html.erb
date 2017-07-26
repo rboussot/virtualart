@@ -1,15 +1,115 @@
 <div class="homeban" >
-  <%= image_tag @carousels.last.picture, class: "home-ban"%>
+  <%= image_tag @carousels.last.picture, class: "home-ban" %>
 </div>
-<!-- <div class="banner" style="background-image: url('<%= @carousels.last.picture %>');">
-</div> -->
-
+<!-- =============== ROW & CONTAINER =============== -->
 <div class="container">
   <div class="row">
-    <div class="col-sm-8 volet-gauche">
-      <h1> Accueil <h1>
+<!-- =============== VOLET GAUCHE =============== -->
+    <div class="col-sm-8">
+      <!-- ==== LOGICIELS ==== -->
+      <% if @home_logiciel.visible %>
+        <div class= "block">
+        <%= image_tag "puce-v5.png", class: "puce" %>
+          <h4><%= @home_logiciel.title %></h4>
+          <p><%= @home_logiciel.description %></p>
+          <% @softwares.each do |software| %>
+            <div class= "home-logo">
+              <%= image_tag software.logo %><br>
+              <%= software.title %>
+            </div>
+          <% end %>
+        </div>
+      <% end %>
+      <!-- ==== VIDEO  ==== -->
+      <% if @home_video.visible %>
+        <div class= "block">
+        <%= image_tag "puce-v5.png", class: "puce" %>
+          <h4><%= @home_video.title %></h4>
+            <div class= "home-video">
+              <div class="embed-responsive embed-responsive-16by9 home-video">
+              <iframe width="854" height="480" src= "https://www.youtube.com/embed/<%= @home_video.link %>?showinfo=0&rel=0" frameborder="1" allowfullscreen></iframe>
+              </div>
+              <p><%= @home_video.description %></p>
+          </div>
+        </div>
+      <% end %>
+      <!-- ==== ESPACE ==== -->
+      <% if @home_espace.visible %>
+        <div class= "block">
+        <%= image_tag "puce-v5.png", class: "puce" %>
+          <h4><%= @home_espace.title %></h4>
+          <div class= "row">
+            <div class="home-espace col-sm-8">
+              <%= image_tag @home_espace.picture %>
+            </div>
+            <div class= "home-espace col-sm-4">
+              <p><%= @home_espace.description %></p>
+            </div>
+          </div>
+        </div>
+      <% end %>
+      <!-- ==== MATERIEL ==== -->
+      <% if @home_materiel.visible %>
+        <div class= "block">
+        <%= image_tag "puce-v5.png", class: "puce" %>
+          <div class= "home-materiel">
+            <h4><%= @home_materiel.title %></h4>
+            <%= image_tag @home_materiel.picture %>
+            <p><%= @home_materiel.description %></p>
+          </div>
+        </div>
+      <% end %>
+      <!-- =============== CLOSE VOLET GAUCHE =============== -->
     </div>
+<!-- =============== VOLET DROIT =============== -->
+    <div class="col-sm-4">
+      <!-- ==== NEWS ==== -->
+      <% if @news.visible %>
+        <div class= "block">
+        <%= image_tag "puce-v5.png", class: "puce" %>
+          <div class="home-news">
+            <h4><%= @news.title %></h4>
+            <p><%= @news.description %></p>
+          </div>
+          <div class= "inscription">
+            <%= link_to "Consulter le formulaire d'inscription", edit_user_path(current_user) %>
+          </div>
+        </div>
+      <% end %>
+      <!-- ==== POST ==== -->
+      <% if @post.visible %>
+        <div class= "block">
+        <%= image_tag "puce-v5.png", class: "puce" %>
+          <div class="home-post">
+            <h4><%= @post.title %></h4>
+            <%= link_to image_tag(@post.picture, class: "full"), @post.link%>
+          </div>
+        </div>
+      <% end %>
+      <!-- ==== COEUR ==== -->
+      <% if @coeur.visible %>
+        <div class= "block">
+        <%= image_tag "puce-v5.png", class: "puce" %>
+          <div class="home-coeur">
+            <h4><%= @coeur.title %></h4>
+            <div class="embed-responsive embed-responsive-16by9 home-video">
+              <iframe width="854" height="480" src= "https://www.youtube.com/embed/<%= @coeur.link %>?showinfo=0&rel=0" frameborder="1" allowfullscreen></iframe>
+              </div>
+          </div>
+        </div>
+      <% end %>
+      <!-- ==== LIVREDOR ==== -->
+      <% if @livredor.visible %>
+        <div class= "block">
+        <%= image_tag "puce-v5.png", class: "puce" %>
+          <div class="home-coeur">
+            <h4><%= @livredor.title %></h4>
+            <%= image_tag @livredor.picture, class: "right" %>
+          </div>
+        </div>
+      <% end %>
+    <!-- =============== CLOSE VOLET DROIT =============== -->
+    </div>
+<!-- =============== ROW & CONTAINER =============== -->
   </div>
 </div>
-
-<!-- http://www.virtualart.pro/images/interface/carousel1.jpg -->

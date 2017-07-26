@@ -3,12 +3,48 @@
   background-color: black;
 }
 
+.home-margin {
+  margin-bottom: 40px;
+}
+
+.home-logo {
+  color: white;
+  display: inline-block;
+  text-align: center;
+  font-size: 11px;
+
+  img {
+  height: 96px;
+  margin: O.6% 0px;
+  }
+}
+.home-video {
+  color: white;
+}
+
+.home-espace {
+  img {
+    width: 100%;
+    height: 100%;
+}
+  p {
+    display: inline-block;
+    margin-right: 20px;
+  }
+}
+
+.home-materiel {
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
 .banner {
   color: white;
   text-align: center;
   height: 445px;
   background-size: 100vw;
-  // background-size: cover !important;
   display: flex;
   align-items: center;
   justify-content: center;
