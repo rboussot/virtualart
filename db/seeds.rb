@@ -90,7 +90,9 @@ m2d = Course.create!(
 
 Logiciels : Photoshop, Moho, After Effects.",
   picture: "http://www.virtualart.pro/images/interface/ic-2d.jpg",
-  visible: true)
+  visible: true,
+  color: "167, 207, 137",
+  puce: "http://www.virtualart.pro/images/interface/puce-2d.png")
 p m2d
 #
 m3d = Course.create!(
@@ -99,7 +101,9 @@ m3d = Course.create!(
 
 Logiciels : Maya, Mudbox, Photoshop, After Effects.",
   picture: "http://www.virtualart.pro/images/interface/ic-3d.jpg",
-  visible: true)
+  visible: true,
+  color: "81, 178, 99",
+  puce: "http://www.virtualart.pro/images/interface/puce-3d.png")
 p m3d
 #
 bd = Course.create!(
@@ -108,7 +112,9 @@ bd = Course.create!(
 
 Logiciels : Clip Sutdio Paint, Photoshop.",
   picture: "http://www.virtualart.pro/images/interface/ic-bd.jpg",
-  visible: true)
+  visible: true,
+  color: "253, 203, 104",
+  puce: "http://www.virtualart.pro/images/interface/puce-bd.png")
 p bd
 #
 pr = Course.create!(
@@ -117,7 +123,9 @@ pr = Course.create!(
 
 Logiciels : Photoshop, Illustrator, Indesign.",
   picture: "http://www.virtualart.pro/images/interface/ic-print.jpg",
-  visible: true)
+  visible: true,
+  color: "248, 241, 153",
+  puce: "http://www.virtualart.pro/images/interface/puce-print.png")
 p pr
 #
 # ==================== Lecture ====================

@@ -21,17 +21,18 @@
 }
 
 .navbar-login {
-  font-family: $navbar-font;
-  font-size: 24px;
-  padding: 10px 20px 10px 20px;
+  font-family: "Teko", "sans-serif";
+  font-size: 20px;
+  padding: 5px 20px 5px 20px;
   position: absolute;
-  right: 33px;
+  right: 55px;
   top: 220px;
   background: white;
-  border: 2px solid $grey;
+  border: 2px solid #bbbbbb;
   font-weight: lighter !important;
-  color: $grey-dark !important;
+  color: #333333 !important;
   line-height: 22px !important;
+  z-index: 1;
 }
 
 .navbar-link:hover {

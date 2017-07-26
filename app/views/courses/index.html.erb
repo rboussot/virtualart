@@ -1,11 +1,60 @@
+<!-- =============== ROW & CONTAINER =============== -->
 <div class="container">
   <div class="row">
-    <div class="col-sm-8 volet-gauche">
-      <h1>Tous mes cours</h1>
+    <!-- =============== VOLET GAUCHE =============== -->
+    <div class="col-sm-8">
+    <!-- ===== COURS ===== -->
       <% @courses.each do |course| %>
-        <%= link_to course.title, course_path(course) %><br>
-        <%= link_to image_tag(course.picture), course_path(course) %><br><br>
+        <%= link_to course_path(course) do %>
+          <div class= "block height"
+          style= "background-color: rgba(<%= course.color %>, 0.35);border-color: rgb(<%= course.color %>);">
+          <%= image_tag course.puce, class: "puce" %>
+            <h4 style= "text-shadow: 0 0 0.2em rgba(<%= course.color %>, 0.5), 0 0 0.2em rgba(<%= course.color %>, 0.5)"><%= course.title %></h4>
+            <%= image_tag course.picture, class: "left" %>
+            <p><%= course.description.gsub("\n", "<br/>").html_safe %></p>
+          </div>
+        <% end %>
       <% end %>
+    <!-- =============== CLOSE VOLET GAUCHE =============== -->
     </div>
+    <!-- =============== VOLET DROIT =============== -->
+    <div class="col-sm-4">
+    <div class= "block-margin"></div>
+      <!-- ===== INSCRIPTION ===== -->
+      <div class= "block">
+      <%= image_tag "puce-v5.png", class: "puce" %>
+        <h4><%= @inscription.title %></h4>
+          <p><%= @inscription.description.gsub("\n", "<br/>").html_safe %></p>
+          <% if current_user %>
+            <%= link_to edit_user_path(current_user) do %>
+            <div class= "inscription">
+              Consulter le formulaire d'inscription
+            </div>
+            <% end %>
+          <% else %>
+            <%= link_to new_user_session_path do %>
+            <div class= "inscription">
+              Créer d'abord un compte gratuit !
+            </div>
+            <% end %>
+          <% end %>
+      </div>
+      <!-- ===== PLANNING ===== -->
+      <div class= "block">
+        <%= image_tag "puce-v5.png", class: "puce" %>
+        <h4><%= @planning.title %></h4>
+        <p><%= @planning.description.gsub("\n", "<br/>").html_safe %></p>
+      </div>
+      <!-- ===== TARIF ===== -->
+      <div class= "block">
+        <%= image_tag "puce-v5.png", class: "puce" %>
+        <h4><%= @tarifs1.title %></h4>
+        <p><%= @tarifs1.description.gsub("\n", "<br/>").html_safe %></p>
+        <%= image_tag @tarifs1.picture, class: "full" %><br><br>
+        <p><%= @tarifs2.description.gsub("\n", "<br/>").html_safe %></p>
+        <%= image_tag @tarifs2.picture, class: "full" %><br><br>
+      </div>
+    </div>
+<!-- =============== CLOSE ROW & CONTAINER =============== -->
   </div>
 </div>
