@@ -5,12 +5,15 @@
 }
 
 .block {
-  background-color: $color-home;
   padding: 15px 15px 15px 15px;
   margin: 20px 0px 20px 0px;
+  box-shadow: -6px 8px 15px 2px rgba(0, 0, 0, 0.5);
+  background-color: $color-home;
   border-top: 5px solid $color-line;
   border-bottom: 5px solid $color-line;
-  box-shadow: -6px 8px 15px 2px rgba(0, 0, 0, 0.5);
+  &.height {
+  min-height: 340px;
+  }
   h4 {
     color: $color-text;
     text-shadow: 0 0 0.2em $color-line, 0 0 0.2em $color-line
@@ -26,26 +29,40 @@
     width: 50%;
     margin-left: 50%;
   }
+  .left {
+    float: left;
+    margin: 0px 15px 0px 0px;
+  }
+  a {
+    color: $color-text;
+    &:hover {
+      color: white;
+    }
+  }
 }
 
 .inscription {
-    background-color: $color-background;
-    margin: 0px 0px 0px 0px;
-    padding: 10px 0px 10px 0px;
-    text-align: center;
-    border-radius: 5px;
-    border: 2px solid $color-line;
-    font-size: 14px;
-    font-style: italic;
-    a {
-      color: $color-line;
-    }
-    &:hover
+  width: 100%;
+  background-color: $color-background;
+  margin: 20px 0px 10px 0px;
+  padding: 10px 30px 10px 30px;
+  text-align: center;
+  border-radius: 5px;
+  border: 2px solid $color-line;
+  font-size: 14px;
+  font-style: italic;
+  color: $color-line;
+  &:hover
+  {
+    background-color: $color-navbar;
+    a
     {
-      background-color: $color-navbar;
-      a
-      {
-        color: $color-text;
-      }
+      color: $color-text;
     }
+    }
+}
+
+.block-margin {
+  margin-top: 160px;
+  z-index: -1;
 }

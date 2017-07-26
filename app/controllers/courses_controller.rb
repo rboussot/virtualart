@@ -4,7 +4,11 @@ class CoursesController < ApplicationController
   before_action :find_softwares, only: [:show]
 
   def index
-    @courses = Course.all
+    @courses = Course.where(visible: true).order(created_at: :asc)
+    @inscription = Block.find_by(tag: "inscription_cours")
+    @planning = Block.find_by(tag: "planning")
+    @tarifs1 = Block.find_by(tag: "tarifs1")
+    @tarifs2 = Block.find_by(tag: "tarifs2")
   end
 
   def show

@@ -71,13 +71,19 @@
             <h4><%= @news.title %></h4>
             <p><%= @news.description.gsub("\n", "<br/>").html_safe %></p>
           </div>
-          <div class= "inscription">
-            <% if current_user %>
-              <%= link_to "Consulter le formulaire d'inscription", edit_user_path(current_user) %>
-            <% else %>
-              <%= link_to "Je m'inscris gratuitement !", new_user_session_path %>
+          <% if current_user %>
+            <%= link_to edit_user_path(current_user) do %>
+            <div class= "inscription">
+              Consulter le formulaire d'inscription
+            </div>
             <% end %>
-          </div>
+          <% else %>
+            <%= link_to new_user_session_path do %>
+            <div class= "inscription">
+              Créer d'abord un compte gratuit !
+            </div>
+            <% end %>
+          <% end %>
         </div>
       <% end %>
       <!-- ==== POST ==== -->
