@@ -30,42 +30,50 @@ p u3
 #
 ph = Software.create!(
   title: "Photoshop",
-  description: "Photoshop est un logiciel de retouche et de montage assisté par ordinateur édité par Adobe. Il est utilisé dans tous les domaines (traitement de photographie et création d'images) pour sa polyvalence !")
+  description: "Photoshop est un logiciel de retouche et de montage assisté par ordinateur édité par Adobe. Il est utilisé dans tous les domaines (traitement de photographie et création d'images) pour sa polyvalence !",
+  logo: "http://www.wantitbuyit.com/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/p/h/photoshop.jpg")
 p ph
 #
 ai = Software.create!(
   title: "Illustrator",
-  description: "Illustrator est un logiciel de dessin vectoriel édité par Adobe. Il est essentiellement utilisé pour la création de logos, mais l'illustration vectorielle est à la mode !")
+  description: "Illustrator est un logiciel de dessin vectoriel édité par Adobe. Il est essentiellement utilisé pour la création de logos, mais l'illustration vectorielle est à la mode !",
+  logo: "https://helpx.adobe.com/content/dam/help/mnemonics/ai_cc_app_RGB.svg")
 p ai
 #
 ind = Software.create!(
   title: "InDesign",
-  description: "Indesign est un logiciel de mise en page édité par Adobe, les liens avec les fichiers Photoshop et Illustrator sont évidement reconnus.")
+  description: "Indesign est un logiciel de mise en page édité par Adobe, les liens avec les fichiers Photoshop et Illustrator sont évidement reconnus.",
+  logo: "http://www.ensistemas.com/portals/0/Adobe/Adobe-InDesign-CC-01.png")
 p ind
 #
 ae = Software.create!(
   title: "After Effects",
-  description: "After Effects est un logiciel de compositing (montage) édité par Adobe. Il permet de créer des effets spéciaux et des animations graphiques sur des images et vidéos.")
+  description: "After Effects est un logiciel de compositing (montage) édité par Adobe. Il permet de créer des effets spéciaux et des animations graphiques sur des images et vidéos.",
+  logo: "http://ducminhabc.com/wp-content/uploads/2016/12/After-Effect-logo-500x500.png")
 p ae
 #
 ma = Software.create!(
   title: "Maya",
-  description: "Maya est un logiciel de modéalisation et d'animation 3D utilisé dans l'industrie du cinéma, développé par la société Autodesk.")
+  description: "Maya est un logiciel de modéalisation et d'animation 3D utilisé dans l'industrie du cinéma, développé par la société Autodesk.",
+  logo: "http://area.autodesk.com/userdata/blogs/the-maya-blog.png")
 p ma
 #
 mu = Software.create!(
   title: "Mudbox",
-  description: "Mudbox est un logiciel de sculpting 3D, développé par la société Autodesk. Il permet la création de détails en modélisation et textures.")
+  description: "Mudbox est un logiciel de sculpting 3D, développé par la société Autodesk. Il permet la création de détails en modélisation et textures.",
+  logo: "https://www.tezabo.com/sites/default/files/mudbox.png")
 p mu
 #
 csp = Software.create!(
   title: "Clip Studio Paint",
-  description: "Clip Studio Paint est un logiciel de création de BDs Japonais, éditer chez nous par Lost Marble.")
+  description: "Clip Studio Paint est un logiciel de création de BDs Japonais, éditer chez nous par Lost Marble.",
+  logo: "https://pbs.twimg.com/profile_images/378800000343701556/aed29f4d1f173fc74b33a7a0da7b2e92_400x400.png")
 p csp
 #
 mo = Software.create!(
   title: "Moho",
-  description: "Moho est un logiciel d'animation 2D vectoriel facile d'accès, édité par Lost Marble.")
+  description: "Moho est un logiciel d'animation 2D vectoriel facile d'accès, édité par Lost Marble.",
+  logo: "https://pbs.twimg.com/profile_images/762793616817303552/xegBWWOY.jpg")
 p mo
 #
 gra = Software.create!(
@@ -1080,7 +1088,7 @@ accueil_video = Block.create!(
   title: "Un enseignement 2.0",
   description: "L'enseignement aussi est 2.0 ! Vous aurez accès à tous les cours en vidéos sur notre site et pendant les séances nous feront des applications ou vos projets, en avançant à votre rythme.",
   picture: "",
-  link: "Hp-TCNuBtuc",
+  link: "57Q6swND1ic",
   visible: true,
   footer: false)
 p accueil_video
@@ -1120,7 +1128,7 @@ post = Block.create!(
   title: "Dernière réalisation",
   description: "", # Pas besoin de description pour le dernier post l'image parle d'elle-même
   picture: "http://www.virtualart.pro/images/divers/inu.jpg",
-  link: "lien vers le post",
+  link: "http://www.virtualart.pro/images/divers/inu.jpg",
   visible: true,
   footer: false)
 p post
@@ -1130,7 +1138,7 @@ coeur = Block.create!(
   title:"Coup de coeur", # Il faudra réfléchir à l'organisation de la page d'accueil >> NE PAS METTRE
   description: "",
   picture: "",
-  link: "",
+  link: "m7nfQzZuePc",
   visible: true,
   footer: false)
 p coeur
@@ -1139,7 +1147,7 @@ livredor = Block.create!(
   tag: "livredor",
   title: "Livre d’Or",
   description: "Venez commenter :)",
-  picture: "",
+  picture: "http://www.magicskullgames.com/wp-content/uploads/2012/12/FCI-spots-2-Spell-book-fancy-open-colorized.png",
   link: "",
   visible: false, # Invisible pour l'instant : à développer plus tard.
   footer: false)

@@ -1,0 +1,51 @@
+.puce {
+    margin: -17px 15px 0px -15px;
+    max-height: 45px;
+    float: left;
+}
+
+.block {
+  background-color: $color-home;
+  padding: 15px 15px 15px 15px;
+  margin: 20px 0px 20px 0px;
+  border-top: 5px solid $color-line;
+  border-bottom: 5px solid $color-line;
+  box-shadow: -6px 8px 15px 2px rgba(0, 0, 0, 0.5);
+  h4 {
+    color: $color-text;
+    text-shadow: 0 0 0.2em $color-line, 0 0 0.2em $color-line
+  }
+  p {
+    color: $color-text;
+  }
+  .full {
+    width: 100%;
+  }
+  .right {
+    text-align: right;
+    width: 50%;
+    margin-left: 50%;
+  }
+}
+
+.inscription {
+    background-color: $color-background;
+    margin: 0px 0px 0px 0px;
+    padding: 10px 0px 10px 0px;
+    text-align: center;
+    border-radius: 5px;
+    border: 2px solid $color-line;
+    font-size: 14px;
+    font-style: italic;
+    a {
+      color: $color-line;
+    }
+    &:hover
+    {
+      background-color: $color-navbar;
+      a
+      {
+        color: $color-text;
+      }
+    }
+}
