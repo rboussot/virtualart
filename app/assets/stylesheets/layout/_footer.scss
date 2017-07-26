@@ -1,1 +1,31 @@
-// Your footer style
+.footer {
+    background-color: $color-navbar;
+    margin: 40px 0px 0px 0px;
+    padding: 40px 0px 20px 40px;
+    border-top: 5px solid $color-light;
+}
+
+.footer-link {
+  height: 20px;
+  margin: 0px 0px 0px 20px;
+}
+
+.footer-icon {
+  text-align: center;
+  margin: -107px 0px 0px 0px;
+}
+
+.footer-copyright {
+  margin: -20px 40px 0px 60%;
+  padding: 0px 0px 0px 0px;
+  font-size: 10px;
+  font-style: italic;
+  text-align: right;
+  a {
+    color: $grey;
+    text-decoration: none;
+    &:hover {
+      color: white;
+    }
+  }
+}

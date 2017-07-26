@@ -1379,8 +1379,8 @@ twitter = Block.create!(
   tag: "twitter",
   title: "Mon fil Twitter",
   description: "",
-  picture: "http....jpg",
-  link: "",
+  picture: "http://www.iconsdb.com/icons/preview/silver/twitter-xxl.png",
+  link: "https://twitter.com/LydieArt31",
   visible: true,
   footer: true)
 p twitter
@@ -1389,8 +1389,8 @@ facebook = Block.create!(
   tag: "facebook",
   title: "Ma page facebook",
   description: "",
-  picture:"http....jpg",
-  link: "",
+  picture:"http://www.iconsdb.com/icons/preview/silver/facebook-3-xxl.png",
+  link: "https://www.facebook.com/Virtual-Art-199584596815296",
   visible: true,
   footer: true)
 p facebook
@@ -1399,8 +1399,8 @@ youtube = Block.create!(
   tag: "youtube",
   title: "Ma chaîne Youtube",
   description: "",
-  picture:"http....jpg",
-  link: "",
+  picture:"http://www.montelvini.it/wp-content/uploads/revslider/home-FS/youtube-grigio.png",
+  link: "https://www.youtube.com/user/VirtualArtToulouse",
   visible: true,
   footer: true)
 p youtube
@@ -1411,7 +1411,7 @@ instagram = Block.create!(
   description: "",
   picture:"http....jpg",
   link: "",
-  visible: true,
+  visible: false,
   footer: true)
 p instagram
 #
