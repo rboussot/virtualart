@@ -819,7 +819,9 @@ st1 = Stagetype.create!(
 - Techniques aux pinceaux numérique
 - Ajout de textures et motifs",
   picture: "http://www.virtualart.pro/images/interface/ic-stageillu.jpg",
-  visible: true)
+  visible: true,
+  color: "167, 207, 137",
+  puce: "http://www.virtualart.pro/images/interface/puce-2d.png")
 p st1
 #
 st2 = Stagetype.create!(
@@ -833,7 +835,9 @@ st2 = Stagetype.create!(
 - Corrections (colorimétrie, déformation ...)
 - Création d’un matte Painting",
   picture: "http://www.virtualart.pro/images/interface/ic-stagephoto.jpg",
-  visible: true)
+  visible: true,
+  color: "81, 178, 99",
+  puce: "http://www.virtualart.pro/images/interface/puce-3d.png")
 p st2
 #
 st3 = Stagetype.create!(
@@ -848,7 +852,9 @@ Illustrator : dessin vectoriel (logo)
 InDesign : mise en page
 - Création d’une petite plaquette",
   picture: "http://www.virtualart.pro/images/interface/ic-stageprint.jpg",
-  visible: true)
+  visible: true,
+  color: "248, 241, 153",
+  puce: "http://www.virtualart.pro/images/interface/puce-print.png")
 p st3
 #
 st4 = Stagetype.create!(
@@ -863,7 +869,9 @@ st4 = Stagetype.create!(
 - Mise en couleur ou en trames de la planche
 - Ajout des bulles et texte sur ordinateur",
   picture: "http://www.virtualart.pro/images/interface/ic-stagebd.jpg",
-  visible: true)
+  visible: true,
+  color: "253, 203, 104",
+  puce: "http://www.virtualart.pro/images/interface/puce-bd.png")
 p st4
 
 #

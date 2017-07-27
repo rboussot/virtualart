@@ -39,6 +39,22 @@
       color: white;
     }
   }
+  &.height:hover {
+    background-image: linear-gradient(708deg, rgba(255, 230, 90, 0.1)9%, rgba(0, 0, 0, 0) 55%);
+  }
+}
+
+.block-timeslots {
+  text-align: center;
+  .timeslot {
+      background-color: rgba(255, 255, 255, 0.3);
+      color: white;
+      margin: auto;
+      margin-top: 10px;
+      padding: 4px 0px 4px 0px;
+      font-size: 15px;
+      width: 60%;
+  }
 }
 
 .inscription {

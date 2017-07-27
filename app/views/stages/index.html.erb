@@ -1,9 +1,75 @@
-<h1>Tous mes stages</h1>
-<% @stagetypes.each do |stagetype| %>
-  <h4><%= stagetype.title %></h4>
-  <%= image_tag(stagetype.picture) %><br>
-  <% stages = Stage.where(stagetype: stagetype) %>
-  <% stages.each do |stage| %>
-    <em><%= stage.timeslot %></em><br>
-  <% end %><br>
-<% end %>
+<!-- =============== ROW & CONTAINER =============== -->
+<div class="container">
+  <div class="row">
+    <!-- =============== VOLET GAUCHE =============== -->
+    <div class="col-sm-8">
+    <!-- ===== COURS ===== -->
+      <% @stagetypes.each do |stagetype| %>
+        <% if current_user %>
+            <%= link_to edit_user_path(current_user) do %>
+              <div class= "block height"
+              style= "background-color: rgba(<%= stagetype.color %>, 0.35);border-color: rgb(<%= stagetype.color %>);">
+              <%= image_tag stagetype.puce, class: "puce" %>
+                <h4 style= "text-shadow: 0 0 0.2em rgba(<%= stagetype.color %>, 0.5), 0 0 0.2em rgba(<%= stagetype.color %>, 0.5)"><%= stagetype.title %></h4>
+                <%= image_tag stagetype.picture, class: "left" %>
+                <p><%= stagetype.description.gsub("\n", "<br/>").html_safe %></p><br><br>
+                  <% stages = Stage.where(stagetype: stagetype) %>
+                  <div class="block-timeslots">
+                    <% stages.each do |stage| %>
+                      <div class="timeslot"><%= stage.timeslot %></div>
+                    <% end %>
+                  </div>
+              </div>
+            <% end %>
+          <% else %>
+            <%= link_to new_user_session_path do %>
+              <div class= "block height"
+              style= "background-color: rgba(<%= stagetype.color %>, 0.35);border-color: rgb(<%= stagetype.color %>);">
+              <%= image_tag stagetype.puce, class: "puce" %>
+                <h4 style= "text-shadow: 0 0 0.2em rgba(<%= stagetype.color %>, 0.5), 0 0 0.2em rgba(<%= stagetype.color %>, 0.5)"><%= stagetype.title %></h4>
+                <%= image_tag stagetype.picture, class: "left" %>
+                <p><%= stagetype.description.gsub("\n", "<br/>").html_safe %></p><br><br>
+                  <% stages = Stage.where(stagetype: stagetype) %>
+                  <div class="block-timeslots">
+                  <% stages.each do |stage| %>
+                    <div class="timeslot"><%= stage.timeslot %></div>
+                  <% end %>
+                  </div>
+              </div>
+            <% end %>
+          <% end %>
+      <% end %>
+    <!-- =============== CLOSE VOLET GAUCHE =============== -->
+    </div>
+    <!-- =============== VOLET DROIT =============== -->
+    <div class="col-sm-4">
+    <div class= "block-margin"></div>
+      <!-- ===== INSCRIPTION ===== -->
+      <div class= "block">
+      <%= image_tag "puce-v5.png", class: "puce" %>
+        <h4><%= @inscription.title %></h4>
+          <p><%= @inscription.description.gsub("\n", "<br/>").html_safe %></p>
+          <% if current_user %>
+            <%= link_to edit_user_path(current_user) do %>
+            <div class= "inscription">
+              Consulter le formulaire d'inscription
+            </div>
+            <% end %>
+          <% else %>
+            <%= link_to new_user_session_path do %>
+            <div class= "inscription">
+              Créer d'abord un compte gratuit !
+            </div>
+            <% end %>
+          <% end %>
+      </div>
+      <!-- ===== INFOS ===== -->
+      <div class= "block">
+        <%= image_tag "puce-v5.png", class: "puce" %>
+        <h4><%= @infos.title %></h4>
+        <p><%= @infos.description.gsub("\n", "<br/>").html_safe %></p>
+      </div>
+<!-- =============== CLOSE ROW & CONTAINER =============== -->
+    </div>
+  </div>
+</div>

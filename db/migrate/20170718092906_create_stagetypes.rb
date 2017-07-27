@@ -4,6 +4,8 @@ class CreateStagetypes < ActiveRecord::Migration[5.0]
       t.string :title
       t.string :picture
       t.text :description
+      t.string :color
+      t.string :puce
       t.boolean :visible, default: false, null: false
 
       t.timestamps

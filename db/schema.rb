@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170726160352) do
+ActiveRecord::Schema.define(version: 20170719081918) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -31,11 +31,11 @@ ActiveRecord::Schema.define(version: 20170726160352) do
     t.string   "title"
     t.text     "description"
     t.string   "picture"
+    t.string   "color"
+    t.string   "puce"
     t.boolean  "visible",     default: false, null: false
     t.datetime "created_at",                  null: false
     t.datetime "updated_at",                  null: false
-    t.string   "color"
-    t.string   "puce"
   end
 
   create_table "courses_softwares", force: :cascade do |t|
@@ -75,10 +75,10 @@ ActiveRecord::Schema.define(version: 20170726160352) do
 
   create_table "softwares", force: :cascade do |t|
     t.string   "title"
+    t.string   "logo"
     t.text     "description"
     t.datetime "created_at",  null: false
     t.datetime "updated_at",  null: false
-    t.string   "logo"
   end
 
   create_table "stages", force: :cascade do |t|
@@ -94,6 +94,8 @@ ActiveRecord::Schema.define(version: 20170726160352) do
     t.string   "title"
     t.string   "picture"
     t.text     "description"
+    t.string   "color"
+    t.string   "puce"
     t.boolean  "visible",     default: false, null: false
     t.datetime "created_at",                  null: false
     t.datetime "updated_at",                  null: false
