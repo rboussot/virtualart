@@ -1,7 +1,7 @@
-<!-- ========== LOGIN OR NOT ========== -->
+<!-- ========== LARGE SCREEN LOGIN OR NOT ========== -->
 <% if user_signed_in? %>
   <!-- Profile picture and dropdown -->
-  <div class="navbar-virtualart-item">
+  <div class="navbar-virtualart-item hidden-xs hidden-sm">
     <div class="dropdown">
       <a data-toggle="dropdown" class="navbar-login"><%= current_user.email %></a>
       <ul class="dropdown-menu dropdown-menu-right navbar-login-dropdown-menu">
@@ -27,6 +27,38 @@
   <!-- Login text link -->
   <%= link_to "Connexion / Inscription", new_user_session_path, class: "navbar-login" %>
 <% end %>
+
+
+<!-- ========== MOBILE LOGIN OR NOT ========== -->
+<% if user_signed_in? %>
+  <!-- Profile picture and dropdown -->
+  <div class="navbar-virtualart-item hidden-md hidden-lg">
+    <div class="dropdown">
+      <a data-toggle="dropdown" class="navbar-login-mobile"><%= current_user.email %></a>
+      <ul class="dropdown-menu dropdown-menu-right navbar-login-dropdown-menu" id= "dropdown-login-mobile">
+        <% if current_user && current_user.admin %>
+          <li>
+            <%= link_to rails_admin_path do %>
+              <%= t(".sign_in", default: "Admin") %>
+            <% end %>
+          </li>
+        <% end %>
+        <li>
+          <%= link_to("Mes inscriptions", edit_user_path(current_user)) %>
+        </li>
+        <li>
+          <%= link_to destroy_user_session_path, method: :delete do %>
+            </i>  <%= t(".sign_out", default: "Déconnexion") %>
+          <% end %>
+        </li>
+      </ul>
+    </div>
+  </div>
+<% else %>
+  <!-- Login text link -->
+  <%= link_to "Connexion / Inscription", new_user_session_path, class: "navbar-login" %>
+<% end %>
+
 
 <!-- ========== LARGE SCREEN ========== -->
 
@@ -61,9 +93,16 @@
     <div class="dropdown">
       <i class="fa fa-bars dropdown-toggle" data-toggle="dropdown"></i>
       <ul class="dropdown-menu dropdown-menu-right navbar-virtualart-dropdown-menu">
-        <li><a href="#">Some mobile link</a></li>
-        <li><a href="#">Other one</a></li>
-        <li><a href="#">Other one</a></li>
+        <li><%= link_to "Accueil", root_path, class: "navbar-link" %></li>
+        <li><%= link_to "Cours", courses_path, class: "navbar-link"  %></li>
+        <li><%= link_to "Stages", stages_path, class: "navbar-link"  %></li>
+        <li><%= link_to "Profil", profile_path, class: "navbar-link"  %></li>
+        <li><%= link_to "Réalisations", realisations_path, class: "navbar-link"  %></li>
+        <% @courses.each do |course| %>
+          <li>
+            <%= link_to(course.title, course_path(course)) %>
+          </li>
+        <% end %>
       </ul>
     </div>
   </div>
