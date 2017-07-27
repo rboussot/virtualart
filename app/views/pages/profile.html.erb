@@ -1,1 +1,64 @@
-<h1>Qui suis-je ?</h1>
+<!-- =============== ROW & CONTAINER =============== -->
+<div class="container">
+  <div class="row">
+    <!-- =============== VOLET GAUCHE =============== -->
+    <div class="col-sm-8">
+    <!-- ===== COURS ===== -->
+      <div class= "block">
+        <%= image_tag "puce-v5.png", class: "puce" %>
+        <h4><%= @prof1.title %></h4>
+        <div class= "row">
+          <div class="col-sm-5">
+            <%= image_tag @prof1.picture, class: "profile hidden-xs" %>
+            <%= image_tag @prof2.picture, class: "profile hidden-xs" %>
+            <%= image_tag @prof3.picture, class: "profile" %>
+            <%= image_tag @prof4.picture, class: "profile hidden-xs" %>
+          </div>
+          <div class="col-sm-7">
+            <p><%= @prof1.description.gsub("\n", "<br/>").html_safe %></p>
+            <p><%= @prof2.description.gsub("\n", "<br/>").html_safe %></p>
+            <p><%= @prof3.description.gsub("\n", "<br/>").html_safe %></p>
+            <p><%= @prof4.description.gsub("\n", "<br/>").html_safe %></p>
+          </div>
+        </div>
+      </div>
+    <!-- =============== CLOSE VOLET GAUCHE =============== -->
+    </div>
+    <!-- =============== VOLET DROIT =============== -->
+    <div class="col-sm-4">
+    <div class= "block-margin hidden-xs hidden-sm"></div>
+      <!-- ===== INSCRIPTION ===== -->
+      <div class= "block">
+      <%= image_tag "puce-v5.png", class: "puce" %>
+        <h4><%= @inscription.title %></h4>
+          <p><%= @inscription.description.gsub("\n", "<br/>").html_safe %></p>
+          <% if current_user %>
+            <%= link_to edit_user_path(current_user) do %>
+            <div class= "inscription">
+              Consulter le formulaire d'inscription
+            </div>
+            <% end %>
+          <% else %>
+            <%= link_to new_user_session_path do %>
+            <div class= "inscription">
+              Créer d'abord un compte gratuit !
+            </div>
+            <% end %>
+          <% end %>
+      </div>
+      <!-- ===== PLANNING ===== -->
+      <div class= "block">
+        <%= image_tag "puce-v5.png", class: "puce" %>
+        <h4><%= @parcours.title %></h4>
+        <p><%= @parcours.description.gsub("\n", "<br/>").html_safe %></p>
+      </div>
+      <!-- ===== MON TRAVAIL ===== -->
+      <div class= "block">
+        <%= image_tag "puce-v5.png", class: "puce" %>
+        <h4><%= @travail.title %></h4>
+        <p><%= @travail.description.gsub("\n", "<br/>").html_safe %></p>
+      </div>
+    </div>
+<!-- =============== CLOSE ROW & CONTAINER =============== -->
+  </div>
+</div>

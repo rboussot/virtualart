@@ -35,6 +35,30 @@
   z-index: 1;
 }
 
+.navbar-login-mobile {
+  font-family: "Teko", "sans-serif";
+  font-size: 20px;
+  padding: 5px 20px 5px 20px;
+  position: absolute;
+  right: 0px;
+  top: 20px;
+  background: white;
+  border: 2px solid #bbbbbb;
+  font-weight: lighter !important;
+  color: #333333 !important;
+  line-height: 22px !important;
+  z-index: 1;
+}
+
+#dropdown-login-mobile {
+  margin: 65px 0px 0px 0px;
+  border: 2px solid #bbbbbb;
+}
+
+.dropdown {
+  color: white;
+}
+
 .navbar-link:hover {
   text-decoration: none;
   cursor: pointer;

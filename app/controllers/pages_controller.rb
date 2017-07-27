@@ -14,4 +14,15 @@ class PagesController < ApplicationController
     @coeur = Block.find_by tag: "coeur"
     @livredor = Block.find_by tag: "livredor"
   end
+
+  def profile
+    @prof1 = Block.find_by(tag: "prof1")
+    @prof2 = Block.find_by(tag: "prof2")
+    @prof3 = Block.find_by(tag: "prof3")
+    @prof4 = Block.find_by(tag: "prof4")
+    @parcours = Block.find_by(tag: "parcours")
+    @travail = Block.find_by(tag: "travail")
+    @travail = Block.find_by(tag: "travail")
+    @inscription = Block.find_by(tag: "inscription_cours")
+  end
 end
