@@ -12,17 +12,10 @@ class RealisationsController < ApplicationController
     @courses = Course.where(visible: true)
     @propos = Block.find_by(tag: "propos")
     @realisation = Realisation.find(params[:id])
-    if @realisation.link.include? "http"
       respond_to do |format|
         format.html { render 'show', layout: false}
-        format.js { render 'picture' }
+        format.js { }
       end
-    else
-      respond_to do |format|
-        format.html { render 'show', layout: false}
-        format.js { render 'video' }
-      end
-    end
   end
 
 end
