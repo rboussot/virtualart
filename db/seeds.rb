@@ -725,7 +725,7 @@ r4 = Realisation.create!(
   course: m2d,
   user: u1,
   title: "Plongeuse animée en 2D",
-  link: "https://www.youtube.com/watch?v=lR7n4zTqgX0",
+  link: "lR7n4zTqgX0",
   thumbnail: "http://www.virtualart.pro/images/realisations/eleves/icone 2d/2danim1.jpg")
 p r4
 #

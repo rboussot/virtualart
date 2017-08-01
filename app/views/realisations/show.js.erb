@@ -3,8 +3,8 @@
     $(window).click(function() {
       $(".modal").fadeOut();
     });
-    $(".modal").html('<%= image_tag @realisation.link %>');
     $(".modal").fadeIn();
+    $(".modal").html('<%= image_tag @realisation.link %>');
   });
 <% else %>
   $(document).ready(function() {
@@ -12,8 +12,8 @@
       $(".modal").fadeOut();
     });
     var video = $("<%= j render 'video' %>");
-    $('.modal').html(video);
     $('.modal').fadeIn();
+    $('.modal').html(video);
   });
 <% end %>
 
