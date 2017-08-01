@@ -1,0 +1,19 @@
+<% if @realisation.link.include? "http" %>
+  $(document).ready(function() {
+    $(window).click(function() {
+      $(".modal").fadeOut();
+    });
+    $(".modal").html('<%= image_tag @realisation.link %>');
+    $(".modal").fadeIn();
+  });
+<% else %>
+  $(document).ready(function() {
+    $(window).click(function() {
+      $(".modal").fadeOut();
+    });
+    var video = $("<%= j render 'video' %>");
+    $('.modal').html(video);
+    $('.modal').fadeIn();
+  });
+<% end %>
+
