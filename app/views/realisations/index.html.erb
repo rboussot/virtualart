@@ -1,8 +1,55 @@
-<h1>Réalisations d'élèves</h1>
-<% @courses.each do |course| %>
-  <h3><%= course.title %></h3>
-  <% realisations = Realisation.where(course: course) %>
-  <% realisations.each do |realisation| %>
-    <%= link_to image_tag(realisation.thumbnail), realisation.link %> -
-  <% end %>
-<% end %>
+<!-- =============== ROW & CONTAINER =============== -->
+<div class="container">
+  <div class="row">
+    <!-- =============== VOLET GAUCHE =============== -->
+    <div class="col-sm-8">
+    <!-- ===== REALISATIONS ===== -->
+    <% @courses.each do |course| %>
+      <div class= "block height"
+        style= "background-color: rgba(<%= course.color %>, 0.35);border-color: rgb(<%= course.color %>);">
+        <%= image_tag course.puce, class: "puce" %>
+        <h4 style= "text-shadow: 0 0 0.2em rgba(<%= course.color %>, 0.5), 0 0 0.2em rgba(<%= course.color %>, 0.5)"><%= course.title %></h4>
+        <!-- === Vignettes === -->
+        <% realisations = Realisation.where(course: course) %>
+        <% realisations.each do |realisation| %>
+          <%= link_to realisation_path(realisation), remote: true do %>
+            <%= image_tag realisation.thumbnail, class: "realisation", id: realisation.id %>
+          <% end %>
+        <% end %>
+      </div>
+      <% end %>
+<!-- =============== CLOSE VOLET GAUCHE =============== -->
+    </div>
+    <!-- =============== VOLET DROIT =============== -->
+    <div class="col-sm-4">
+    <div class= "block-margin hidden-xs hidden-sm"></div>
+      <!-- ===== À PROPOS ===== -->
+      <% if @propos.visible %>
+      <div class= "block">
+        <%= image_tag "puce-v5.png", class: "puce" %>
+        <h4><%= @propos.title %></h4>
+        <p><%= @propos.description.gsub("\n", "<br/>").html_safe %></p>
+      </div>
+      <% end %>
+    </div>
+<!-- =============== CLOSE ROW & CONTAINER =============== -->
+  </div>
+</div>
+
+<!-- === Modale === -->
+<div class="modal fade" id="Realisation" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document" style="text-align:center;width:100%;">
+    <div class="modal-content" style="background-color:rgba(0,0,0,0);box-shadow:0 0px;border:0px;box-shadow: 0 5px 15px rgba(0,0,0,0);">
+      <div class="modal-body">
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modale à la main -->
+<div class="test">
+
+</div>
+
+
+

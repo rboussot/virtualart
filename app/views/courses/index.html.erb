@@ -6,7 +6,7 @@
     <!-- ===== COURS ===== -->
       <% @courses.each do |course| %>
         <%= link_to course_path(course) do %>
-          <div class= "block height"
+          <div class= "block height link"
           style= "background-color: rgba(<%= course.color %>, 0.35);border-color: rgb(<%= course.color %>);">
           <%= image_tag course.puce, class: "puce" %>
             <h4 style= "text-shadow: 0 0 0.2em rgba(<%= course.color %>, 0.5), 0 0 0.2em rgba(<%= course.color %>, 0.5)"><%= course.title %></h4>

@@ -22,7 +22,7 @@ module VirtualartV1
       generate.assets false
       generate.helper false
     end
-
+  config.embed_authenticity_token_in_remot_forms = true
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration should go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded.

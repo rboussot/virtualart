@@ -4,7 +4,7 @@ Rails.application.routes.draw do
   root to: 'pages#home'
   get "contact", to: "pages#contact"
   get "profile", to: "pages#profile"
-  resources :realisations, only: [:index]
+  resources :realisations, only: [:index, :show]
   resources :courses, only: [:index, :show]
   resources :stages, only: [:index]
   resources :users, only: [:edit, :update]
