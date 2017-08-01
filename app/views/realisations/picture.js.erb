@@ -1,0 +1,10 @@
+
+  $(document).ready(function() {
+    $(window).click(function() {
+      $(".test").fadeOut();
+    });
+    $(".test").fadeIn();
+    $(".test").html('<%= image_tag @realisation.link %>');
+  });
+
+

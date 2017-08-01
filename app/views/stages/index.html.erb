@@ -7,7 +7,7 @@
       <% @stagetypes.each do |stagetype| %>
         <% if current_user %>
             <%= link_to edit_user_path(current_user) do %>
-              <div class= "block height"
+              <div class= "block height link"
               style= "background-color: rgba(<%= stagetype.color %>, 0.35);border-color: rgb(<%= stagetype.color %>);">
               <%= image_tag stagetype.puce, class: "puce" %>
                 <h4 style= "text-shadow: 0 0 0.2em rgba(<%= stagetype.color %>, 0.5), 0 0 0.2em rgba(<%= stagetype.color %>, 0.5)"><%= stagetype.title %></h4>
@@ -23,7 +23,7 @@
             <% end %>
           <% else %>
             <%= link_to new_user_session_path do %>
-              <div class= "block height"
+              <div class= "block height link"
               style= "background-color: rgba(<%= stagetype.color %>, 0.35);border-color: rgb(<%= stagetype.color %>);">
               <%= image_tag stagetype.puce, class: "puce" %>
                 <h4 style= "text-shadow: 0 0 0.2em rgba(<%= stagetype.color %>, 0.5), 0 0 0.2em rgba(<%= stagetype.color %>, 0.5)"><%= stagetype.title %></h4>

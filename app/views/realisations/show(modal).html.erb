@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <% if @realisation.link.include? "http" %>
+      <div data-dismiss="modal">
+        <%= image_tag @realisation.link %>
+      </div>
+    <% else %>
+    <div data-dismiss="modal">
+      <div style="text-align:center;margin:auto;width:70%;">
+        <div class="embed-responsive embed-responsive-16by9">
+          <iframe data-dismiss="modal" width="854" height="480" src= "https://www.youtube.com/embed/<%= @realisation.link %>" frameborder="1" allowfullscreen>
+          </iframe>
+        </div>
+      </div>
+    </div>
+    <% end %>
+    <%= javascript_include_tag 'application' %>
+  </body>
+</html>
+
+<% content_for(:js) do %>
+  <%= javascript_tag do %>
+    $(document).ready(function() {
+      alert();
+    });
+  <% end %>
+<% end %>
