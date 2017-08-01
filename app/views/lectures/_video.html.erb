@@ -1,0 +1,15 @@
+<% if current_user %>
+  <div style="text-align:center;margin:auto;width:70%;">
+    <div class="embed-responsive embed-responsive-16by9">
+      <iframe data-dismiss="modal" width="854" height="480" src= "https://www.youtube.com/embed/<%= @lecture.video %>" frameborder="1" allowfullscreen>
+      </iframe>
+    </div>
+  </div>
+<% else %>
+<div style="text-align:center;margin:auto;width:70%;background-color: white;">
+    <div class="embed-responsive embed-responsive-16by9">
+      <div class= "block-margin hidden-xs hidden-sm"></div>
+      <h4>Cette vidéo est réservée aux abonnés</h4>
+    </div>
+  </div>
+<% end %>

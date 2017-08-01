@@ -1,0 +1,20 @@
+.modal {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 5vh 3vw 5vh 3vw;
+  width: 100vw;
+  height: 100vh;
+  text-align: center;
+  display: none;
+  overflow: scroll;
+  z-index: 3;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+iframe {
+
+}

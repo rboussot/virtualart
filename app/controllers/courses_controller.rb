@@ -15,6 +15,14 @@ class CoursesController < ApplicationController
     @lectures = Lecture.where(course: @course).where(visible: true)
     @softwares = Software.where(course: @course)
     @users_lectures = UsersLecture.where(user: current_user)
+    @inscription = Block.find_by(tag: "inscription_cours")
+    # cf before_action
+  end
+
+  def modal
+    @lectures = Lecture.where(course: @course).where(visible: true)
+    @softwares = Software.where(course: @course)
+    @users_lectures = UsersLecture.where(user: current_user)
     # cf before_action
   end
 
