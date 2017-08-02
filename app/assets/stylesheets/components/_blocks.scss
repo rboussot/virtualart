@@ -20,6 +20,7 @@ label {
   background-color: $color-home;
   border-top: 5px solid $color-line;
   border-bottom: 5px solid $color-line;
+  color: $color-text;
   &.height {
   min-height: 340px;
   }
@@ -50,6 +51,9 @@ label {
   }
   &.link:hover {
     background-image: linear-gradient(708deg, rgba(255, 230, 90, 0.1)9%, rgba(0, 0, 0, 0) 55%);
+  }
+  .link {
+    color: $color-text;
   }
   .profile {
     margin: 0px 0px 12px 0px;

@@ -71,7 +71,6 @@
     <%= link_to "Accueil", root_path, class: "navbar-link" %>
     <%= link_to "Cours", courses_path, class: "navbar-link"  %>
     <%= link_to "Stages", stages_path, class: "navbar-link"  %>
-    <%= link_to "Profil", profile_path, class: "navbar-link"  %>
     <%= link_to "Réalisations", realisations_path, class: "navbar-link"  %>
     <div class="dropdown">
       <a data-toggle="dropdown" class="navbar-link">Vidéos</a>
@@ -96,7 +95,6 @@
         <li><%= link_to "Accueil", root_path, class: "navbar-link" %></li>
         <li><%= link_to "Cours", courses_path, class: "navbar-link"  %></li>
         <li><%= link_to "Stages", stages_path, class: "navbar-link"  %></li>
-        <li><%= link_to "Profil", profile_path, class: "navbar-link"  %></li>
         <li><%= link_to "Réalisations", realisations_path, class: "navbar-link"  %></li>
         <% @courses.each do |course| %>
           <li>

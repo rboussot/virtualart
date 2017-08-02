@@ -1,7 +1,9 @@
+<!-- Pour désactiver le clic droit et les outils de lecture sur les vidéos -->
+<!--  <div class="lecture-prevent"></div> -->
 <% if current_user %>
   <div style="text-align:center;margin:auto;width:70%;">
     <div class="embed-responsive embed-responsive-16by9">
-      <iframe data-dismiss="modal" width="854" height="480" src= "https://www.youtube.com/embed/<%= @lecture.video %>" frameborder="1" allowfullscreen>
+      <iframe data-dismiss="modal" width="854" height="480" src= "https://www.youtube.com/embed/<%= @lecture.video %>?autoplay=1" frameborder="1" allowfullscreen >
       </iframe>
     </div>
   </div>
