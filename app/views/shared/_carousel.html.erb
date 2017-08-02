@@ -1,0 +1,23 @@
+<div id="Carousel" class="carousel slide col-lg-12">
+        <ol class="carousel-indicators">
+            <% @carousels.each do |carousel| %>
+              <li data-target="#Carousel" data-slide-to="<%= carousel.tag.split('').last.to_i-1 %>" class="<%= carousel.link%>"></li>
+          <% end %>
+        </ol>
+
+        <div class="carousel-inner">
+          <% @carousels.each do |carousel| %>
+            <div class="item <%= carousel.link %>">
+              <img src="<%= carousel.picture %>" class="img-responsive">
+            </div>
+          <% end %>
+        </div>
+
+        <a class="left carousel-control" href="#Carousel" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+        </a>
+        <a class="right carousel-control" href="#Carousel" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+        </a>
+</div>
+

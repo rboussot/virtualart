@@ -2,8 +2,9 @@ class PagesController < ApplicationController
   skip_before_action :authenticate_user!, only: [:home]
 
   def home
+    @count= 1
     @blocks = Block.all
-    @carousels = Block.where("tag like ?", "carousel%").shuffle
+    @carousels = Block.where("tag like ?", "carousel%").where(visible: true).order(tag: :asc)
     @home_logiciel = Block.find_by tag: "accueil_logiciels"
     @home_video = Block.find_by tag: "accueil_video"
     @home_espace = Block.find_by tag: "accueil_espace"

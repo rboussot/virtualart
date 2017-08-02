@@ -1,0 +1,39 @@
+.carousel-inner {
+  z-index: -1;
+}
+
+.carousel {
+  padding: 0px;
+}
+
+.carousel-control.right {
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.0001)), to(rgba(0, 0, 0, 0)));
+  opacity: 0.5;
+  &:hover {
+    opacity: 1;
+    text-shadow: 0 4px 14px rgba(0, 0, 0, 1);
+    text-shadow: 0 4px 14px rgba(0, 0, 0, 1);
+  }
+}
+
+.carousel-control.left {
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.0001)), to(rgba(0, 0, 0, 0)));
+  opacity: 0.5;
+  &:hover {
+    opacity: 1;
+    text-shadow: 0 4px 14px rgba(0, 0, 0, 1);
+    text-shadow: 0 4px 14px rgba(0, 0, 0, 1);
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
