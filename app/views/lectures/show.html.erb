@@ -1,7 +1,7 @@
 <% if current_user %>
   <div style="text-align:center;margin:auto;width:70%;">
     <div class="embed-responsive embed-responsive-16by9">
-      <iframe data-dismiss="modal" width="854" height="480" src= "https://www.youtube.com/embed/<%= @lecture.video %>" frameborder="1" allowfullscreen>
+      <iframe data-dismiss="modal" width="854" height="480" src= "https://www.youtube.com/embed/<%= @lecture.video %>" frameborder="1" allowfullscreen oncontextmenu="return false">
       </iframe>
     </div>
   </div>

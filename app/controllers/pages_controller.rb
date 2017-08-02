@@ -1,5 +1,5 @@
 class PagesController < ApplicationController
-  skip_before_action :authenticate_user!, only: [:home]
+  skip_before_action :authenticate_user!, only: [:home, :profile]
 
   def home
     @count= 1
@@ -14,6 +14,7 @@ class PagesController < ApplicationController
     @post = Block.find_by tag: "post"
     @coeur = Block.find_by tag: "coeur"
     @livredor = Block.find_by tag: "livredor"
+    @profil = Block.find_by tag: "profil"
   end
 
   def profile

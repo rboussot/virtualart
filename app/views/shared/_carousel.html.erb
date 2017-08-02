@@ -1,5 +1,5 @@
 <div id="Carousel" class="carousel slide col-lg-12">
-        <ol class="carousel-indicators">
+        <ol class="carousel-indicators" style="margin-bottom: -10px;">
             <% @carousels.each do |carousel| %>
               <li data-target="#Carousel" data-slide-to="<%= carousel.tag.split('').last.to_i-1 %>" class="<%= carousel.link%>"></li>
           <% end %>

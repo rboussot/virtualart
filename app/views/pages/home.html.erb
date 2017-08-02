@@ -98,6 +98,19 @@
           </div>
         </div>
       <% end %>
+      <!-- ==== PROFIL ==== -->
+      <% if @profil.visible %>
+        <%= link_to profile_path do %>
+          <div class= "block link">
+          <%= image_tag "puce-v5.png", class: "puce" %>
+              <h4><%= @profil.title %></h4>
+              <%= @profil.description %>
+              <% if @profil.picture.present? %>
+                <%= image_tag @profil.picture, class: "full" %>
+              <% end %>
+          </div>
+        <% end %>
+      <% end %>
       <!-- ==== COEUR ==== -->
       <% if @coeur.visible %>
         <div class= "block">

@@ -3,13 +3,22 @@
 * ------------------------------------- */
 
 .alert {
-  margin: 0;
+  position: absolute;
+  width: 100%;
+  opacity: 1.7;
   text-align: center;
   color: white;
+  top: 0px;
 }
 .alert-info {
   background: $green;
 }
 .alert-warning {
   background: $red;
+}
+.alert-danger {
+  background: $color-line;
+  position: relative;
+  border-color: black;
+  color: black;
 }

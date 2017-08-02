@@ -1258,6 +1258,16 @@ tarifs2 = Block.create!(
 p tarifs2
 #
 # --- PAGE PROFIL
+profil = Block.create!(
+  tag:"profil",
+  title:"Qui suis-je ?", # faire un blox texte + image a chaque fois x4
+  description:"Cliquez ici pour découvrir mon parcours et mes projets.",
+  picture:"http://www.virtualart.pro/images/interface/profil3.jpg",
+  link: "",
+  visible: true,
+  footer: false)
+p profil
+#
 prof1 = Block.create!(
   tag:"prof1",
   title:"Professeur", # faire un blox texte + image a chaque fois x4
