@@ -1034,7 +1034,7 @@ carousel1 = Block.create!(
   title: "Carousel",
   description: "",
   picture: "http://www.virtualart.pro/images/interface/carousel1.jpg",
-  link: "",
+  link: "active",
   visible: true,
   footer: false)
 p carousel1
@@ -1043,7 +1043,7 @@ carousel2 = Block.create!(
   tag: "carousel2",
   title: "Carousel",
   description: "",
-  picture: "http://www.virtualart.pro/images/interface/carousel1.jpg",
+  picture: "http://www.virtualart.pro/images/interface/carousel2.jpg",
   link: "",
   visible: true,
   footer: false)
@@ -1063,7 +1063,7 @@ carousel4 = Block.create!(
   tag: "carousel4",
   title: "Carousel",
   description: "",
-  picture: "http://www.virtualart.pro/images/interface/carousel2.jpg",
+  picture: "http://www.virtualart.pro/images/interface/carousel4.jpg",
   link: "",
   visible: true,
   footer: false)
@@ -1073,7 +1073,7 @@ carousel5 = Block.create!(
   tag: "carousel5",
   title: "Carousel",
   description: "",
-  picture: "http://www.virtualart.pro/images/interface/carousel2.jpg",
+  picture: "http://www.virtualart.pro/images/interface/carousel5.jpg",
   link: "",
   visible: true,
   footer: false)
