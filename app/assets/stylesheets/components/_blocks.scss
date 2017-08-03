@@ -1,3 +1,26 @@
+.bubble {
+  background: white;
+  position: relative;
+  top: 0px;
+  border-radius: 10px;
+  color: black;
+  font-size: 14px;
+  margin: 10px 10px 10px 10px;
+  padding: 10px 10px 10px 10px
+}
+
+.bubble2 {
+  content: "";
+  position: relative;
+  left: 65%;
+  top: -20px;
+  width: 0;
+  height: 0;
+  border-left: 15px solid transparent;
+  border-top: 40px solid white;
+  border-right: 15px solid transparent;
+}
+
 .forgot {
   text-align: right;
   margin-top: -22px;

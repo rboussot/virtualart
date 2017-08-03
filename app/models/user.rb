@@ -11,6 +11,7 @@ class User < ApplicationRecord
   has_many :stages, through: :users_stages
   has_many :users_courses
   has_many :courses, through: :users_courses
+  has_many :timeslots, through: :users_courses
   validates :email, presence: true, uniqueness: :true
 
   def name

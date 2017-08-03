@@ -1,8 +1,6 @@
 class UsersStage < ApplicationRecord
   belongs_to :user
   belongs_to :stage
-  has_many :stages
-  has_many :users
 
   rails_admin do
     list do

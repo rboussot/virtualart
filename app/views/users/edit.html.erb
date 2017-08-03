@@ -1,1 +1,37 @@
-<h1>Formulaire d'inscription</h1>
+<!-- =============== ROW & CONTAINER =============== -->
+<div class="container">
+  <div class="row">
+    <!-- =============== VOLET GAUCHE =============== -->
+    <div class="col-sm-8">
+    <!-- ===== FORM USER ===== -->
+        <%= render "shared/formuser" %>
+    <!-- =============== CLOSE VOLET GAUCHE =============== -->
+    </div>
+    <!-- =============== VOLET DROIT =============== -->
+    <div class="col-sm-4">
+    <div class= "block-margin hidden-xs hidden-sm"></div>
+      <!-- ===== PLANNING COURS ===== -->
+      <div class= "block">
+        <%= image_tag "puce-v5.png", class: "puce" %>
+        <h4><%= @planning.title %></h4>
+        <p><%= @planning.description.gsub("\n", "<br/>").html_safe %></p>
+      </div>
+      <!-- ===== TARIF COURS ===== -->
+      <div class= "block">
+        <%= image_tag "puce-v5.png", class: "puce" %>
+        <h4><%= @tarifs1.title %></h4>
+        <p><%= @tarifs1.description.gsub("\n", "<br/>").html_safe %></p>
+        <%= image_tag @tarifs1.picture, class: "full" %><br><br>
+        <p><%= @tarifs2.description.gsub("\n", "<br/>").html_safe %></p>
+        <%= image_tag @tarifs2.picture, class: "full" %><br><br>
+      </div>
+      <!-- ===== INFOS STAGES ===== -->
+      <div class= "block">
+        <%= image_tag "puce-v5.png", class: "puce" %>
+        <h4><%= @infos.title %></h4>
+        <p><%= @infos.description.gsub("\n", "<br/>").html_safe %></p>
+      </div>
+<!-- =============== CLOSE ROW & CONTAINER =============== -->
+    </div>
+  </div>
+</div>

@@ -1220,7 +1220,7 @@ p inscription_cours
 #
 planning = Block.create!(
   tag: "planning",
-  title: "Planning",
+  title: "Planning des cours",
   description: "Choisissez un de ces créneaux, au choix !
   Mercredi :
   13h30 - 15h / 15h - 16h30 / 16h30 - 18h / 18h - 19h30
@@ -1236,7 +1236,7 @@ p planning
 #
 tarifs1 = Block.create!(
   tag: "tarifs1",
-  title: "Tarifs",
+  title: "Tarifs des cours",
   description: "VIDEOS + SEANCES 1H30
   PAR SEMAINE :",
   picture: "http://www.virtualart.pro/images/interface/prixseances.png",
@@ -1363,7 +1363,7 @@ p inscription_stage
 #
 infos = Block.create!(
   tag:"infos",
-  title:"Infos pratique",
+  title:"Infos pratiques stages",
   description:"Horaires :
 10h - 12h30 à 13h30 - 17h
 
@@ -1451,6 +1451,16 @@ copyright = Block.create!(
   visible: true,
   footer: false)
 p copyright
+#
+form = Block.create!(
+  tag: "form",
+  title: "Infos formulaire",
+  description: "Pour vous inscrire à mes cours ou à mes stages, complétez cette fiche de renseignements, je vous contacterai alors pour confirmer votre inscription, à bientôt !",
+  picture: "http://www.virtualart.pro/images/realisations/perso/mascotteva.jpg",
+  link: "http://virtualart.pro/pages/mentions.html",
+  visible: true,
+  footer: false)
+p form
 #
 # ==================== CoursesSoftware ====================
 # === On en crée 1 seul pour tester
