@@ -7,6 +7,7 @@ u1 = User.create!(
   password:"mlkmlk",
   firstname:"Estelle",
   lastname:"Boussot",
+  access: "Compte admin",
   admin: true)
 p u1
 #
@@ -15,6 +16,7 @@ u2 = User.create!(
   password:"mlkmlk",
   firstname:"Romain",
   lastname:"Boussot",
+  access: "Compte test",
   admin: true)
 p u2
 #

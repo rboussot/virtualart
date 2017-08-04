@@ -30,6 +30,9 @@ class UsersController < ApplicationController
 
   def update
     # CF before_action
+    if !current_user.phone.present? || !current_user.email.present? || !current_user.adress.present?
+      # redirect_to edit_user_path(current_user), alert: "Pensez bien à indiquer votre numéro de téléphone, votre email et votre adresse ! C'est indispensable pour que je puisse vous contacter par la suite :)" and return
+    end
     @user = current_user
     current_user.update(user_params)
     # Construire users_course
