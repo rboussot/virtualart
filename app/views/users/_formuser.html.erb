@@ -25,8 +25,8 @@
   <h4>Mes cours</h4>
   <div class="row">
     <div class="col-sm-10 col-sm-offset-1">
-          <%= f.association :courses, collection: Course.where(visible: true), as: :check_boxes, label: "Cochez les cours qui vous intéressent", required: true, disabled: @disabled_courses %>
-          <%= f.association :timeslots, collection: Timeslot.where(visible: true),as: :check_boxes, label: "Indiquez vos disponibilités :", required: true, disabled: @disabled_timeslots %>
+          <%= f.association :courses, collection: Course.where(visible: true), as: :check_boxes, label: "Cochez les cours qui vous intéressent", disabled: @disabled_courses %>
+          <%= f.association :timeslots, collection: Timeslot.where(visible: true),as: :check_boxes, label: "Indiquez vos disponibilités :", disabled: @disabled_timeslots %>
     </div>
   </div>
 </div>
@@ -36,7 +36,7 @@
   <h4>Mes stages</h4>
   <div class="row">
     <div class="col-sm-10 col-sm-offset-1">
-          <%= f.association :stages, as: :check_boxes, label: "Cochez les stages qui vous intéressent", required: true, disabled: @disabled_stages %>
+          <%= f.association :stages, as: :check_boxes, label: "Cochez les stages qui vous intéressent", disabled: @disabled_stages %>
     </div>
   </div>
 </div>
