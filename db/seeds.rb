@@ -138,7 +138,7 @@ l0 = Lecture.create!(
   course: m2d,
   title: "Atelier Animation gratuit",
   video: "Hp-TCNuBtuc",
-  description: "...",
+  description: "",
   order: "000",
   visible: true)
 p l0
@@ -210,7 +210,7 @@ l1 = Lecture.create!(
   course: m2d,
   title: "Dessin - le corps",
   video: "Hp-TCNuBtuc",
-  description: "...",
+  description: "",
   order: "001",
   visible: true)
 p l1
@@ -220,7 +220,7 @@ l2 = Lecture.create!(
   course: m2d,
   title: "Dessin - deuxieme",
   video: "Hp-TCNuBtuc",
-  description: "...",
+  description: "",
   order: "002",
   visible: true)
 p l2
@@ -230,7 +230,7 @@ l3 = Lecture.create!(
   course: m2d,
   title: "Dessins - troisième",
   video: "Hp-TCNuBtuc",
-  description: "...",
+  description: "",
   order: "003",
   visible: true)
 p l3
@@ -274,7 +274,7 @@ l0 = Lecture.create!(
   course: m3d,
   title: "Atelier 3D gratuit",
   video: "Hp-TCNuBtuc",
-  description: "...",
+  description: "",
   order: "000",
   visible: true)
 p l0
@@ -408,7 +408,7 @@ l1 = Lecture.create!(
   course: m3d,
   title: "Dessin - le corps",
   video: "Hp-TCNuBtuc",
-  description: "...",
+  description: "",
   order: "001",
   visible: true)
 p l1
@@ -418,7 +418,7 @@ l2 = Lecture.create!(
   course: m3d,
   title: "Dessin - deuxieme",
   video: "Hp-TCNuBtuc",
-  description: "...",
+  description: "",
   order: "002",
   visible: true)
 p l2
@@ -428,7 +428,7 @@ l3 = Lecture.create!(
   course: m3d,
   title: "Dessins - troisième",
   video: "Hp-TCNuBtuc",
-  description: "...",
+  description: "",
   order: "003",
   visible: true)
 p l3
@@ -441,7 +441,7 @@ l0 = Lecture.create!(
   course: bd,
   title: "Atelier BD gratuit",
   video: "Hp-TCNuBtuc",
-  description: "...",
+  description: "",
   order: "000",
   visible: true)
 p l0
@@ -513,7 +513,7 @@ l1 = Lecture.create!(
   course: bd,
   title: "Dessin - le corps",
   video: "Hp-TCNuBtuc",
-  description: "...",
+  description: "",
   order: "001",
   visible: true)
 p l1
@@ -523,7 +523,7 @@ l2 = Lecture.create!(
   course: bd,
   title: "Dessin - deuxieme",
   video: "Hp-TCNuBtuc",
-  description: "...",
+  description: "",
   order: "002",
   visible: true)
 p l2
@@ -533,7 +533,7 @@ l3 = Lecture.create!(
   course: bd,
   title: "Dessin - troisième",
   video: "Hp-TCNuBtuc",
-  description: "...",
+  description: "",
   order: "003",
   visible: true)
 p l3
@@ -545,7 +545,7 @@ l0 = Lecture.create!(
   course: pr,
   title: "Atelier infographie gratuit",
   video: "Hp-TCNuBtuc",
-  description: "...",
+  description: "",
   order: "000",
   visible: true)
 p l0
@@ -648,7 +648,7 @@ l1 = Lecture.create!(
   course: pr,
   title: "Print - les couleurs",
   video: "Hp-TCNuBtuc",
-  description: "...",
+  description: "",
   order: "001",
   visible: true)
 p l1
@@ -658,7 +658,7 @@ l2 = Lecture.create!(
   course: pr,
   title: "Print - le papier",
   video: "Hp-TCNuBtuc",
-  description: "...",
+  description: "",
   order: "002",
   visible: true)
 p l2
@@ -668,7 +668,7 @@ l3 = Lecture.create!(
   course: pr,
   title: "DPrint - troisième",
   video: "Hp-TCNuBtuc",
-  description: "...",
+  description: "",
   order: "003",
   visible: true)
 p l3
@@ -1014,6 +1014,16 @@ t8 = Timeslot.create!(
   title: "Samedi 16h30 - 18h00",
   visible: true)
 p t8
+#
+t9 = Timeslot.create!(
+  title: "Accéder aux vidéos uniquement.",
+  visible: true)
+p t9
+#
+t10 = Timeslot.create!(
+  title: "Prendre des cours particuliers à distance.",
+  visible: false)
+p t10
 #
 # ==================== UsersCourse ====================
 # === On en crée 1 seul pour tester

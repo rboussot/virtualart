@@ -23,9 +23,10 @@ class User < ApplicationRecord
       field :email
       field :courses
       field :stages
-      field :note
+      field :access
       field :tutored_by_id
       field :tutor
+      field :note
       field :firstname
       field :lastname
       field :phone
@@ -44,6 +45,7 @@ class User < ApplicationRecord
       field :adress
       field :phone
       field :birth
+      field :access
       field :note
       field :contact
       field :tutored_by_id
@@ -64,6 +66,7 @@ class User < ApplicationRecord
       field :adress
       field :phone
       field :birth
+      field :access
       field :note
       field :contact
       field :tutored_by_id

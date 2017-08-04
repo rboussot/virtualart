@@ -1,3 +1,11 @@
+.confirmed {
+  font-style: italic;
+  color: $color-line;
+}
+.not-confirmed {
+  font-style: italic;
+  color: $color-light;
+}
 .bubble {
   background: white;
   position: relative;
@@ -6,7 +14,7 @@
   color: black;
   font-size: 14px;
   margin: 10px 10px 10px 10px;
-  padding: 10px 10px 10px 10px
+  padding: 10px 10px 10px 10px;
 }
 
 .bubble2 {
@@ -111,6 +119,7 @@ label {
   &:hover
   {
     background-color: $color-navbar;
+    cursor: pointer;
     a
     {
       color: $color-text;
