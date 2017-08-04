@@ -1,5 +1,15 @@
 class UsersController < ApplicationController
-  skip_before_action :authenticate_user!, only: [:index]
+  skip_before_action :authenticate_user!, only: [:edit, :show]
+
+  def show
+    @user = current_user
+    @planning = Block.find_by(tag: "planning")
+    @tarifs1 = Block.find_by(tag: "tarifs1")
+    @tarifs2 = Block.find_by(tag: "tarifs2")
+    @infos = Block.find_by(tag: "infos")
+    @users_courses = UsersCourse.where(user: current_user)
+    @users_stages = UsersStage.where(user: current_user)
+  end
 
   def edit
     @user = current_user
@@ -13,6 +23,9 @@ class UsersController < ApplicationController
     @users_courses = UsersCourse.where(user: current_user)
     @users_stages = UsersStage.where(user: current_user)
     @form_info = Block.find_by(tag: "form")
+    @disabled_courses = UsersCourse.where(user: current_user).where(confirmed: true).map(&:course_id)
+    @disabled_timeslots = UsersCourse.where(user: current_user).where(confirmed: true).map(&:timeslot_id)
+    @disabled_stages = UsersStage.where(user: current_user).where(confirmed: true).map(&:stage_id)
   end
 
   def update
@@ -20,21 +33,39 @@ class UsersController < ApplicationController
     @user = current_user
     current_user.update(user_params)
     # Construire users_course
-    @course = Course.find(params[:user][:course_ids])
-    @timeslot = Timeslot.find(params[:user][:timeslot_ids])
-    @users_course = UsersCourse.new
-    @users_course.course = @course
-    @users_course.timeslot = @timeslot
-    @users_course.user = @user
-    @users_course.save!
+    UsersCourse.where(user: @user).where(confirmed: false).destroy_all
+    if params[:user][:course_ids][1].present?
+      if params[:user][:timeslot_ids][1].present?
+        params[:user][:course_ids][1..-1].each do |course_id|
+          params[:user][:timeslot_ids][1..-1].each do |timeslot_id|
+            @course = Course.find(course_id)
+            @timeslot = Timeslot.find(timeslot_id)
+            @users_course = UsersCourse.new
+            @users_course.course = @course
+            @users_course.timeslot = @timeslot
+            @users_course.user = @user
+            unless UsersCourse.where(user: @user).where(course: course_id).where(timeslot: timeslot_id).present?
+              @users_course.save!
+            end
+          end
+        end
+      end
+    end
     # Construire users_stage
-    @stage = Stage.find(params[:user][:stage_ids])
-    @users_stage = UsersStage.new
-    @users_stage.stage = @stage
-    @users_stage.user = @user
-    @users_stage.save!
+    UsersStage.where(user: @user).where(confirmed: false).destroy_all
+    if params[:user][:stage_ids][1].present?
+      params[:user][:stage_ids][1..-1].each do |stage_id|
+        @stage = Stage.find(stage_id)
+        @users_stage = UsersStage.new
+        @users_stage.stage = @stage
+        @users_stage.user = @user
+        unless UsersStage.where(user: @user).where(stage: stage_id).present?
+          @users_stage.save!
+        end
+      end
+    end
     # Aller à la page de résultats
-    redirect_to edit_user_path(current_user)
+    redirect_to user_path(current_user)
   end
 
   private

@@ -17,4 +17,15 @@ class UsersCourse < ApplicationRecord
       field :updated_at
     end
   end
+
+  rails_admin do
+    list do
+      field :user
+      field :course
+      field :timeslot
+      field :confirmed
+      field :created_at
+      field :updated_at
+    end
+  end
 end

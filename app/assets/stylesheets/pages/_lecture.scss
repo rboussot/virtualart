@@ -22,3 +22,81 @@
   height: 90vh;
   z-index: 4;
 }
+
+.description {
+  color: $color-text;
+  width: 70%;
+  text-align: center;
+  margin: auto;
+  padding: 10px 0px 20px 0px;
+  .close {
+    position: relative;
+    top: 0px;
+    right: 15px;
+    color: $color-navbar;
+    opacity: 0.7;
+    &:hover {
+      color: $color-text;
+    }
+  }
+}
+
+.lecture-title {
+    position:relative;
+    cursor:pointer;
+}
+.lecture-description {
+  position: absolute;
+  top: -23px;
+  bottom: 10px;
+  left: 22vw;
+  padding: 10px;
+  margin: 0px;
+  width: 24vw;
+  height: 26vh;
+  color: black;
+  font-size: 13px;
+  background: white;
+  border-radius: 6px;
+  z-index: 2;
+  opacity: 0;
+  -webkit-transition: opacity 250ms ease-out;
+     -moz-transition: opacity 250ms ease-out;
+      -ms-transition: opacity 250ms ease-out;
+       -o-transition: opacity 250ms ease-out;
+          transition: opacity 250ms ease-out;
+}
+
+.lecture-title:hover .lecture-description {
+    right: -20px;
+    opacity: 0.7;
+}
+
+/*
+.info-bubble {
+  background: white; OK
+  border-radius: .4em;
+  padding: 10px; OK
+  color: black;
+  position: absolute;
+  margin: -20px 0px 0px 33%; OK
+  opacity: 1;
+  width: 56%;
+  font-size: 13px;
+  display: none;
+}
+
+.info-bubble:after {
+  content: "";
+  position: absolute;
+  left: Opx;
+  top: 10px;
+  right: 99%;
+  width: 0;
+  height: 0;
+  border-left: 26px solid transparent;
+  border-right: 1px solid transparent;
+  border-top: 19px solid white;
+  border-bottom: 0px solid white;
+}
+*/

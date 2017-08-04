@@ -1,6 +1,11 @@
-<!-- Pour désactiver le clic droit et les outils de lecture sur les vidéos -->
+<!-- -->
+<!-- ==================== STOP CLIC DROIT ==================== -->
+<!-- -->
 <!--  <div class="lecture-prevent"></div> -->
-<% if current_user %>
+<!-- -->
+<!-- ==================== VERIFIE AUTORISATIONS ==================== -->
+<!-- -->
+<% if current_user && current_user.access.present? %>
   <div style="text-align:center;margin:auto;width:70%;">
     <div class="embed-responsive embed-responsive-16by9">
       <iframe data-dismiss="modal" width="854" height="480" src= "https://www.youtube.com/embed/<%= @lecture.video %>?autoplay=1" frameborder="1" allowfullscreen >
@@ -15,3 +20,11 @@
     </div>
   </div>
 <% end %>
+<!-- -->
+<!-- ==================== TITRE ET DESCRIPTION VIDEO ==================== -->
+<!-- -->
+<div class= "description" style= "background-color: rgba(<%= @lecture.course.color %>, 0.35)">
+  <p class= "close">x</p>
+  <h4><%= @lecture.title%></h4>
+  <%= @lecture.description%>
+</div>

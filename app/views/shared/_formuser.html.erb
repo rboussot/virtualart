@@ -5,12 +5,12 @@
     <div class="col-sm-7">
       <%= simple_form_for(@user) do |f| %>
         <%= f.error_notification %>
-          <%= f.input :firstname, label: "Prénom" %>
-          <%= f.input :lastname, label: "Nom" %>
-          <%= f.input :email %>
-          <%= f.input :phone, label: "Téléphone", class: "telinput" %>
-          <%= f.input :birth, label: "Date de naissance", as: :date, start_year: Date.today.year - 90,end_year: Date.today.year - 12, discard_day: false,order: [ :day, :month, :year  ] %>
-          <%= f.input :adress, label: "Adresse", as: :text %>
+          <%= f.input :firstname, label: "Prénom", required: true %>
+          <%= f.input :lastname, label: "Nom", required: true %>
+          <%= f.input :email, required: true %>
+          <%= f.input :phone, label: "Téléphone", class: "telinput", required: true %>
+          <%= f.input :birth, label: "Date de naissance", as: :date, start_year: Date.today.year - 90,end_year: Date.today.year - 12, discard_day: false,order: [ :day, :month, :year  ], required: true %>
+          <%= f.input :adress, label: "Adresse", as: :text, required: true %>
     </div>
       <div class="col-sm-5">
           <div class= "bubble"><%= @form_info.description %></div>
@@ -25,8 +25,8 @@
   <h4>Mes cours</h4>
   <div class="row">
     <div class="col-sm-10 col-sm-offset-1">
-          <%= f.association :courses, as: :radio_buttons, label: "Cochez les cours qui vous intéressent" %>
-          <%= f.association :timeslots, as: :radio_buttons, label: "Tous les cours sont disponibles aux horaires suivants :" %>
+          <%= f.association :courses, collection: Course.where(visible: true), as: :check_boxes, label: "Cochez les cours qui vous intéressent", required: true, disabled: @disabled_courses %>
+          <%= f.association :timeslots, collection: Timeslot.where(visible: true),as: :check_boxes, label: "Indiquez vos disponibilités :", required: true, disabled: @disabled_timeslots %>
     </div>
   </div>
 </div>
@@ -36,7 +36,7 @@
   <h4>Mes stages</h4>
   <div class="row">
     <div class="col-sm-10 col-sm-offset-1">
-          <%= f.association :stages, as: :radio_buttons, label: "Cochez les stages qui vous intéressent" %>
+          <%= f.association :stages, as: :check_boxes, label: "Cochez les stages qui vous intéressent", required: true, disabled: @disabled_stages %>
     </div>
   </div>
 </div>
