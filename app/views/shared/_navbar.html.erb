@@ -84,6 +84,7 @@
       </ul>
     </div>
     <%= link_to "Contact", contact_path, class: "navbar-link" %>
+    <%= link_to "Tarifs", tarifs_path, class: "navbar-link" %>
   </div>
 
   <!-- ========== MOBILE ONLY ========== -->
@@ -96,11 +97,8 @@
         <li><%= link_to "Cours", courses_path, class: "navbar-link"  %></li>
         <li><%= link_to "Stages", stages_path, class: "navbar-link"  %></li>
         <li><%= link_to "Réalisations", realisations_path, class: "navbar-link"  %></li>
-        <% @courses.each do |course| %>
-          <li>
-            <%= link_to(course.title, course_path(course)) %>
-          </li>
-        <% end %>
+        <li><%= link_to "Contact", contact_path, class: "navbar-link" %></li>
+        <li><%= link_to "Tarifs", tarifs_path, class: "navbar-link" %></li>
       </ul>
     </div>
   </div>

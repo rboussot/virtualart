@@ -5,7 +5,7 @@
 <!-- -->
 <!-- ==================== VERIFIE AUTORISATIONS ==================== -->
 <!-- -->
-<% if current_user && current_user.access.present? %>
+<% if current_user && current_user.access.present? && @access %>
   <div style="text-align:center;margin:auto;width:70%;">
     <div class="embed-responsive embed-responsive-16by9">
       <iframe data-dismiss="modal" width="854" height="480" src= "https://www.youtube.com/embed/<%= @lecture.video %>?autoplay=1" frameborder="1" allowfullscreen >

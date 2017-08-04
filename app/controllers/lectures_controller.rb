@@ -2,11 +2,13 @@ class LecturesController < ApplicationController
   skip_before_action :authenticate_user!, only: [:show]
 
   def show
+    @lecture = Lecture.find(params[:id])
+    @course = @lecture.course
     @lectures = Lecture.where(course: @course).where(visible: true)
     @softwares = Software.where(course: @course)
     @users_lectures = UsersLecture.where(user: current_user)
     @courses = Course.where(visible: true)
-    @lecture = Lecture.find(params[:id])
+    @access = UsersCourse.where(user: current_user).where(course: @course).find_by(confirmed: true)
       respond_to do |format|
         format.html { render 'show', layout: false}
         format.js { }

@@ -74,6 +74,13 @@ label {
     float: left;
     margin: 0px 15px 0px 0px;
   }
+  .center {
+    text-align: right;
+    width: 70%;
+    max-width: 600px;
+    margin-left: 15%;
+    margin-right: 15%;
+  }
   a {
     color: $color-text;
     &:hover {

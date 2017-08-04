@@ -1,1 +1,58 @@
-<h1>Contact</h1>
+<!-- =============== ROW & CONTAINER =============== -->
+<div class="container">
+  <div class="row">
+    <!-- =============== VOLET GAUCHE =============== -->
+    <div class="col-sm-8">
+    <!-- ===== LIEU ===== -->
+      <div class= "block link">
+        <%= image_tag "puce-v5.png", class: "puce" %>
+        <h4><%= @lieu.title %></h4>
+        <p><%= @lieu.description.gsub("\n", "<br/>").html_safe %></p>
+        <% if @lieu.link.present? %>
+          <%= image_tag @lieu.link, class: "center" %>
+        <% end %>
+        <div style="margin-top:20px"></div>
+        <% if @lieu.picture.present? %>
+          <%= image_tag @lieu.picture, class: "center" %>
+        <% end %>
+      </div>
+    <!-- =============== CLOSE VOLET GAUCHE =============== -->
+    </div>
+    <!-- =============== VOLET DROIT =============== -->
+    <div class="col-sm-4">
+    <div class= "block-margin hidden-xs hidden-sm"></div>
+      <!-- ===== INSCRIPTION ===== -->
+      <div class= "block">
+      <%= image_tag "puce-v5.png", class: "puce" %>
+        <h4><%= @inscription.title %></h4>
+          <p><%= @inscription.description.gsub("\n", "<br/>").html_safe %></p>
+          <% if current_user %>
+            <%= link_to edit_user_path(current_user) do %>
+            <div class= "inscription">
+              Consulter le formulaire d'inscription
+            </div>
+            <% end %>
+          <% else %>
+            <%= link_to new_user_session_path do %>
+            <div class= "inscription">
+              Créer d'abord un compte gratuit !
+            </div>
+            <% end %>
+          <% end %>
+      </div>
+      <!-- ===== COORDONNÉES ===== -->
+      <div class= "block">
+      <%= image_tag "puce-v5.png", class: "puce" %>
+        <h4><%= @coo.title %></h4>
+          <p><%= @coo.description.gsub("\n", "<br/>").html_safe %></p>
+      </div>
+      <!-- ===== OUVERTURE ===== -->
+      <div class= "block">
+      <%= image_tag "puce-v5.png", class: "puce" %>
+        <h4><%= @ouverture.title %></h4>
+          <p><%= @ouverture.description.gsub("\n", "<br/>").html_safe %></p>
+      </div>
+<!-- =============== CLOSE ROW & CONTAINER =============== -->
+    </div>
+  </div>
+</div>

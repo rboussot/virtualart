@@ -1,5 +1,5 @@
 class PagesController < ApplicationController
-  skip_before_action :authenticate_user!, only: [:home, :profile]
+  skip_before_action :authenticate_user!, only: [:home, :profile, :tarifs, :contact]
 
   def home
     @count= 1
@@ -25,6 +25,23 @@ class PagesController < ApplicationController
     @parcours = Block.find_by(tag: "parcours")
     @travail = Block.find_by(tag: "travail")
     @travail = Block.find_by(tag: "travail")
+    @inscription = Block.find_by(tag: "inscription_cours")
+  end
+
+  def tarifs
+    @planning = Block.find_by(tag: "planning")
+    @tarifs1 = Block.find_by(tag: "tarifs1")
+    @tarifs2 = Block.find_by(tag: "tarifs2")
+    @infos = Block.find_by(tag: "infos")
+    @inscription = Block.find_by(tag: "inscription_cours")
+    @profil = Block.find_by(tag: "profil")
+    @timeslots = Timeslot.where(visible: true)
+  end
+
+  def contact
+    @lieu = Block.find_by(tag: "lieu")
+    @coo = Block.find_by(tag: "coo")
+    @ouverture = Block.find_by(tag: "ouverture")
     @inscription = Block.find_by(tag: "inscription_cours")
   end
 end

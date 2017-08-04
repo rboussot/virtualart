@@ -1,0 +1,80 @@
+<!-- =============== ROW & CONTAINER =============== -->
+<div class="container">
+  <div class="row">
+    <!-- =============== VOLET GAUCHE =============== -->
+    <div class="col-sm-8">
+    <!-- ===== TARIFS COURS ===== -->
+      <%= link_to (current_user ? edit_user_path(current_user) : new_user_session_path) do %>
+          <div class= "block link">
+            <%= image_tag "puce-v5.png", class: "puce" %>
+            <h4><%= @tarifs1.title %></h4>
+            <p><%= @tarifs1.description %></p>
+            <% if @tarifs1.picture.present? %>
+              <%= image_tag @tarifs1.picture, class: "center" %>
+            <% end %>
+            <p style="margin-top:30px;"><%= @planning.description.gsub("\n", "<br/>").html_safe %></p>
+          </div>
+        <% end %>
+    <!-- ===== TARIFS VIDEOS ===== -->
+        <%= link_to (current_user ? edit_user_path(current_user) : new_user_session_path) do %>
+          <div class= "block link">
+            <%= image_tag "puce-v5.png", class: "puce" %>
+            <h4><%= @tarifs2.title %></h4>
+            <p><%= @tarifs2.description.gsub("\n", "<br/>").html_safe %></p>
+            <% if @tarifs2.picture.present? %>
+              <%= image_tag @tarifs2.picture, class: "center" %>
+            <% end %>
+          </div>
+        <% end %>
+    <!-- ===== TARIFS STAGES ===== -->
+        <%= link_to (current_user ? edit_user_path(current_user) : new_user_session_path) do %>
+          <div class= "block link">
+            <%= image_tag "puce-v5.png", class: "puce" %>
+            <h4><%= @infos.title %></h4>
+            <p><%= @infos.description.gsub("\n", "<br/>").html_safe %></p>
+            <% if @infos.picture.present? %>
+              <%= image_tag @infos.picture, class: "center" %>
+            <% end %>
+          </div>
+        <% end %>
+    <!-- =============== CLOSE VOLET GAUCHE =============== -->
+    </div>
+    <!-- =============== VOLET DROIT =============== -->
+    <div class="col-sm-4">
+    <div class= "block-margin hidden-xs hidden-sm"></div>
+      <!-- ===== INSCRIPTION ===== -->
+      <div class= "block">
+      <%= image_tag "puce-v5.png", class: "puce" %>
+        <h4><%= @inscription.title %></h4>
+          <p><%= @inscription.description.gsub("\n", "<br/>").html_safe %></p>
+          <% if current_user %>
+            <%= link_to edit_user_path(current_user) do %>
+            <div class= "inscription">
+              Consulter le formulaire d'inscription
+            </div>
+            <% end %>
+          <% else %>
+            <%= link_to new_user_session_path do %>
+            <div class= "inscription">
+              Créer d'abord un compte gratuit !
+            </div>
+            <% end %>
+          <% end %>
+      </div>
+      <!-- ==== PROFIL ==== -->
+      <% if @profil.visible %>
+        <%= link_to profile_path do %>
+          <div class= "block link">
+          <%= image_tag "puce-v5.png", class: "puce" %>
+              <h4><%= @profil.title %></h4>
+              <%= @profil.description %>
+              <% if @profil.picture.present? %>
+                <%= image_tag @profil.picture, class: "full" %>
+              <% end %>
+          </div>
+        <% end %>
+      <% end %>
+<!-- =============== CLOSE ROW & CONTAINER =============== -->
+    </div>
+  </div>
+</div>
