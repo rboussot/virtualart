@@ -9,6 +9,12 @@ class UsersController < ApplicationController
     @infos = Block.find_by(tag: "infos")
     @users_courses = UsersCourse.where(user: current_user)
     @users_stages = UsersStage.where(user: current_user)
+    @access = UsersCourse.where(user: current_user).where(course: @course).find_by(confirmed: true)
+    if @access && @access.end && @access.end.strftime < Date.today.strftime
+      @access.confirmed = false
+      @access.save!
+      flash[:notice] = "Votre abonnement est terminé"
+    end
   end
 
   def edit

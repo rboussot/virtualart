@@ -10,10 +10,12 @@
       <% @users_courses.each do |user_course| %>
         <p>
           <%= user_course.course.title %> - <%= user_course.timeslot.title %> -
-          <% if user_course.confirmed %>
-            <span class= "confirmed">Le cours est bien confirmé.</span>
+          <% if user_course.confirmed && user_course.end.strftime > Date.today.strftime %>
+            <span class= "confirmed">Ce cours est bien confirmé jusqu'au <%= user_course.end %></span>
+          <% elsif user_course.end && user_course.end.strftime < Date.today.strftime %>
+            <span class= "ended">Ce cours est terminé depuis le <%= user_course.end %></span>
           <% else %>
-            <span class="not-confirmed">Je vous contacterai pour confirmer.</span>
+            <span class="not-confirmed">Je vous contacterai pour confirmer cette éventualité.</span>
           <% end %>
         </p>
       <% end %>

@@ -16,6 +16,12 @@ class CoursesController < ApplicationController
     @softwares = Software.where(course: @course)
     @users_lectures = UsersLecture.where(user: current_user)
     @inscription = Block.find_by(tag: "inscription_cours")
+    @access = UsersCourse.where(user: current_user).where(course: @course).find_by(confirmed: true)
+    if @access && @access.end && @access.end.strftime < Date.today.strftime
+      @access.confirmed = false
+      @access.save!
+      flash[:notice] = "Votre abonnement est terminé"
+    end
     # cf before_action
   end
 
