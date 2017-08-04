@@ -1187,7 +1187,7 @@ lieu = Block.create!(
   title: "Lieu",
   description: "",
   picture: "http://www.virtualart.pro/images/interface/local.jpg",
-  link: "https://maps.google.fr/maps?f=q&amp;source=s_q&amp;hl=fr&amp;geocode=&amp;q=virtual+art&amp;aq=&amp;sll=43.604652,1.444209&amp;sspn=0.20659,0.528374&amp;ie=UTF8&amp;hq=virtual+art&amp;hnear=&amp;t=m&amp;cid=4733741065628515629&amp;ll=43.606624,1.448779&amp;spn=0.002719,0.00456&amp;z=17&amp;output=embed",
+  link: "https://maps.googleapis.com/maps/api/staticmap?zoom=18&size=800x800&maptype=roadmap&markers=color:0x32B796|8+rue+Dalayrac,Toulouse&",
   visible: true,
   footer: false)
 p lieu
@@ -1248,7 +1248,7 @@ p planning
 #
 tarifs1 = Block.create!(
   tag: "tarifs1",
-  title: "Tarifs des cours",
+  title: "Mes cours à l'atelier",
   description: "VIDEOS + SEANCES 1H30
   PAR SEMAINE :",
   picture: "http://www.virtualart.pro/images/interface/prixseances.png",
@@ -1259,10 +1259,8 @@ p tarifs1
 #
 tarifs2 = Block.create!(
   tag: "tarifs2",
-  title: "",
-  description: "UNIQUEMENT VIDEOS :
-
-  Si vous n'êtes pas sur Toulouse ou êtes autonomes, Avec cette solution, toutes les vidéos du programme choisi sont disponible pendant le nombre de mois que vous prenez.",
+  title: "Accéder uniquement aux vidéos",
+  description: "Si vous n'êtes pas sur Toulouse ou êtes autonomes, Avec cette solution, toutes les vidéos du programme choisi sont disponibles pendant le nombre de mois que vous prenez.",
   picture: "http://www.virtualart.pro/images/interface/prixvideos.png",
   link: "",
   visible: true,

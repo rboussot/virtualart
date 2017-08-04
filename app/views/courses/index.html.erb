@@ -45,12 +45,17 @@
         <h4><%= @planning.title %></h4>
         <p><%= @planning.description.gsub("\n", "<br/>").html_safe %></p>
       </div>
-      <!-- ===== TARIF ===== -->
+      <!-- ===== TARIF ATELIER ===== -->
       <div class= "block">
         <%= image_tag "puce-v5.png", class: "puce" %>
         <h4><%= @tarifs1.title %></h4>
         <p><%= @tarifs1.description.gsub("\n", "<br/>").html_safe %></p>
         <%= image_tag @tarifs1.picture, class: "full" %><br><br>
+      </div>
+      <!-- ===== TARIF VIDEOS ===== -->
+      <div class= "block">
+        <%= image_tag "puce-v5.png", class: "puce" %>
+        <h4><%= @tarifs2.title %></h4>
         <p><%= @tarifs2.description.gsub("\n", "<br/>").html_safe %></p>
         <%= image_tag @tarifs2.picture, class: "full" %><br><br>
       </div>
