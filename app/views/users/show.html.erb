@@ -7,17 +7,23 @@
     <div class= "block">
       <%= image_tag "puce-v5.png", class: "puce" %>
       <h4>Récapitulatif des incriptions aux cours</h4>
-      <% @users_courses.each do |user_course| %>
-        <p>
-          <%= user_course.course.title %> - <%= user_course.timeslot.title %> -
-          <% if user_course.confirmed && user_course.end.strftime > Date.today.strftime %>
-            <span class= "confirmed">Ce cours est bien confirmé jusqu'au <%= user_course.end %></span>
-          <% elsif user_course.end && user_course.end.strftime < Date.today.strftime %>
-            <span class= "ended">Ce cours est terminé depuis le <%= user_course.end %></span>
-          <% else %>
-            <span class="not-confirmed">Je vous contacterai pour confirmer cette éventualité.</span>
-          <% end %>
-        </p>
+      <% if @users_courses && @users_courses.count > 0 %>
+        <% @users_courses.each do |user_course| %>
+          <p>
+            <%= user_course.course.title %> - <%= user_course.timeslot.title %> -
+            <% if user_course.confirmed && user_course.end.strftime > Date.today.strftime %>
+              <span class= "confirmed">Ce cours est bien confirmé jusqu'au <%= user_course.end %></span>
+            <% elsif user_course.end && user_course.end.strftime < Date.today.strftime %>
+              <span class= "ended">Ce cours est terminé depuis le <%= user_course.end %></span>
+            <% else %>
+              <span class="not-confirmed">Je vous contacterai pour confirmer cette éventualité.</span>
+            <% end %>
+          </p>
+        <% end %>
+      <% else %>
+        <%= link_to edit_user_path(current_user) do %>
+          <p>Remplissez le formulaire pour vous inscrire à l'un de mes cours !</p>
+        <% end %>
       <% end %>
     </div>
     <!-- ===== RECAP STAGES ===== -->
@@ -38,7 +44,7 @@
     <!-- ===== RETOUR AU FORMULAIRE ===== -->
     <%= link_to edit_user_path(current_user) do %>
       <div class= "inscription">
-        Revenir au formulaire
+        Modifier le formulaire
       </div>
     <% end %>
     <!-- ===== RETOUR À L'ACCUEIL ===== -->

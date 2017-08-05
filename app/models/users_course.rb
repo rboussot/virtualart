@@ -28,4 +28,5 @@ class UsersCourse < ApplicationRecord
       field :updated_at
     end
   end
+
 end
