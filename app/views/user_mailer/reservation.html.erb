@@ -1,0 +1,20 @@
+Coucou,<br>
+Tu as une nouvelle réservation d'un client, voici les infos :<br><br>
+
+<%= @user.firstname+" "+@user.lastname %><br>
+<%= @user.email %><br>
+<%= @user.phone %><br>
+<%= @user.adress %><br>
+Né le <%= @user.birth %><br><br>
+
+<% @users_courses.each do |users_course| %>
+  <p>
+    <%= users_course.course.title %> -
+    <%= users_course.timeslot.title %> -
+    <%= users_course.confirmed ? "Réservé" : "À confirmer !" %>
+  </p>
+<% end %>
+<br>
+
+<%= link_to "Voir tout ça dans l'admin", rails_admin.index_url('users_course') %>
+
