@@ -7,13 +7,14 @@ class UsersController < ApplicationController
     @tarifs1 = Block.find_by(tag: "tarifs1")
     @tarifs2 = Block.find_by(tag: "tarifs2")
     @infos = Block.find_by(tag: "infos")
-    @users_courses = UsersCourse.where(user: current_user)
     @users_stages = UsersStage.where(user: current_user)
-    @access = UsersCourse.where(user: current_user).where(course: @course).find_by(confirmed: true)
-    if @access && @access.end && @access.end.strftime < Date.today.strftime
-      @access.confirmed = false
-      @access.save!
-      flash[:notice] = "Votre abonnement est terminé"
+    @ended_courses = UsersCourse.where(user: current_user).find_by(confirmed: true)
+    @users_courses = UsersCourse.where(user: current_user)
+    @users_courses.each do |users_course|
+      if users_course && users_course.end && users_course.end.strftime < Date.today.strftime
+        users_course.confirmed = false
+        users_course.save!
+      end
     end
   end
 
@@ -29,6 +30,12 @@ class UsersController < ApplicationController
     @users_courses = UsersCourse.where(user: current_user)
     @users_stages = UsersStage.where(user: current_user)
     @form_info = Block.find_by(tag: "form")
+    @users_courses.each do |users_course|
+      if users_course && users_course.end && users_course.end.strftime < Date.today.strftime
+        users_course.confirmed = false
+        users_course.save!
+      end
+    end
     @disabled_courses = UsersCourse.where(user: current_user).where(confirmed: true).map(&:course_id)
     @disabled_timeslots = UsersCourse.where(user: current_user).where(confirmed: true).map(&:timeslot_id)
     @disabled_stages = UsersStage.where(user: current_user).where(confirmed: true).map(&:stage_id)
@@ -79,7 +86,7 @@ class UsersController < ApplicationController
   private
 
   def user_params
-    params.require(:user).permit(:firstname, :lastname, :email, :adress, :phone, :birth, :course, :stage, :contact, :timeslot)
+    params.require(:user).permit(:firstname, :lastname, :email, :adress, :phone, :birth, :course, :stage, :source, :timeslot)
   end
 
 end

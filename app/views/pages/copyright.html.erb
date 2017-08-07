@@ -3,20 +3,11 @@
   <div class="row">
     <!-- =============== VOLET GAUCHE =============== -->
     <div class="col-sm-8">
-    <!-- ===== LIEU ===== -->
+    <!-- ===== COURS ===== -->
       <div class= "block">
         <%= image_tag "puce-v5.png", class: "puce" %>
-        <h4><%= @lieu.title %></h4>
-
-          <div class="embed-responsive embed-responsive-16by9 center img-border">
-            <iframe src="<%= @lieu.description %>" width="496" height="504" frameborder="0" style="border:0" allowfullscreen></iframe>
-          </div>
-
-        <%= link_to "Agrandir la carte", @lieu.link, target: :_blank, class: "center" %>
-        <div style="margin-top:20px"></div>
-        <% if @lieu.picture.present? %>
-          <%= image_tag @lieu.picture, class: "center img-border" %>
-        <% end %>
+        <h4>Copyright</h4>
+        <p><%= @copyright.description.gsub("\n", "<br/>").html_safe %></p>
       </div>
     <!-- =============== CLOSE VOLET GAUCHE =============== -->
     </div>
@@ -48,12 +39,19 @@
         <h4><%= @coo.title %></h4>
           <p><%= @coo.description.gsub("\n", "<br/>").html_safe %></p>
       </div>
-      <!-- ===== OUVERTURE ===== -->
-      <div class= "block">
-      <%= image_tag "puce-v5.png", class: "puce" %>
-        <h4><%= @ouverture.title %></h4>
-          <p><%= @ouverture.description.gsub("\n", "<br/>").html_safe %></p>
-      </div>
+      <!-- ==== PROFIL ==== -->
+      <% if @profil.visible %>
+        <%= link_to profile_path do %>
+          <div class= "block">
+          <%= image_tag "puce-v5.png", class: "puce" %>
+              <h4><%= @profil.title %></h4>
+              <%= @profil.description %>
+              <% if @profil.picture.present? %>
+                <%= image_tag @profil.picture, class: "full" %>
+              <% end %>
+          </div>
+        <% end %>
+      <% end %>
 <!-- =============== CLOSE ROW & CONTAINER =============== -->
     </div>
   </div>

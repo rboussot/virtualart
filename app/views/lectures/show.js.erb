@@ -1,5 +1,6 @@
   $(document).ready(function() {
     $(window).click(function() {
+      $(".modal").html("");
       $(".modal").fadeOut();
     });
     var video = $("<%= j render 'video' %>");

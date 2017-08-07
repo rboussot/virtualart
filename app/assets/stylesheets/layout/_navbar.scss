@@ -1,9 +1,18 @@
 /* Main class */
 
+.navbar-padding {
+  padding-top: 117px;
+}
 .navbar-logo {
   position: absolute;
   top: 0px;
   right: 0px;
+}
+.navbar-logo-xs {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  height:111px;
 }
 
 .navbar-virtualart {
@@ -12,19 +21,31 @@
   font-size: 30px;
   background: $color-navbar;
   height: 117px;
-  padding: 50px 37% 0px 40px;
+  padding: 42px 37% 0px 40px;
+  position: fixed;
+  width: 100%;
+  z-index: 16;
 }
 
-.navbar-link {
+a.navbar-link {
   color: white;
   margin: 12px;
+  transition: all 250ms ease;
+  &.active {
+    color: $color-light;
+  }
+  &:hover {
+    text-decoration: none;
+    cursor: pointer;
+    text-shadow: 0px 0px 6px $color-light;
+  }
 }
 
 .navbar-login {
   font-family: "Teko", "sans-serif";
   font-size: 20px;
-  padding: 5px 20px 5px 20px;
-  position: absolute;
+  padding: 8px 20px 5px 20px;
+  position: fixed;
   right: 55px;
   top: 220px;
   background: white;
@@ -33,6 +54,13 @@
   color: #333333 !important;
   line-height: 22px !important;
   z-index: 2;
+  transition: all 250ms ease;
+  &:hover {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    background: $grey-light;
+  }
 }
 
 .navbar-login-mobile {
@@ -40,14 +68,14 @@
   font-size: 20px;
   padding: 5px 20px 5px 20px;
   position: absolute;
-  right: 40px;
-  top: 20px;
+  right: 135px;
+  top: 40px;
   background: white;
   border: 2px solid #bbbbbb;
   font-weight: lighter !important;
   color: #333333 !important;
   line-height: 22px !important;
-  z-index: 1;
+  z-index: 17;
 }
 
 #dropdown-login-mobile {
@@ -59,18 +87,6 @@
   color: white;
 }
 
-.navbar-link:hover {
-  text-decoration: none;
-  cursor: pointer;
-  color: $color-light;
-}
-
-.navbar-login:hover {
-  color: white;
-  text-decoration: none;
-  cursor: pointer;
-  background: $grey-lighter;
-}
 
 /* Optional class to fix the navbar on top */
 .navbar-virtualart-fixed {
@@ -90,7 +106,8 @@
 .navbar-virtualart-right {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-end;
+  margin: 0px 0px 0px 10%;
 }
 
 /* Navbar item */
@@ -98,67 +115,6 @@
   flex: 0 1 auto;
   cursor: pointer;
   padding: 0 20px;
-}
-
-/* Navbar standard link */
-.navbar-virtualart-link {
-  color: #616668;
-  font-size: 14px;
-}
-.navbar-virtualart-link:hover {
-  color: #da552f;
-  text-decoration: none;
-}
-
-/* Navbar right button */
-.navbar-virtualart-button {
-  margin-left: 10px;
-  padding: 0 20px;
-  border-radius: 20em;
-  line-height: 40px;
-  background-color: #D23333;
-  color: white;
-  font-size: 14px;
-  border: 2px solid #D23333;
-}
-.navbar-virtualart-button:hover {
-  color: white;
-  background: #D23333;
-  border-color: #ac2626;
-}
-
-/* Navbar search form */
-.navbar-virtualart-search {
-  flex: 0 1 300px;
-  display: flex;
-  justify-content: flex-end;
-  padding: 0 10px;
-  position: relative;
-}
-.navbar-virtualart-search-btn {
-  line-height: 40px;
-  color: #E6E6E6;
-  border: none;
-  background: transparent;
-  position: absolute;
-  right: 14px;
-  top: -2px;
-  z-index: 1;
-}
-.navbar-virtualart-search-input {
-  flex: 0 1 300px;
-  transition: all 0.15s ease;
-  line-height: 40px;
-  font-weight: lighter;
-  color: #666666;
-  border: 1px solid #E6E6E6;
-  border-radius: 5px;
-  padding: 0 10px;
-  font-size: 14px;
-  outline: none;
-}
-.navbar-virtualart-search-input:focus  {
-  border: 1px solid #CCCCCC;
 }
 
 /* =========== VIDEOS DROPDOWN MENU ========== */
@@ -178,24 +134,15 @@
   background: transparent !important;
   color: $color-light !important;
 }
-// .navbar-virtualart-dropdown-menu:before {
-//   content: ' ';
-//   height: 10px;
-//   width: 10px;
-//   position: absolute;
-//   right: 10px;
-//   top: -6px;
-//   background-color: white;
-//   transform: rotate(45deg);
-//   border-left: 1px solid #E6E6E6;
-//   border-top: 1px solid #E6E6E6;
-// }
 
 /* =========== LOGIN DROPDOWN MENU ========== */
 .navbar-login-dropdown-menu {
-  margin: 271px 43px 0px 0px;
+  top: 270px;
+  right: 55px;
   border: 2px solid #bbbbbb;
+  position: fixed;
   display: true !important;
+  transition: all 250ms ease;
 }
 .navbar-login-dropdown-menu li > a {
   font-family: $navbar-font;
@@ -204,6 +151,7 @@
   font-size: 20px !important;
   line-height: 22px !important;
   padding: 10px 20px;
+  transition: all 250ms ease;
 }
 .navbar-login-dropdown-menu li > a:hover {
   background: $grey-light !important;

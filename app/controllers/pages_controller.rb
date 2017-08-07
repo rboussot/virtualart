@@ -1,7 +1,8 @@
 class PagesController < ApplicationController
-  skip_before_action :authenticate_user!, only: [:home, :profile, :tarifs, :contact]
+  skip_before_action :authenticate_user!, only: [:home, :profile, :tarifs, :contact, :copyright]
 
   def home
+    @menu_accueil = "active"
     @count= 1
     @blocks = Block.all
     @carousels = Block.where("tag like ?", "carousel%").where(visible: true).order(tag: :asc)
@@ -29,6 +30,7 @@ class PagesController < ApplicationController
   end
 
   def tarifs
+    @menu_tarifs = "active"
     @planning = Block.find_by(tag: "planning")
     @tarifs1 = Block.find_by(tag: "tarifs1")
     @tarifs2 = Block.find_by(tag: "tarifs2")
@@ -39,9 +41,17 @@ class PagesController < ApplicationController
   end
 
   def contact
+    @menu_contact = "active"
     @lieu = Block.find_by(tag: "lieu")
     @coo = Block.find_by(tag: "coo")
     @ouverture = Block.find_by(tag: "ouverture")
     @inscription = Block.find_by(tag: "inscription_cours")
+  end
+
+  def copyright
+    @inscription = Block.find_by(tag: "inscription_cours")
+    @copyright = Block.find_by(tag: "copyright")
+    @profil = Block.find_by(tag: "profil")
+    @coo = Block.find_by(tag: "coo")
   end
 end

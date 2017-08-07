@@ -5,7 +5,7 @@
     <div class="col-sm-8">
     <!-- ===== TARIFS COURS ===== -->
       <%= link_to (current_user ? edit_user_path(current_user) : new_user_session_path) do %>
-          <div class= "block link">
+          <div class= "block">
             <%= image_tag "puce-v5.png", class: "puce" %>
             <h4><%= @tarifs1.title %></h4>
             <p><%= @tarifs1.description %></p>
@@ -17,7 +17,7 @@
         <% end %>
     <!-- ===== TARIFS VIDEOS ===== -->
         <%= link_to (current_user ? edit_user_path(current_user) : new_user_session_path) do %>
-          <div class= "block link">
+          <div class= "block">
             <%= image_tag "puce-v5.png", class: "puce" %>
             <h4><%= @tarifs2.title %></h4>
             <p><%= @tarifs2.description.gsub("\n", "<br/>").html_safe %></p>
@@ -28,7 +28,7 @@
         <% end %>
     <!-- ===== TARIFS STAGES ===== -->
         <%= link_to (current_user ? edit_user_path(current_user) : new_user_session_path) do %>
-          <div class= "block link">
+          <div class= "block">
             <%= image_tag "puce-v5.png", class: "puce" %>
             <h4><%= @infos.title %></h4>
             <p><%= @infos.description.gsub("\n", "<br/>").html_safe %></p>
@@ -41,7 +41,7 @@
     </div>
     <!-- =============== VOLET DROIT =============== -->
     <div class="col-sm-4">
-    <div class= "block-margin hidden-xs hidden-sm"></div>
+    <div class= "big-margin hidden-xs hidden-sm"></div>
       <!-- ===== INSCRIPTION ===== -->
       <div class= "block">
       <%= image_tag "puce-v5.png", class: "puce" %>
@@ -63,16 +63,17 @@
       </div>
       <!-- ==== PROFIL ==== -->
       <% if @profil.visible %>
-        <%= link_to profile_path do %>
-          <div class= "block link">
-          <%= image_tag "puce-v5.png", class: "puce" %>
-              <h4><%= @profil.title %></h4>
-              <%= @profil.description %>
+          <div class= "block">
+            <%= image_tag "puce-v5.png", class: "puce" %>
+            <h4><%= @profil.title %></h4>
+            <div class= mini-margin></div>
+            <%= link_to profile_path do %>
               <% if @profil.picture.present? %>
-                <%= image_tag @profil.picture, class: "full" %>
+                <%= image_tag @profil.picture, class: "full img-border" %>
               <% end %>
+            <% end %>
+            <%= link_to @profil.description, profile_path, class: "inscription" %>
           </div>
-        <% end %>
       <% end %>
 <!-- =============== CLOSE ROW & CONTAINER =============== -->
     </div>

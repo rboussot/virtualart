@@ -6,7 +6,7 @@
     <!-- ===== COURS GRATUIT ===== -->
     <div style= "margin-top:40px"></div>
       <% @lectures.where(order: "000").each do |free_lecture| %>
-          <div style="text-align:center;margin:auto;width:70%;">
+          <div style="text-align:center;margin:auto;width:80%;">
           <div class="embed-responsive embed-responsive-16by9">
             <iframe data-dismiss="modal" src= "https://www.youtube.com/embed/<%= free_lecture.video %>" frameborder="1" allowfullscreen>
             </iframe>
@@ -22,17 +22,18 @@
           <% lectures = Lecture.where(course: @course).where(software: courses_software.software).where.not(order: "000") %>
             <% lectures.each do |lecture| %>
             <!-- Lien vers la modale -->
-              <span class= "lecture-title">
+              <div class= "lecture-title">
                 <%= link_to lecture_path(lecture), remote: true do %>
                   <strong class="<%= lecture.id %>">- <%= lecture.title %></strong>
                     <% UsersLecture.where(lecture: lecture).where(user: current_user).each do |users_lecture| %>
-                      - <span class="confirmed"><%= users_lecture.note %></span>
+                      - <span class="block-appreciation"><%= users_lecture.note %></span>
                     <% end %><br>
                 <% end %>
                 <% if lecture.description.present? %>
                   <span class="lecture-description hidden-xs"><%= lecture.description %></span>
                 <% end %>
-              </span>
+              </div>
+              <br>
             <% end %>
             <!-- fin du lien vers la modale -->
           </div>
@@ -41,7 +42,7 @@
     </div>
     <!-- =============== VOLET DROIT =============== -->
     <div class="col-sm-4">
-    <div class= "block-margin hidden-xs hidden-sm"></div>
+    <div class= "big-margin hidden-xs hidden-sm"></div>
       <!-- ===== INSCRIPTION ===== -->
       <div class= "block">
       <%= image_tag "puce-v5.png", class: "puce" %>
@@ -83,7 +84,7 @@
     $(document).ready(function() {
     $().ready(function(){
       $('.strong').hover(function(){$(this).show();},
-                       function(){$(this).hide();});
+                       function(){$(this).remove();});
     });
     });
   <% end %>

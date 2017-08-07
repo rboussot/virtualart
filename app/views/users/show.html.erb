@@ -6,14 +6,14 @@
     <!-- ===== RECAP COURS ===== -->
     <div class= "block">
       <%= image_tag "puce-v5.png", class: "puce" %>
-      <h4>Récapitulatif des incriptions aux cours</h4>
+      <h4>Récapitulatif des cours qui vous intéressent</h4>
       <% if @users_courses && @users_courses.count > 0 %>
         <% @users_courses.each do |user_course| %>
           <p>
             <%= user_course.course.title %> - <%= user_course.timeslot.title %> -
-            <% if user_course.confirmed && user_course.end.strftime > Date.today.strftime %>
+            <% if user_course.confirmed && user_course.end && user_course.end.strftime > Date.today.strftime %>
               <span class= "confirmed">Ce cours est bien confirmé jusqu'au <%= user_course.end %></span>
-            <% elsif user_course.end && user_course.end.strftime < Date.today.strftime %>
+            <% elsif user_course.end && user_course.end && user_course.end.strftime < Date.today.strftime %>
               <span class= "ended">Ce cours est terminé depuis le <%= user_course.end %></span>
             <% else %>
               <span class="not-confirmed">Je vous contacterai pour confirmer cette éventualité.</span>
@@ -29,7 +29,7 @@
     <!-- ===== RECAP STAGES ===== -->
     <div class= "block">
       <%= image_tag "puce-v5.png", class: "puce" %>
-      <h4>Récapitulatif des incriptions aux stages</h4>
+      <h4>Récapitulatif des stages qui vous intéressent</h4>
       <% @users_stages.each do |user_stage| %>
         <p>
           <%= user_stage.stage.stagetype.title %> - <%= user_stage.stage.timeslot %> -
@@ -57,7 +57,7 @@
     </div>
     <!-- =============== VOLET DROIT =============== -->
     <div class="col-sm-4">
-    <div class= "block-margin hidden-xs hidden-sm"></div>
+    <div class= "big-margin hidden-xs hidden-sm"></div>
       <!-- ===== PLANNING COURS ===== -->
       <div class= "block">
         <%= image_tag "puce-v5.png", class: "puce" %>

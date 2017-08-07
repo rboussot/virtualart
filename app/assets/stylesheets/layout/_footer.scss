@@ -1,8 +1,12 @@
 .footer {
     background-color: $color-navbar;
     margin: 40px 0px 0px 0px;
-    padding: 40px 0px 40px 40px;
+    padding: 20px 0px 40px 0px;
     border-top: 5px solid $color-light;
+}
+
+.footer-left {
+  margin: 0px 0px 0px 25%;
 }
 
 .footer-link {
@@ -12,17 +16,16 @@
 
 .footer-icon {
   text-align: center;
-  margin: -107px 0px 0px 0px;
+  margin: -87px 0px 0px 0px;
 }
 
 .footer-copyright {
-  margin: -20px 40px 0px 60%;
-  padding: 0px 0px 0px 0px;
+  margin: 0% 25% 0% 0%;
   font-size: 10px;
   font-style: italic;
   text-align: right;
   a {
-    color: $grey;
+    color: $color-pale;
     text-decoration: none;
     &:hover {
       color: white;

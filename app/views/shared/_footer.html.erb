@@ -2,16 +2,17 @@
 <% @footer_copyright = Block.find_by(tag: "copyright") %>
 
 <div class= "footer">
-  <% @footer_links.each do |footer_link| %>
-    <%= link_to image_tag(footer_link.picture, class: "footer-link"), footer_link.link, target: "_blank" %>
-  <% end %>
+  <div class= "footer-left">
+    <% @footer_links.each do |footer_link| %>
+      <%= link_to image_tag(footer_link.picture, class: "footer-link"), footer_link.link, target: "_blank" %>
+    <% end %>
+  </div>
   <div class= "footer-icon">
     <%= image_tag "footericon-v2.png" %>
   </div>
   <div class= "footer-copyright">
-    <%= link_to @footer_copyright.link, target: "_blank" do %>
+    <%= link_to copyright_path do %>
       <%= @footer_copyright.title %><br>
-      <%= @footer_copyright.description.gsub("\n", "<br/>").html_safe %>
     <% end %>
   </div>
 </div>

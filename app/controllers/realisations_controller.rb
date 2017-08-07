@@ -2,6 +2,7 @@ class RealisationsController < ApplicationController
   skip_before_action :authenticate_user!, only: [:index, :show]
 
   def index
+    @menu_realisations = "active"
     @realisations = Realisation.all
     @courses = Course.where(visible: true)
     @propos = Block.find_by(tag: "propos")

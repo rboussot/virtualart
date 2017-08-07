@@ -15,7 +15,7 @@ class User < ApplicationRecord
   validates :email, presence: true, uniqueness: :true
 
   def name
-    email
+    email+" "+phone.to_s
   end
 
   rails_admin do
@@ -23,7 +23,6 @@ class User < ApplicationRecord
       field :email
       field :courses
       field :stages
-      field :access
       field :tutored_by_id
       field :tutor
       field :note
@@ -45,16 +44,11 @@ class User < ApplicationRecord
       field :adress
       field :phone
       field :birth
-      field :access
       field :note
-      field :contact
+      field :source
       field :tutored_by_id
       field :tutor
       field :admin
-      field :lectures
-      field :realisations
-      field :stages
-      field :courses
     end
   end
 
@@ -66,9 +60,8 @@ class User < ApplicationRecord
       field :adress
       field :phone
       field :birth
-      field :access
       field :note
-      field :contact
+      field :source
       field :tutored_by_id
       field :tutor
       field :admin
