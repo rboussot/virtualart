@@ -7,7 +7,6 @@ u1 = User.create!(
   password:"mlkmlk",
   firstname:"Estelle",
   lastname:"Boussot",
-  access: "Compte admin",
   admin: true)
 p u1
 #
@@ -16,7 +15,8 @@ u2 = User.create!(
   password:"mlkmlk",
   firstname:"Romain",
   lastname:"Boussot",
-  access: "Compte test",
+  phone:"06 85 18 65 73",
+  adress:"33B rue Lebon, Sartouville",
   admin: true)
 p u2
 #
@@ -24,6 +24,8 @@ u3 = User.create!(
   email: "test@gmail.com",
   password:"mlkmlk",
   firstname:"Test",
+  phone:"test",
+  adress:"test",
   lastname:"Test")
 p u3
 #
@@ -93,7 +95,7 @@ m2d = Course.create!(
 Logiciels : Photoshop, Moho, After Effects.",
   picture: "http://www.virtualart.pro/images/interface/ic-2d.jpg",
   visible: true,
-  color: "167, 207, 137",
+  color: "153, 255, 153",
   puce: "http://www.virtualart.pro/images/interface/puce-2d.png")
 p m2d
 #
@@ -822,7 +824,7 @@ st1 = Stagetype.create!(
 - Ajout de textures et motifs",
   picture: "http://www.virtualart.pro/images/interface/ic-stageillu.jpg",
   visible: true,
-  color: "167, 207, 137",
+  color: "153, 255, 153",
   puce: "http://www.virtualart.pro/images/interface/puce-2d.png")
 p st1
 #
@@ -1154,7 +1156,7 @@ p news
 post = Block.create!(
   tag: "post",
   title: "Dernière réalisation",
-  description: "", # Pas besoin de description pour le dernier post l'image parle d'elle-même
+  description: "Montage 2D réalisé par mes soins, pour illustrer les techniques du cursus Multimédia 2D.",
   picture: "http://www.virtualart.pro/images/divers/inu.jpg",
   link: "http://www.virtualart.pro/images/divers/inu.jpg",
   visible: true,
@@ -1185,9 +1187,9 @@ p livredor
 lieu = Block.create!(
   tag: "lieu",
   title: "Lieu",
-  description: "",
+  description: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2888.975507931656!2d1.4466251153027123!3d43.607051563431874!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12aebc98d76ab2fb%3A0x41b1a06b33777d2d!2sAtelier+Virtual+Art!5e0!3m2!1sfr!2sfr!4v1502106928893',
   picture: "http://www.virtualart.pro/images/interface/local.jpg",
-  link: "https://maps.googleapis.com/maps/api/staticmap?zoom=18&size=800x800&maptype=roadmap&markers=color:0x32B796|8+rue+Dalayrac,Toulouse&",
+  link: "https://www.google.fr/maps/place/Atelier+Virtual+Art/@43.6070516,1.4466251,17z/data=!3m1!4b1!4m5!3m4!1s0x12aebc98d76ab2fb:0x41b1a06b33777d2d!8m2!3d43.6070477!4d1.4488138",
   visible: true,
   footer: false)
 p lieu
@@ -1271,7 +1273,7 @@ p tarifs2
 profil = Block.create!(
   tag:"profil",
   title:"Qui suis-je ?", # faire un blox texte + image a chaque fois x4
-  description:"Cliquez ici pour découvrir mon parcours et mes projets.",
+  description:"Mon parcours et mes projets...",
   picture:"http://www.virtualart.pro/images/interface/profil3.jpg",
   link: "",
   visible: true,
@@ -1454,8 +1456,36 @@ p instagram
 #copyright en dur
 copyright = Block.create!(
   tag: "copyright",
-  title: "Mentions légales",
-  description: "Tous droits réservés,",
+  title: "© Copyright SARL Virtual Art 2017 - Mentions légales.",
+  description: "1. Identification
+
+Ce site est la propriété de la SARL Virtual Art RCS TOULOUSE 534 459 607, éditeur du site, située au :
+8, rue Dalayrac
+31000 TOULOUSE
+Tél. : 0954111431
+
+
+2. Hébergement du site
+
+Ce site est hébergé auprès de la société :
+OVH SAS
+2 rue Kellermann - 59100 Roubaix - France
+
+
+3. Données personnelles
+
+La SARL Virtual Art ne collecte aucune information personnelle autres que celles que vous lui communiquez, et ces dernières le sont uniquement à des fins de gestion de vos demandes et de statistiques internes à l'atelier. Ces informations ne sont en aucun cas cédées à des tiers.
+
+Conformément à la loi \"Informatique et Libertés\" (art. 34) vous disposez d'un droit d'accès, de modification, de rectification et de suppression des données qui vous concernent. Pour cela il vous suffit d'écrire à contact@virtualart.pro.
+
+4. Responsabilités
+
+Les liens hypertextes mis en place dans ce site web en direction d'autres sites présents sur le réseau Internet ou les liens provenant d'autres sites du réseau Internet vers ce site, ne sauraient engager la responsabilité de la SARL Virtual Art. Vous avez la possibilité de mettre en place un lien hypertexte entre votre site et celui-ci.
+
+5. Propriété intellectuelle
+
+La reproduction et/ou diffusion des textes, des visuels d'illustration, animés ou non, des sons et éléments multimédia, des documents téléchargeables, des représentations iconographiques et photographiques, et, plus généralement, de tout élément original - au sens du Code de la propriété intellectuelle - du site internet virtualart.pro, ainsi que du site en lui-même, sont strictement soumis à l'autorisation préalable et expresse de l'éditeur du site.
+Les images et les textes du site ne sont en aucun cas contractuels.",
   picture: "",
   link: "http://virtualart.pro/pages/mentions.html",
   visible: true,
@@ -1467,10 +1497,20 @@ form = Block.create!(
   title: "Infos formulaire",
   description: "Pour vous inscrire à mes cours ou à mes stages, complétez cette fiche de renseignements, je vous contacterai alors pour confirmer votre inscription, à bientôt !",
   picture: "http://www.virtualart.pro/images/realisations/perso/mascotteva.jpg",
-  link: "http://virtualart.pro/pages/mentions.html",
+  link: "",
   visible: true,
   footer: false)
 p form
+#
+logo_xs = Block.create!(
+  tag: "logo_xs",
+  title: "",
+  description: "",
+  picture: "http://www.ecoregion.fr/tmp/enterprises/1564-logo_220x220.jpg",
+  link: "",
+  visible: true,
+  footer: false)
+p logo_xs
 #
 # ==================== CoursesSoftware ====================
 # === On en crée 1 seul pour tester

@@ -7,17 +7,20 @@
   margin-bottom: 40px;
 }
 
-.home-logo {
-  color: white;
-  display: inline-block;
+.home-software {
   text-align: center;
-  font-size: 11px;
-
-  img {
-  height: 80px;
-  margin: O.6% 0px;
+  padding: 10px 0px 10px 0px;
+  .logo {
+    color: white;
+    display: inline-block;
+    text-align: center;
+    font-size: 11px;
+    img {
+      height: 69px;
+    }
   }
 }
+
 .home-video {
   color: white;
 }

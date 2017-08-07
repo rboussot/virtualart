@@ -6,11 +6,11 @@
     <!-- ===== COURS ===== -->
       <% @courses.each do |course| %>
         <%= link_to course_path(course) do %>
-          <div class= "block height link"
+          <div class= "block height"
           style= "background-color: rgba(<%= course.color %>, 0.35);border-color: rgb(<%= course.color %>);">
           <%= image_tag course.puce, class: "puce" %>
             <h4 style= "text-shadow: 0 0 0.2em rgba(<%= course.color %>, 0.5), 0 0 0.2em rgba(<%= course.color %>, 0.5)"><%= course.title %></h4>
-            <%= image_tag course.picture, class: "left" %>
+            <%= image_tag course.picture, class: "left", style: "border: 4px solid rgb("+course.color+");" %>
             <p><%= course.description.gsub("\n", "<br/>").html_safe %></p>
           </div>
         <% end %>
@@ -19,7 +19,7 @@
     </div>
     <!-- =============== VOLET DROIT =============== -->
     <div class="col-sm-4">
-    <div class= "block-margin hidden-xs hidden-sm"></div>
+    <div class= "big-margin hidden-xs hidden-sm"></div>
       <!-- ===== INSCRIPTION ===== -->
       <div class= "block">
       <%= image_tag "puce-v5.png", class: "puce" %>

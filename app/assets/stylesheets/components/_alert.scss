@@ -9,9 +9,14 @@
   text-align: center;
   color: white;
   top: 0px;
+  z-index: 16;
 }
 .alert-info {
-  background: $green;
+  background-image: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, #009E6F 50%, rgba(0, 0, 0, 0) 101%);
+  background-color: transparent;
+  border: none;
+  width: 50%;
+  margin-left: 25%;
 }
 .alert-warning {
   background: $red;

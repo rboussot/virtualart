@@ -13,13 +13,19 @@
         <div class= "block">
         <%= image_tag "puce-v5.png", class: "puce" %>
           <h4><%= @home_logiciel.title %></h4>
+          <div class= "mini-margin"></div>
           <p><%= @home_logiciel.description.gsub("\n", "<br/>").html_safe %></p>
-          <% @softwares.each do |software| %>
-            <div class= "home-logo">
-              <%= image_tag software.logo %><br>
-              <%= software.title %>
-            </div>
-          <% end %>
+          <div class= "home-software">
+            <% @softwares.each do |software| %>
+              <div class= "logo">
+                <% if software.logo.present? %>
+                  <%= image_tag software.logo %><br>
+                  <%= software.title %>
+                <% end %>
+              </div>
+            <% end %>
+          </div>
+          <%= link_to "Découvrez mes cours...", courses_path, class: "inscription" %>
         </div>
       <% end %>
       <!-- ==== VIDEO  ==== -->
@@ -28,11 +34,13 @@
         <%= image_tag "puce-v5.png", class: "puce" %>
           <h4><%= @home_video.title %></h4>
             <div class= "home-video">
-              <div class="embed-responsive embed-responsive-16by9 home-video">
+              <div class="embed-responsive embed-responsive-16by9 home-video img-border">
               <iframe width="854" height="480" src= "https://www.youtube.com/embed/<%= @home_video.link %>?showinfo=0&rel=0" frameborder="1" allowfullscreen></iframe>
               </div>
+              <div class= "mini-margin"></div>
               <p><%= @home_video.description.gsub("\n", "<br/>").html_safe %></p>
           </div>
+          <%= link_to "En savoir plus...", courses_path, class: "inscription" %>
         </div>
       <% end %>
       <!-- ==== ESPACE ==== -->
@@ -42,10 +50,11 @@
           <h4><%= @home_espace.title %></h4>
           <div class= "row">
             <div class="home-espace col-sm-8">
-              <%= image_tag @home_espace.picture %>
+              <%= image_tag @home_espace.picture, class: "img-border" %>
             </div>
             <div class= "home-espace col-sm-4">
               <p><%= @home_espace.description.gsub("\n", "<br/>").html_safe %></p>
+          <%= link_to "En savoir plus...", contact_path, class: "inscription" %>
             </div>
           </div>
         </div>
@@ -57,6 +66,7 @@
           <div class= "home-materiel">
             <h4><%= @home_materiel.title %></h4>
             <%= image_tag @home_materiel.picture %>
+            <div class= "mini-margin"></div>
             <p><%= @home_materiel.description.gsub("\n", "<br/>").html_safe %></p>
           </div>
         </div>
@@ -94,22 +104,28 @@
         <%= image_tag "puce-v5.png", class: "puce" %>
           <div class="home-post">
             <h4><%= @post.title %></h4>
-            <%= link_to image_tag(@post.picture, class: "full"), @post.link%>
+            <% if @post.description.present? %>
+              <p><%= @post.description %></p>
+            <% end %>
+            <div class= "mini-margin"></div>
+            <%= link_to image_tag(@post.picture, class: "full img-border"), @post.link%>
           </div>
+          <%= link_to "Les réalisations des élèves...", realisations_path, class: "inscription" %>
         </div>
       <% end %>
       <!-- ==== PROFIL ==== -->
       <% if @profil.visible %>
-        <%= link_to profile_path do %>
-          <div class= "block link">
+          <div class= "block">
           <%= image_tag "puce-v5.png", class: "puce" %>
               <h4><%= @profil.title %></h4>
-              <%= @profil.description %>
+              <div class= "mini-margin"></div>
               <% if @profil.picture.present? %>
-                <%= image_tag @profil.picture, class: "full" %>
+                <%= link_to profile_path do %>
+                  <%= image_tag @profil.picture, class: "full img-border" %>
+                <% end %>
               <% end %>
+              <%= link_to @profil.description, profile_path, class: "inscription" %>
           </div>
-        <% end %>
       <% end %>
       <!-- ==== COEUR ==== -->
       <% if @coeur.visible %>
@@ -117,9 +133,17 @@
         <%= image_tag "puce-v5.png", class: "puce" %>
           <div class="home-coeur">
             <h4><%= @coeur.title %></h4>
-            <div class="embed-responsive embed-responsive-16by9 home-video">
-              <iframe width="854" height="480" src= "https://www.youtube.com/embed/<%= @coeur.link %>?showinfo=0&rel=0" frameborder="1" allowfullscreen></iframe>
+            <% if @coeur.picture.present? %>
+              <%= link_to @coeur.link, target: :_blank do %>
+                <%= image_tag @coeur.picture, class: "full img-border"%>
+              <% end %>
+              <div class= "mini-margin"></div>
+              <p><%= @coeur.description %></p>
+            <% elsif %>
+              <div class="embed-responsive embed-responsive-16by9 home-video">
+                <iframe width="854" height="480" src= "https://www.youtube.com/embed/<%= @coeur.link %>?showinfo=0&rel=0" frameborder="1" allowfullscreen></iframe>
               </div>
+            <% end %>
           </div>
         </div>
       <% end %>

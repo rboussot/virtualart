@@ -5,25 +5,40 @@
 <!-- -->
 <!-- ==================== VERIFIE AUTORISATIONS ==================== -->
 <!-- -->
-<% if current_user && current_user.access.present? && @access %>
-  <div style="text-align:center;margin:auto;width:70%;">
+<% if current_user && @access || current_user && current_user.admin %>
+  <div style="text-align:center;margin:auto;width:70%;border:4px solid rgb(<%= @lecture.course.color %>)">
     <div class="embed-responsive embed-responsive-16by9">
-      <iframe data-dismiss="modal" width="854" height="480" src= "https://www.youtube.com/embed/<%= @lecture.video %>?autoplay=1" frameborder="1" allowfullscreen >
+      <iframe data-dismiss="modal" width="854" height="480" src= "https://www.youtube.com/embed/<%= @lecture.video %>" frameborder="1" allowfullscreen >
       </iframe>
     </div>
   </div>
 <% else %>
-<div style="text-align:center;margin:auto;width:70%;background-color: white;">
+<div style="text-align:center;margin:auto;width:70%;border:4px solid rgb(<%= @lecture.course.color %>);">
     <div class="embed-responsive embed-responsive-16by9">
-      <div class= "block-margin hidden-xs hidden-sm"></div>
-      <h4>Cette vidéo est réservée aux abonnés</h4>
+      <div class= "small-margin hidden-xs"></div>
+      <div class= "big-margin hidden-sm hidden-xs"></div>
+      <h4>Cette vidéo est réservée à mes élèves !</h4>
+        <p class="hidden-xs">Consultez mon formulaire en ligne pour ouvrir un accès aux vidéos.</p>
+        <% if current_user %>
+              <%= link_to edit_user_path(current_user) do %>
+              <div class= "inscription">
+                Formulaire d'inscription
+              </div>
+              <% end %>
+            <% else %>
+              <%= link_to new_user_session_path do %>
+              <div class= "inscription">
+                Créer d'abord un compte gratuit !
+              </div>
+              <% end %>
+            <% end %>
     </div>
   </div>
 <% end %>
 <!-- -->
 <!-- ==================== TITRE ET DESCRIPTION VIDEO ==================== -->
 <!-- -->
-<div class= "description" style= "background-color: rgba(<%= @lecture.course.color %>, 0.35)">
+<div class= "description" style= "background-color: rgb(<%= @lecture.course.color %>)">
   <p class= "close">x</p>
   <h4><%= @lecture.title%></h4>
   <%= @lecture.description%>

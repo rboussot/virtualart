@@ -1,3 +1,8 @@
+.block-appreciation {
+  color: rgba(255,255,255,0.5);
+  font-style: italic;
+}
+
 .confirmed {
   font-style: italic;
   color: $color-line;
@@ -61,10 +66,13 @@ label {
   }
   h4 {
     color: $color-text;
-    text-shadow: 0 0 0.2em $color-line, 0 0 0.2em $color-line
+    text-shadow: 0px 0px 6px $color-line, 0px 0px 6px $color-line, 0px 0px 6px $color-line, 0px 0px 6px $color-line
   }
   p {
-    color: $color-text;
+    color: white;
+    margin: 0px 2% 10px 2%;
+    width: 96%;
+    text-align: justify;
   }
   .full {
     width: 100%;
@@ -103,64 +111,3 @@ label {
   }
 }
 
-.block-timeslots {
-  text-align: center;
-  .timeslot {
-      background-color: rgba(255, 255, 255, 0.3);
-      color: white;
-      margin: auto;
-      margin-top: 10px;
-      padding: 4px 0px 4px 0px;
-      font-size: 15px;
-      width: 60%;
-  }
-}
-
-.inscription {
-  width: 100%;
-  background-color: $color-background;
-  margin: 20px 0px 10px 0px;
-  padding: 10px 30px 10px 30px;
-  text-align: center;
-  border-radius: 5px;
-  border: 2px solid $color-line;
-  font-size: 14px;
-  font-style: italic;
-  color: $color-line;
-  &:hover
-  {
-    background-color: $color-navbar;
-    cursor: pointer;
-    a
-    {
-      color: $color-text;
-    }
-    }
-}
-
-input.btn.btn-default {
-    width: 100%;
-  background-color: $color-background;
-  margin: 20px 0px 10px 0px;
-  padding: 10px 30px 10px 30px;
-  text-align: center;
-  border-radius: 5px;
-  border: 2px solid $color-line;
-  font-size: 14px;
-  font-style: italic;
-  color: $color-line;
-  &:hover
-  {
-    background-color: $color-navbar;
-    a
-    {
-      color: $color-text;
-    }
-    }
-}
-
-
-.block-margin {
-  margin-top: 160px;
-  z-index: -1;
-}

@@ -4,6 +4,7 @@ class CoursesController < ApplicationController
   before_action :find_softwares, only: [:show]
 
   def index
+    @menu_cours = "active"
     @courses = Course.where(visible: true).order(created_at: :asc)
     @inscription = Block.find_by(tag: "inscription_cours")
     @planning = Block.find_by(tag: "planning")
@@ -12,6 +13,7 @@ class CoursesController < ApplicationController
   end
 
   def show
+    @menu_videos = "active"
     @lectures = Lecture.where(course: @course).where(visible: true)
     @softwares = Software.where(course: @course)
     @users_lectures = UsersLecture.where(user: current_user)

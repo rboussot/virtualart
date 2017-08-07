@@ -16,11 +16,11 @@ ActiveRecord::Schema.define(version: 20170804172635) do
   enable_extension "plpgsql"
 
   create_table "blocks", force: :cascade do |t|
-    t.string   "tag"
-    t.string   "title"
-    t.text     "description"
-    t.string   "picture"
-    t.string   "link"
+    t.string   "tag",         default: ""
+    t.string   "title",       default: ""
+    t.text     "description", default: ""
+    t.string   "picture",     default: ""
+    t.string   "link",        default: ""
     t.boolean  "visible",     default: false, null: false
     t.boolean  "footer",      default: false, null: false
     t.datetime "created_at",                  null: false
@@ -28,11 +28,11 @@ ActiveRecord::Schema.define(version: 20170804172635) do
   end
 
   create_table "courses", force: :cascade do |t|
-    t.string   "title"
-    t.text     "description"
-    t.string   "picture"
-    t.string   "color"
-    t.string   "puce"
+    t.string   "title",       default: ""
+    t.text     "description", default: ""
+    t.string   "picture",     default: ""
+    t.string   "color",       default: ""
+    t.string   "puce",        default: ""
     t.boolean  "visible",     default: false, null: false
     t.datetime "created_at",                  null: false
     t.datetime "updated_at",                  null: false
@@ -50,10 +50,10 @@ ActiveRecord::Schema.define(version: 20170804172635) do
   create_table "lectures", force: :cascade do |t|
     t.integer  "software_id"
     t.integer  "course_id"
-    t.string   "title"
-    t.string   "video"
-    t.text     "description"
-    t.string   "order"
+    t.string   "title",       default: ""
+    t.string   "video",       default: ""
+    t.text     "description", default: ""
+    t.string   "order",       default: ""
     t.boolean  "visible",     default: true, null: false
     t.datetime "created_at",                 null: false
     t.datetime "updated_at",                 null: false
@@ -64,26 +64,26 @@ ActiveRecord::Schema.define(version: 20170804172635) do
   create_table "realisations", force: :cascade do |t|
     t.integer  "course_id"
     t.integer  "user_id"
-    t.string   "title"
-    t.string   "link"
-    t.string   "thumbnail"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.string   "title",      default: ""
+    t.string   "link",       default: ""
+    t.string   "thumbnail",  default: ""
+    t.datetime "created_at",              null: false
+    t.datetime "updated_at",              null: false
     t.index ["course_id"], name: "index_realisations_on_course_id", using: :btree
     t.index ["user_id"], name: "index_realisations_on_user_id", using: :btree
   end
 
   create_table "softwares", force: :cascade do |t|
-    t.string   "title"
-    t.string   "logo"
-    t.text     "description"
-    t.datetime "created_at",  null: false
-    t.datetime "updated_at",  null: false
+    t.string   "title",       default: ""
+    t.string   "logo",        default: ""
+    t.text     "description", default: ""
+    t.datetime "created_at",               null: false
+    t.datetime "updated_at",               null: false
   end
 
   create_table "stages", force: :cascade do |t|
     t.integer  "stagetype_id"
-    t.string   "timeslot"
+    t.string   "timeslot",     default: ""
     t.boolean  "visible",      default: false, null: false
     t.datetime "created_at",                   null: false
     t.datetime "updated_at",                   null: false
@@ -91,18 +91,18 @@ ActiveRecord::Schema.define(version: 20170804172635) do
   end
 
   create_table "stagetypes", force: :cascade do |t|
-    t.string   "title"
-    t.string   "picture"
-    t.text     "description"
-    t.string   "color"
-    t.string   "puce"
+    t.string   "title",       default: ""
+    t.string   "picture",     default: ""
+    t.text     "description", default: ""
+    t.string   "color",       default: ""
+    t.string   "puce",        default: ""
     t.boolean  "visible",     default: false, null: false
     t.datetime "created_at",                  null: false
     t.datetime "updated_at",                  null: false
   end
 
   create_table "timeslots", force: :cascade do |t|
-    t.string   "title"
+    t.string   "title",      default: ""
     t.boolean  "visible",    default: false, null: false
     t.datetime "created_at",                 null: false
     t.datetime "updated_at",                 null: false
@@ -121,19 +121,18 @@ ActiveRecord::Schema.define(version: 20170804172635) do
     t.inet     "last_sign_in_ip"
     t.datetime "created_at",                             null: false
     t.datetime "updated_at",                             null: false
-    t.string   "firstname"
-    t.string   "lastname"
-    t.string   "adress"
-    t.string   "phone"
+    t.string   "firstname",              default: ""
+    t.string   "lastname",               default: ""
+    t.string   "adress",                 default: ""
+    t.string   "phone",                  default: ""
     t.date     "birth"
-    t.text     "contact"
-    t.string   "stripe"
-    t.string   "plan"
-    t.text     "note"
+    t.text     "source",                 default: ""
+    t.string   "stripe",                 default: ""
+    t.string   "plan",                   default: ""
+    t.text     "note",                   default: ""
     t.integer  "tutored_by_id"
     t.boolean  "tutor",                  default: false, null: false
     t.boolean  "admin",                  default: false, null: false
-    t.string   "access"
     t.index ["email"], name: "index_users_on_email", unique: true, using: :btree
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true, using: :btree
     t.index ["tutored_by_id"], name: "index_users_on_tutored_by_id", using: :btree
