@@ -100,7 +100,7 @@
   <div class="navbar-virtualart-item hidden-md hidden-lg">
   <% if Block.where(tag: "logo_xs").present? && Block.find_by(tag: "logo_xs").visible %>
     <%= link_to root_path do %>
-      <%= image_tag Block.find_by(tag: "logo_xs").picture, class: "navbar-logo-xs" %>
+      <%= image_tag Block.find_by(tag: "logo_xs").picture, class: "navbar-logo-xs hidden-xs" %>
     <% end %>
   <% end %>
     <div class="dropdown">
