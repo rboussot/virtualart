@@ -1,23 +1,47 @@
-<% if current_user && @access || current_user && current_user.admin %>
-  <div class= "lecture-border" style="text-align:center;margin:auto;width:70%;border:4px solid white;">
-    <div class="embed-responsive embed-responsive-16by9">
-      <iframe data-dismiss="modal" width="854" height="480" src= "https://www.youtube.com/embed/<%= @lecture.video %>" frameborder="1" allowfullscreen >
-      </iframe>
-    </div>
-  </div>
-<% else %>
-<div style="text-align:center;margin:auto;width:70%;background-color: white;">
-    <div class="embed-responsive embed-responsive-16by9">
-      <div class= "big-margin hidden-xs hidden-sm"></div>
-      <h4>Cette vidéo est réservée aux abonnés</h4>
-    </div>
-  </div>
-<% end %>
+<%= stylesheet_link_tag 'application', media: 'all' %>
+<%= javascript_include_tag 'application' %>
+<!-- =============== ROW & CONTAINER =============== -->
+<div class="container">
+  <div class="row">
+  <div class="small-margin"></div>
+<!-- -->
+<!-- =============== LECTEUR VIDEO =============== -->
+<!-- -->
+      <div style="text-align:center;margin:auto;width:100%;border:4px solid rgb(<%= @lecture.course.color %>)">
+        <div class="embed-responsive embed-responsive-16by9">
+          <% if current_user && @access || current_user && current_user.admin %>
+            <iframe data-dismiss="modal" width="854" height="480" src= "https://www.youtube.com/embed/<%= @lecture.video %>" frameborder="1" allowfullscreen >
+            </iframe>
+          <% else %>
+              <div class= "big-margin hidden-xs hidden-sm"></div>
+              <h4>Cette vidéo est réservée aux abonnés</h4>
+          <% end %>
+        </div>
+      </div>
 <!-- -->
 <!-- ==================== TITRE ET DESCRIPTION VIDEO ==================== -->
 <!-- -->
-<div class= "description" style= "background-color: rgba(<%= @lecture.course.color %>, 1)">
-  <p class= "close">x</p>
-  <h4><%= @lecture.title%></h4>
-  <%= @lecture.description%>
+          <div class= "fullscreen-description" style= "background-color: rgba(<%= @lecture.course.color %>, 1)">
+            <p class= "close">x</p>
+            <h4><%= @lecture.title%></h4>
+            <%= @lecture.description %>
+          </div>
+
+  </div>
 </div>
+<div class="big-margin"></div>
+<%= render 'shared/footer' %>
+<!-- -->
+<!-- ========== JAVASCRIPT ========== -->
+<!-- -->
+<% content_for(:js) do %>
+  <%= javascript_tag do %>
+    $(document).ready(function() {
+      $(window).click(function() {
+        window.close();
+      });
+    });
+  <% end %>
+<% end %>
+<%= javascript_include_tag 'application' %>
+    <%= yield(:js) %>

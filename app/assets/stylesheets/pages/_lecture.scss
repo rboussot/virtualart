@@ -1,3 +1,4 @@
+/* ========== LECTURE SHOW ========== */
 
 .lecture-prevent {
   position: fixed;
@@ -6,6 +7,7 @@
   height: 90vh;
   z-index: 4;
 }
+
 .description {
   width: 70%;
   text-align: center;
@@ -24,17 +26,37 @@
   }
 }
 
+.fullscreen-description {
+  width: 100%;
+  text-align: center;
+  margin: auto;
+  padding: 10px 0px 40px 0px;
+  opacity: 1;
+  .close {
+    position: relative;
+    top: 0px;
+    right: 15px;
+    color: $color-navbar;
+    opacity: 0.7;
+    &:hover {
+      color: $color-text;
+    }
+  }
+}
+
+/* ========== COURSE SHOW ========== */
+
 .lecture-title {
   position:relative;
   display: inline-block;
 
-  a:hover + .lecture-description {
+  a:hover + .lecture-infobulle {
     display: block;
     opacity: 1;
     z-index: 2;
   }
 
-  .lecture-description {
+  .lecture-infobulle {
     position: absolute;
     top: -12px;
     left: calc(100% + 36px);
@@ -42,8 +64,7 @@
     padding: 10px;
     margin: 0px;
 
-    width: 24vw;
-    height: 26vh;
+    min-width: 20vw;
 
     z-index: -1;
     color: black;
