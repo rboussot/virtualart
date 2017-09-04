@@ -432,7 +432,7 @@ l29 = Lecture.create!(
   course: m2d,
   title: "Photoshop - matte painting",
   video: "Hp-TCNuBtuc",
-  description: "En construction."
+  description: "En construction.",
   order: "029",
   visible: true)
 p l29
@@ -2753,7 +2753,7 @@ l24 = Lecture.create!(
   course: pr,
   title: "Photoshop - matte painting",
   video: "Hp-TCNuBtuc",
-  description: "En construction."
+  description: "En construction.",
   order: "024",
   visible: true)
 p l24
@@ -3372,13 +3372,13 @@ p ul1
 #
 ul2 = UsersLecture.create!(
   user: u2,
-  lecture: ll1,
+  lecture: l1,
   note: "Appréciation.")
 p ul2
 #
 ul3 = UsersLecture.create!(
   user: u2,
-  lecture: ll1,
+  lecture: l1,
   note: "Appréciation.")
 p ul3
 #
@@ -4069,7 +4069,7 @@ r86 = Realisation.create!(
   course: m2d,
   user: u1,
   title: "Animation de combat de Stickmen",
-  link: "",
+  link: "mMSPp-E-rsY",
   thumbnail: "http://www.virtualart.pro/images/rea/ic video/anim2d4.jpg")
 p r86
 #
@@ -4109,7 +4109,7 @@ r91 = Realisation.create!(
   course: m2d,
   user: u1,
   title: "Petit film d'animation coopératif sur l'histoire d'un chat",
-  link: "",
+  link: "mMSPp-E-rsY",
   thumbnail: "http://www.virtualart.pro/images/rea/ic video/anim2d9.jpg")
 p r91
 #
@@ -4117,7 +4117,7 @@ r92 = Realisation.create!(
   course: m2d,
   user: u1,
   title: "Animation stickmen et photos",
-  link: "",
+  link: "mMSPp-E-rsY",
   thumbnail: "http://www.virtualart.pro/images/rea/ic video/anim2d10.jpg")
 p r92
 #
