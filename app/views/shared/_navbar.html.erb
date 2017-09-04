@@ -98,13 +98,17 @@
   <!-- ========== MOBILE ONLY ========== -->
 
   <div class="navbar-virtualart-item hidden-md hidden-lg">
-  <% if Block.where(tag: "logo_xs").present? && Block.find_by(tag: "logo_xs").visible %>
-    <%= link_to root_path do %>
-      <%= image_tag Block.find_by(tag: "logo_xs").picture, class: "navbar-logo-xs hidden-xs" %>
-    <% end %>
-  <% end %>
     <div class="dropdown">
-      <i class="fa fa-bars dropdown-toggle" data-toggle="dropdown"></i>
+    <% if Block.where(tag: "logo_xs").present? && Block.find_by(tag: "logo_xs").visible %>
+      <i class="dropdown-toggle" data-toggle="dropdown">
+        <%= link_to root_path do %>
+        <%= image_tag Block.find_by(tag: "logo_xs").picture, class: "navbar-logo-xs" %>
+        <% end %>
+      </i>
+    <% else %>
+      <i class="fa fa-bars dropdown-toggle" data-toggle="dropdown">
+      </i>
+  <% end %>
       <ul class="dropdown-menu dropdown-menu-right navbar-virtualart-dropdown-menu">
         <li><%= link_to "Accueil", root_path, class: "navbar-link" %></li>
         <li><%= link_to "Cours / Vidéos", courses_path, class: "navbar-link"  %></li>
