@@ -28,7 +28,7 @@
               style= "background-color: rgba(<%= stagetype.color %>, 0.35);border-color: rgb(<%= stagetype.color %>);">
               <%= image_tag stagetype.puce, class: "puce" %>
                 <h4 style= "text-shadow: 0 0 0.2em rgba(<%= stagetype.color %>, 0.5), 0 0 0.2em rgba(<%= stagetype.color %>, 0.5)"><%= stagetype.title %></h4>
-                <%= image_tag stagetype.picture, class: "left" %>
+                <%= image_tag stagetype.picture, class: "left" , style: "border: 4px solid rgb("+stagetype.color+");"%>
                 <p><%= stagetype.description.gsub("\n", "<br/>").html_safe %></p>
                 <div class= "medium-margin"></div>
                   <% stages = Stage.where(stagetype: stagetype) %>

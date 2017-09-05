@@ -10,7 +10,7 @@
             <h4><%= @tarifs1.title %></h4>
             <p><%= @tarifs1.description %></p>
             <% if @tarifs1.picture.present? %>
-              <%= image_tag @tarifs1.picture, class: "center" %>
+              <%= image_tag @tarifs1.picture, class: "tableau" %>
             <% end %>
             <p style="margin-top:30px;"><%= @planning.description.gsub("\n", "<br/>").html_safe %></p>
           </div>
@@ -22,7 +22,7 @@
             <h4><%= @tarifs2.title %></h4>
             <p><%= @tarifs2.description.gsub("\n", "<br/>").html_safe %></p>
             <% if @tarifs2.picture.present? %>
-              <%= image_tag @tarifs2.picture, class: "center" %>
+              <%= image_tag @tarifs2.picture, class: "tableau" %>
             <% end %>
           </div>
         <% end %>
