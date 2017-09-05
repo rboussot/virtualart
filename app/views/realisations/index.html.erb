@@ -9,13 +9,15 @@
         style= "background-color: rgba(<%= course.color %>, 0.35);border-color: rgb(<%= course.color %>);">
         <%= image_tag course.puce, class: "puce" %>
         <h4 style= "text-shadow: 0 0 0.2em rgba(<%= course.color %>, 1), 0 0 0.2em rgba(<%= course.color %>, 1)"><%= course.title %></h4>
-        <!-- === Vignettes === -->
-        <% realisations = Realisation.where(course: course) %>
-        <% realisations.each do |realisation| %>
-          <%= link_to realisation_path(realisation), remote: true do %>
-            <%= image_tag realisation.thumbnail, class: "realisation-thumbnail", id: realisation.id %>
+        <div class= "realisation-center">
+          <!-- === Vignettes === -->
+          <% realisations = Realisation.where(course: course).reverse %>
+          <% realisations.each do |realisation| %>
+            <%= link_to realisation_path(realisation), remote: true do %>
+              <%= image_tag realisation.thumbnail, class: "realisation-thumbnail", id: realisation.id %>
+            <% end %>
           <% end %>
-        <% end %>
+        </div>
       </div>
       <% end %>
 <!-- =============== CLOSE VOLET GAUCHE =============== -->
