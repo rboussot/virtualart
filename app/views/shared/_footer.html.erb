@@ -1,14 +1,19 @@
 <% @footer_links = Block.where(footer: true).where(visible: true) %>
 <% @footer_copyright = Block.find_by(tag: "copyright") %>
+<% @footer_icon = Block.find_by(tag: "footer_icon") %>
 
+<div class= "footer-icon">
+<% if @footer_copyright.picture.present? %>
+    <%= image_tag @footer_copyright.picture %>
+  <% else %>
+    <%= image_tag "footericon-v2.png" %>
+  <% end %>
+</div>
 <div class= "footer">
   <div class= "footer-left">
     <% @footer_links.each do |footer_link| %>
       <%= link_to image_tag(footer_link.picture, class: "footer-link"), footer_link.link, target: "_blank" %>
     <% end %>
-  </div>
-  <div class= "footer-icon">
-    <%= image_tag "footericon-v2.png" %>
   </div>
   <div class= "footer-copyright">
     <%= link_to copyright_path do %>

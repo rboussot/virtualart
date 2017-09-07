@@ -108,7 +108,7 @@
               <p><%= @post.description %></p>
             <% end %>
             <div class= "mini-margin"></div>
-            <%= link_to image_tag(@post.picture, class: "full img-border"), @post.link%>
+            <%= link_to image_tag(@post.picture, class: "full img-border"), @post.link, target: :_blank%>
           </div>
           <%= link_to "Les réalisations des élèves...", realisations_path, class: "inscription" %>
         </div>
