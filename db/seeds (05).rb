@@ -35,49 +35,49 @@ p u3
 ph = Software.create!(
   title: "Photoshop",
   description: "Photoshop est un logiciel de retouche et de montage assisté par ordinateur édité par Adobe. Il est utilisé dans tous les domaines (traitement de photographie et création d'images) pour sa polyvalence !",
-  logo: "http://www.i.virtualart.pro/images/interface/photoshop.jpg")
+  logo: "http://www.wantitbuyit.com/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/p/h/photoshop.jpg")
 p ph
 #
 ai = Software.create!(
   title: "Illustrator",
   description: "Illustrator est un logiciel de dessin vectoriel édité par Adobe. Il est essentiellement utilisé pour la création de logos, mais l'illustration vectorielle est à la mode !",
-  logo: "http://www.i.virtualart.pro/images/interface/illustrator.jpg")
+  logo: "https://helpx.adobe.com/content/dam/help/mnemonics/ai_cc_app_RGB.svg")
 p ai
 #
 ind = Software.create!(
   title: "InDesign",
   description: "Indesign est un logiciel de mise en page édité par Adobe, les liens avec les fichiers Photoshop et Illustrator sont évidement reconnus.",
-  logo: "http://www.i.virtualart.pro/images/interface/indesign.jpg")
+  logo: "http://www.ensistemas.com/portals/0/Adobe/Adobe-InDesign-CC-01.png")
 p ind
 #
 ae = Software.create!(
   title: "After Effects",
   description: "After Effects est un logiciel de compositing (montage) édité par Adobe. Il permet de créer des effets spéciaux et des animations graphiques sur des images et vidéos.",
-  logo: "http://www.i.virtualart.pro/images/interface/ae.jpg")
+  logo: "http://ducminhabc.com/wp-content/uploads/2016/12/After-Effect-logo-500x500.png")
 p ae
 #
 ma = Software.create!(
   title: "Maya",
   description: "Maya est un logiciel de modéalisation et d'animation 3D utilisé dans l'industrie du cinéma, développé par la société Autodesk.",
-  logo: "http://www.i.virtualart.pro/images/interface/maya.jpg")
+  logo: "http://area.autodesk.com/userdata/blogs/the-maya-blog.png")
 p ma
 #
 mu = Software.create!(
   title: "Mudbox",
   description: "Mudbox est un logiciel de sculpting 3D, développé par la société Autodesk. Il permet la création de détails en modélisation et textures.",
-  logo: "http://www.i.virtualart.pro/images/interface/mudbox.jpg")
+  logo: "https://www.tezabo.com/sites/default/files/mudbox.png")
 p mu
 #
 csp = Software.create!(
   title: "Clip Studio Paint",
   description: "Clip Studio Paint est un logiciel de création de BDs Japonais, éditer chez nous par Lost Marble.",
-  logo: "http://www.i.virtualart.pro/images/interface/csp.jpg")
+  logo: "https://pbs.twimg.com/profile_images/378800000343701556/aed29f4d1f173fc74b33a7a0da7b2e92_400x400.png")
 p csp
 #
 mo = Software.create!(
   title: "Moho",
   description: "Moho est un logiciel d'animation 2D vectoriel facile d'accès, édité par Lost Marble.",
-  logo: "http://www.i.virtualart.pro/images/interface/moho.jpg")
+  logo: "https://pbs.twimg.com/profile_images/762793616817303552/xegBWWOY.jpg")
 p mo
 #
 gra = Software.create!(
@@ -93,10 +93,10 @@ m2d = Course.create!(
   description: "Réalisez dessins, retouches photos, dessin animé, films... Vous apprendrez à utiliser les logiciels et vous pourrez créer vos projets, nous vous aidons sur toutes les étapes : du croquis à la mise en page; du story-board au compositing en passant par le son !
 
 Logiciels : Photoshop, Moho, After Effects.",
-  picture: "http://www.i.virtualart.pro/images/interface/ic-2d.jpg",
+  picture: "http://www.virtualart.pro/images/interface/ic-2d.jpg",
   visible: true,
   color: "153, 255, 153",
-  puce: "http://www.i.virtualart.pro/images/interface/puce-2d.png")
+  puce: "http://www.virtualart.pro/images/interface/puce-2d.png")
 p m2d
 #
 m3d = Course.create!(
@@ -104,10 +104,10 @@ m3d = Course.create!(
   description: "Réalisez des objets, des scènes et des animations 3D ! Apprenez à utiliser les logiciels, et nous vous aiderons à réaliser vos images, figurines ou films, du story-board au compositing en passant par le son !
 
 Logiciels : Maya, Mudbox, Photoshop, After Effects.",
-  picture: "http://www.i.virtualart.pro/images/interface/ic-3d.jpg",
+  picture: "http://www.virtualart.pro/images/interface/ic-3d.jpg",
   visible: true,
   color: "81, 178, 99",
-  puce: "http://www.i.virtualart.pro/images/interface/puce-3d.png")
+  puce: "http://www.virtualart.pro/images/interface/puce-3d.png")
 p m3d
 #
 bd = Course.create!(
@@ -115,10 +115,10 @@ bd = Course.create!(
   description: "Apprenez les règles de la BD, développez vos personnages, histoires et mises en page. Le numérique vous offre aussi de nouvelles solutions d'immersion à découvrir !
 
 Logiciels : Clip Sutdio Paint, Photoshop.",
-  picture: "http://www.i.virtualart.pro/images/interface/ic-bd.jpg",
+  picture: "http://www.virtualart.pro/images/interface/ic-bd.jpg",
   visible: true,
   color: "253, 203, 104",
-  puce: "http://www.i.virtualart.pro/images/interface/puce-bd.png")
+  puce: "http://www.virtualart.pro/images/interface/puce-bd.png")
 p bd
 #
 pr = Course.create!(
@@ -126,10 +126,10 @@ pr = Course.create!(
   description: "Cette formation vous apportera le savoir faire autour de la retouche photo, du dessin vectoriel et de la mise en page afin de réaliser Flyers, affiches, livrets... Vous n'aurez plus qu'à imprimer !
 
 Logiciels : Photoshop, Illustrator, Indesign.",
-  picture: "http://www.i.virtualart.pro/images/interface/ic-print.jpg",
+  picture: "http://www.virtualart.pro/images/interface/ic-print.jpg",
   visible: true,
   color: "248, 241, 153",
-  puce: "http://www.i.virtualart.pro/images/interface/puce-print.png")
+  puce: "http://www.virtualart.pro/images/interface/puce-print.png")
 p pr
 #
 # ==================== Lecture ====================
@@ -3385,636 +3385,660 @@ p ul3
 # ==================== Realisation ====================
 # === Au moins 3 dans chaque cours
 #----------------------------------------------------------------------------- MULTIMEDIA 2D
-r84 = Realisation.create!(
+r1 = Realisation.create!(
   course: m2d,
   user: u1,
-  title: "Animation Star wars en Stickman",
-  link: "mMSPp-E-rsY",
-  thumbnail: "http://www.i.virtualart.pro/images/rea/ic video/anim2d2.jpg")
-p r84
+  title: "Zepplin, univers en montage photos",
+  link: "http://www.virtualart.pro/images/rea/2d/zepplin.jpg",
+  thumbnail: "http://www.virtualart.pro/images/rea/ic 2d/zepplin.jpg")
+p r1
+#
+r2 = Realisation.create!(
+  course: m2d,
+  user: u1,
+  title: "Décor de jour et nuit pour l'animation des -Chroniques Yndrawiques-",
+  link: "http://www.virtualart.pro/images/rea/2d/yn1.jpg",
+  thumbnail: "http://www.virtualart.pro/images/rea/ic 2d/yn1.jpg")
+p r2
+#
+r3 = Realisation.create!(
+  course: m2d,
+  user: u1,
+  title: "Décor de la taverne pour l'animation des -Chroniques Yndrawiques-",
+  link: "http://www.virtualart.pro/images/rea/2d/yn2.jpg",
+  thumbnail: "http://www.virtualart.pro/images/rea/ic 2d/yn2.jpg")
+p r3
+#
+r4 = Realisation.create!(
+  course: m2d,
+  user: u1,
+  title: "Décor des îles pour l'animation des -Chroniques Yndrawiques-",
+  link: "http://www.virtualart.pro/images/rea/2d/yn3.jpg",
+  thumbnail: "http://www.virtualart.pro/images/rea/ic 2d/yn3.jpg")
+p r4
+#
+r5 = Realisation.create!(
+  course: m2d,
+  user: u1,
+  title: "Décor pour l'animation des -Chroniques Yndrawiques-",
+  link: "http://www.virtualart.pro/images/rea/2d/yn4.jpg",
+  thumbnail: "http://www.virtualart.pro/images/rea/ic 2d/yn4.jpg")
+p r5
+#
+r6 = Realisation.create!(
+  course: m2d,
+  user: u1,
+  title: "Extraits de l'animation des -Chroniques Yndrawiques-",
+  link: "http://www.virtualart.pro/images/rea/2d/yn5.jpg",
+  thumbnail: "http://www.virtualart.pro/images/rea/ic 2d/yn5.jpg")
+p r6
+#
+r7 = Realisation.create!(
+  course: m2d,
+  user: u1,
+  title: "Guerre contre les robots",
+  link: "http://www.virtualart.pro/images/rea/2d/combat.jpg",
+  thumbnail: "http://www.virtualart.pro/images/rea/ic 2d/combat.jpg")
+p r7
 #
 r8 = Realisation.create!(
   course: m2d,
   user: u2,
   title: "Illustration de couverture de livre",
-  link: "http://www.i.virtualart.pro/images/rea/2d/couverture1.jpg",
-  thumbnail: "http://www.i.virtualart.pro/images/rea/ic 2d/couverture1.jpg")
+  link: "http://www.virtualart.pro/images/rea/2d/couverture1.jpg",
+  thumbnail: "http://www.virtualart.pro/images/rea/ic 2d/couverture1.jpg")
 p r8
 #
 r9 = Realisation.create!(
   course: m2d,
   user: u3,
   title: "Illustration de couverture de livre",
-  link: "http://www.i.virtualart.pro/images/rea/2d/couverture2.jpg",
-  thumbnail: "http://www.i.virtualart.pro/images/rea/ic 2d/couverture2.jpg")
+  link: "http://www.virtualart.pro/images/rea/2d/couverture2.jpg",
+  thumbnail: "http://www.virtualart.pro/images/rea/ic 2d/couverture2.jpg")
 p r9
 #
 r10 = Realisation.create!(
   course: m2d,
   user: u3,
   title: "Chimère en montage photos",
-  link: "http://www.i.virtualart.pro/images/rea/2d/aigle.jpg",
-  thumbnail: "http://www.i.virtualart.pro/images/rea/ic 2d/aigle.jpg")
+  link: "http://www.virtualart.pro/images/rea/2d/aigle.jpg",
+  thumbnail: "http://www.virtualart.pro/images/rea/ic 2d/aigle.jpg")
 p r10
 #
 r11 = Realisation.create!(
   course: m2d,
   user: u3,
   title: "Arbre magique",
-  link: "http://www.i.virtualart.pro/images/rea/2d/arbre2.jpg",
-  thumbnail: "http://www.i.virtualart.pro/images/rea/ic 2d/arbre2.jpg")
+  link: "http://www.virtualart.pro/images/rea/2d/arbre2.jpg",
+  thumbnail: "http://www.virtualart.pro/images/rea/ic 2d/arbre2.jpg")
 p r11
 #
 r12 = Realisation.create!(
   course: m2d,
   user: u3,
   title: "Travail d'architecture",
-  link: "http://www.i.virtualart.pro/images/rea/2d/archi1.jpg",
-  thumbnail: "http://www.i.virtualart.pro/images/rea/ic 2d/archi1.jpg")
+  link: "http://www.virtualart.pro/images/rea/2d/archi1.jpg",
+  thumbnail: "http://www.virtualart.pro/images/rea/ic 2d/archi1.jpg")
 p r12
 #
 r13 = Realisation.create!(
   course: m2d,
   user: u3,
   title: "Extrait de montage de film",
-  link: "http://www.i.virtualart.pro/images/rea/2d/avion.jpg",
-  thumbnail: "http://www.i.virtualart.pro/images/rea/ic 2d/avion.jpg")
+  link: "http://www.virtualart.pro/images/rea/2d/avion.jpg",
+  thumbnail: "http://www.virtualart.pro/images/rea/ic 2d/avion.jpg")
 p r13
 #
 r14 = Realisation.create!(
   course: m2d,
   user: u3,
   title: "Montage photos sur le thème d'Harry Potter",
-  link: "http://www.i.virtualart.pro/images/rea/2d/baguette.jpg",
-  thumbnail: "http://www.i.virtualart.pro/images/rea/ic 2d/baguette.jpg")
+  link: "http://www.virtualart.pro/images/rea/2d/baguette.jpg",
+  thumbnail: "http://www.virtualart.pro/images/rea/ic 2d/baguette.jpg")
 p r14
 #
 r15 = Realisation.create!(
   course: m2d,
   user: u3,
   title: "Bannière Youtube",
-  link: "http://www.i.virtualart.pro/images/rea/2d/banniere1.jpg",
-  thumbnail: "http://www.i.virtualart.pro/images/rea/ic 2d/banniere1.jpg")
+  link: "http://www.virtualart.pro/images/rea/2d/banniere1.jpg",
+  thumbnail: "http://www.virtualart.pro/images/rea/ic 2d/banniere1.jpg")
 p r15
 #
 r16 = Realisation.create!(
   course: m2d,
   user: u3,
   title: "Bannière Youtube",
-  link: "http://www.i.virtualart.pro/images/rea/2d/banniere2.jpg",
-  thumbnail: "http://www.i.virtualart.pro/images/rea/ic 2d/banniere2.jpg")
+  link: "http://www.virtualart.pro/images/rea/2d/banniere2.jpg",
+  thumbnail: "http://www.virtualart.pro/images/rea/ic 2d/banniere2.jpg")
 p r16
-#
-r93 = Realisation.create!(
-  course: m2d,
-  user: u1,
-  title: "Petit poisson rouge 2D",
-  link: "FNcKIwuuI1k",
-  thumbnail: "http://www.i.virtualart.pro/images/rea/ic video/anim2d11.jpg")
-p r93
 #
 r17 = Realisation.create!(
   course: m2d,
   user: u3,
   title: "Carte de Baptême",
-  link: "http://www.i.virtualart.pro/images/rea/2d/carte1.jpg",
-  thumbnail: "http://www.i.virtualart.pro/images/rea/ic 2d/carte1.jpg")
+  link: "http://www.virtualart.pro/images/rea/2d/carte1.jpg",
+  thumbnail: "http://www.virtualart.pro/images/rea/ic 2d/carte1.jpg")
 p r17
 #
 r18 = Realisation.create!(
   course: m2d,
   user: u3,
   title: "Montage photos de marmottes pour la fête des mères",
-  link: "http://www.i.virtualart.pro/images/rea/2d/carte2.jpg",
-  thumbnail: "http://www.i.virtualart.pro/images/rea/ic 2d/carte2.jpg")
+  link: "http://www.virtualart.pro/images/rea/2d/carte2.jpg",
+  thumbnail: "http://www.virtualart.pro/images/rea/ic 2d/carte2.jpg")
 p r18
 #
 r19 = Realisation.create!(
   course: m2d,
   user: u3,
   title: "Cascade en peinture numérique",
-  link: "http://www.i.virtualart.pro/images/rea/2d/cascade.jpg",
-  thumbnail: "http://www.i.virtualart.pro/images/rea/ic 2d/cascade.jpg")
+  link: "http://www.virtualart.pro/images/rea/2d/cascade.jpg",
+  thumbnail: "http://www.virtualart.pro/images/rea/ic 2d/cascade.jpg")
 p r19
 #
 r20 = Realisation.create!(
   course: m2d,
   user: u3,
   title: "Décors de cave pour une animation",
-  link: "http://www.i.virtualart.pro/images/rea/2d/cave.jpg",
-  thumbnail: "http://www.i.virtualart.pro/images/rea/ic 2d/cave.jpg")
+  link: "http://www.virtualart.pro/images/rea/2d/cave.jpg",
+  thumbnail: "http://www.virtualart.pro/images/rea/ic 2d/cave.jpg")
 p r20
-#
-r23 = Realisation.create!(
-  course: m2d,
-  user: u3,
-  title: "Montage photos d'un chat qui surf",
-  link: "http://www.i.virtualart.pro/images/rea/2d/chatsurf.jpg",
-  thumbnail: "http://www.i.virtualart.pro/images/rea/ic 2d/chatsurf.jpg")
-p r23
-#
-r24 = Realisation.create!(
-  course: m2d,
-  user: u3,
-  title: "Cheval de feu",
-  link: "http://www.i.virtualart.pro/images/rea/2d/cheval.jpg",
-  thumbnail: "http://www.i.virtualart.pro/images/rea/ic 2d/cheval.jpg")
-p r24
-#
-r25 = Realisation.create!(
-  course: m2d,
-  user: u3,
-  title: "Joggeuse dans un parc",
-  link: "http://www.i.virtualart.pro/images/rea/2d/cours.jpg",
-  thumbnail: "http://www.i.virtualart.pro/images/rea/ic 2d/cours.jpg")
-p r25
-#
-r26 = Realisation.create!(
-  course: m2d,
-  user: u3,
-  title: "Dame et ses chiens : dessin incrusté dans une photo",
-  link: "http://www.i.virtualart.pro/images/rea/2d/dame1.jpg",
-  thumbnail: "http://www.i.virtualart.pro/images/rea/ic 2d/dame1.jpg")
-p r26
-#
-r27 = Realisation.create!(
-  course: m2d,
-  user: u3,
-  title: "Décor en montage photo pour un projet d'animation",
-  link: "http://www.i.virtualart.pro/images/rea/2d/decor1.jpg",
-  thumbnail: "http://www.i.virtualart.pro/images/rea/ic 2d/decor1.jpg")
-p r27
-#
-r28 = Realisation.create!(
-  course: m2d,
-  user: u3,
-  title: "Désert",
-  link: "http://www.i.virtualart.pro/images/rea/2d/desert1.jpg",
-  thumbnail: "http://www.i.virtualart.pro/images/rea/ic 2d/desert1.jpg")
-p r28
-#
-r29 = Realisation.create!(
-  course: m2d,
-  user: u3,
-  title: "Femme et son dragon, croquis et finition sur photoshop",
-  link: "http://www.i.virtualart.pro/images/rea/2d/dragon.jpg",
-  thumbnail: "http://www.i.virtualart.pro/images/rea/ic 2d/dragon.jpg")
-p r29
-#
-r29 = Realisation.create!(
-  course: m2d,
-  user: u3,
-  title: "Femme et son dragon, croquis et finition sur photoshop",
-  link: "http://www.i.virtualart.pro/images/rea/2d/dragon.jpg",
-  thumbnail: "http://www.i.virtualart.pro/images/rea/ic 2d/dragon.jpg")
-p r29
-#
-r96 = Realisation.create!(
-  course: m2d,
-  user: u3,
-  title: "Le bouchon",
-  link: "EF6RFmKxsXw",
-  thumbnail: "http://www.i.virtualart.pro/images/rea/ic video/anim2d14.jpg")
-p r96
-#
-r97 = Realisation.create!(
-  course: m2d,
-  user: u3,
-  title: "Le dragon et la lune, peinture numérique",
-  link: "http://www.i.virtualart.pro/images/rea/2d/dragon2.jpg",
-  thumbnail: "http://www.i.virtualart.pro/images/rea/ic 2d/dragon2.jpg")
-p r97
-#
-r98 = Realisation.create!(
-  course: m2d,
-  user: u3,
-  title: "L'observateur dans la nuit, en montage photos",
-  link: "http://www.i.virtualart.pro/images/rea/2d/ville.jpg",
-  thumbnail: "http://www.i.virtualart.pro/images/rea/ic 2d/ville.jpg")
-p r98
-#
-r30 = Realisation.create!(
-  course: m2d,
-  user: u3,
-  title: "planète en peinture numérique",
-  link: "http://www.i.virtualart.pro/images/rea/2d/drawing.jpg",
-  thumbnail: "http://www.i.virtualart.pro/images/rea/ic 2d/drawing.jpg")
-p r30
-#
-r31 = Realisation.create!(
-  course: m2d,
-  user: u3,
-  title: "Estampe numérique",
-  link: "http://www.i.virtualart.pro/images/rea/2d/estampe1.jpg",
-  thumbnail: "http://www.i.virtualart.pro/images/rea/ic 2d/estampe1.jpg")
-p r31
-#
-r32 = Realisation.create!(
-  course: m2d,
-  user: u3,
-  title: "Femme chat",
-  link: "http://www.i.virtualart.pro/images/rea/2d/femmechat.jpg",
-  thumbnail: "http://www.i.virtualart.pro/images/rea/ic 2d/femmechat.jpg")
-p r32
-#
-r33 = Realisation.create!(
-  course: m2d,
-  user: u3,
-  title: "Fille style SD",
-  link: "http://www.i.virtualart.pro/images/rea/2d/fille.jpg",
-  thumbnail: "http://www.i.virtualart.pro/images/rea/ic 2d/fille.jpg")
-p r33
-#
-r34 = Realisation.create!(
-  course: m2d,
-  user: u3,
-  title: "Fleur en dessin et dégradé",
-  link: "http://www.i.virtualart.pro/images/rea/2d/fleurs1.jpg",
-  thumbnail: "http://www.i.virtualart.pro/images/rea/ic 2d/fleurs1.jpg")
-p r34
-#
-r35 = Realisation.create!(
-  course: m2d,
-  user: u3,
-  title: "Croquis numérique de fleurs ",
-  link: "http://www.i.virtualart.pro/images/rea/2d/fleurs2.jpg",
-  thumbnail: "http://www.i.virtualart.pro/images/rea/ic 2d/fleurs2.jpg")
-p r35
-#
-r36 = Realisation.create!(
-  course: m2d,
-  user: u3,
-  title: "Exercices de fruits en peinture numérique",
-  link: "http://www.i.virtualart.pro/images/rea/2d/fruit.jpg",
-  thumbnail: "http://www.i.virtualart.pro/images/rea/ic 2d/fruit.jpg")
-p r36
-#
-r37 = Realisation.create!(
-  course: m2d,
-  user: u3,
-  title: "Dessin de hibou au stylot et couleur sur Photoshop",
-  link: "http://www.i.virtualart.pro/images/rea/2d/hibou.jpg",
-  thumbnail: "http://www.i.virtualart.pro/images/rea/ic 2d/hibou.jpg")
-p r37
-#
-r38 = Realisation.create!(
-  course: m2d,
-  user: u3,
-  title: "Montage photos pour la fête des mères",
-  link: "http://www.i.virtualart.pro/images/rea/2d/juju.jpg",
-  thumbnail: "http://www.i.virtualart.pro/images/rea/ic 2d/juju.jpg")
-p r38
-#
-r39 = Realisation.create!(
-  course: m2d,
-  user: u3,
-  title: "Croquis et montage photos d'une femme en kimono ",
-  link: "http://www.i.virtualart.pro/images/rea/2d/kimono.jpg",
-  thumbnail: "http://www.i.virtualart.pro/images/rea/ic 2d/kimono.jpg")
-p r39
-#
-r40 = Realisation.create!(
-  course: m2d,
-  user: u3,
-  title: "Dessin en 2 traitements graphique différent sur Photoshop",
-  link: "http://www.i.virtualart.pro/images/rea/2d/kioko.jpg",
-  thumbnail: "http://www.i.virtualart.pro/images/rea/ic 2d/kioko.jpg")
-p r40
-#
-r41 = Realisation.create!(
-  course: m2d,
-  user: u3,
-  title: "Evolution du dessin de Link",
-  link: "http://www.i.virtualart.pro/images/rea/2d/link.jpg",
-  thumbnail: "http://www.i.virtualart.pro/images/rea/ic 2d/link.jpg")
-p r41
-#
-r43 = Realisation.create!(
-  course: m2d,
-  user: u3,
-  title: "Etendard de faction",
-  link: "http://www.i.virtualart.pro/images/rea/2d/logo.jpg",
-  thumbnail: "http://www.i.virtualart.pro/images/rea/ic 2d/logo.jpg")
-p r43
-#
-r44 = Realisation.create!(
-  course: m2d,
-  user: u3,
-  title: "Luigi et les fantômes, effets de lumière sous Photoshop",
-  link: "http://www.i.virtualart.pro/images/rea/2d/luigimanson.jpg",
-  thumbnail: "http://www.i.virtualart.pro/images/rea/ic 2d/luigimanson.jpg")
-p r44
-#
-r45 = Realisation.create!(
-  course: m2d,
-  user: u3,
-  title: "Magicienne",
-  link: "http://www.i.virtualart.pro/images/rea/2d/mage1.jpg",
-  thumbnail: "http://www.i.virtualart.pro/images/rea/ic 2d/mage1.jpg")
-p r45
-#
-r46 = Realisation.create!(
-  course: m2d,
-  user: u3,
-  title: "Magicienne et effet de texture",
-  link: "http://www.i.virtualart.pro/images/rea/2d/mage2.jpg",
-  thumbnail: "http://www.i.virtualart.pro/images/rea/ic 2d/mage2.jpg")
-p r46
-#
-r47 = Realisation.create!(
-  course: m2d,
-  user: u3,
-  title: "fée",
-  link: "http://www.i.virtualart.pro/images/rea/2d/mage3.jpg",
-  thumbnail: "http://www.i.virtualart.pro/images/rea/ic 2d/mage3.jpg")
-p r47
-#
-r48 = Realisation.create!(
-  course: m2d,
-  user: u3,
-  title: "Sort de feu pour travail d'ombres et lumières",
-  link: "http://www.i.virtualart.pro/images/rea/2d/mage4.jpg",
-  thumbnail: "http://www.i.virtualart.pro/images/rea/ic 2d/mage4.jpg")
-p r48
-#
-r49 = Realisation.create!(
-  course: m2d,
-  user: u3,
-  title: "Belle maison",
-  link: "http://www.i.virtualart.pro/images/rea/2d/maison1.jpg",
-  thumbnail: "http://www.i.virtualart.pro/images/rea/ic 2d/maison1.jpg")
-p r49
-#
-r92 = Realisation.create!(
-  course: m2d,
-  user: u1,
-  title: "Animation stickmen et photos",
-  link: "-4hda0NzcxA",
-  thumbnail: "http://www.i.virtualart.pro/images/rea/ic video/anim2d10.jpg")
-p r92
-#
-r51 = Realisation.create!(
-  course: m2d,
-  user: u3,
-  title: "Fiche du personnage Manon",
-  link: "http://www.i.virtualart.pro/images/rea/2d/manon.jpg",
-  thumbnail: "http://www.i.virtualart.pro/images/rea/ic 2d/manon.jpg")
-p r51
-#
-r52 = Realisation.create!(
-  course: m2d,
-  user: u3,
-  title: "Dessin de nain au crayon et couleur numérique",
-  link: "http://www.i.virtualart.pro/images/rea/2d/nain.jpg",
-  thumbnail: "http://www.i.virtualart.pro/images/rea/ic 2d/nain.jpg")
-p r52
-#
-r53 = Realisation.create!(
-  course: m2d,
-  user: u3,
-  title: "Bonhomme de neige en dessin vectoriel",
-  link: "http://www.i.virtualart.pro/images/rea/2d/neige.jpg",
-  thumbnail: "http://www.i.virtualart.pro/images/rea/ic 2d/neige.jpg")
-p r53
-#
-r88 = Realisation.create!(
-  course: m2d,
-  user: u1,
-  title: "Petite animation pour la fête des mères",
-  link: "bTeRLROCdNw",
-  thumbnail: "http://www.i.virtualart.pro/images/rea/ic video/anim2d6.jpg")
-p r88
-#
-r54 = Realisation.create!(
-  course: m2d,
-  user: u3,
-  title: "Carte de Noël",
-  link: "http://www.i.virtualart.pro/images/rea/2d/noel.jpg",
-  thumbnail: "http://www.i.virtualart.pro/images/rea/ic 2d/noel.jpg")
-p r54
-#
-r55 = Realisation.create!(
-  course: m2d,
-  user: u3,
-  title: "Joyeux noël en pixel",
-  link: "http://www.i.virtualart.pro/images/rea/2d/noelpxl.jpg",
-  thumbnail: "http://www.i.virtualart.pro/images/rea/ic 2d/noelpxl.jpg")
-p r55
 #
 r21 = Realisation.create!(
   course: m2d,
   user: u3,
   title: "Dessin de cerf, mélangeant le numérique et l'aquarelle",
-  link: "http://www.i.virtualart.pro/images/rea/2d/cerf.jpg",
-  thumbnail: "http://www.i.virtualart.pro/images/rea/ic 2d/cerf.jpg")
+  link: "http://www.virtualart.pro/images/rea/2d/cerf.jpg",
+  thumbnail: "http://www.virtualart.pro/images/rea/ic 2d/cerf.jpg")
 p r21
 #
 r22 = Realisation.create!(
   course: m2d,
   user: u3,
   title: "Chat dans son jardin",
-  link: "http://www.i.virtualart.pro/images/rea/2d/chat.jpg",
-  thumbnail: "http://www.i.virtualart.pro/images/rea/ic 2d/chat.jpg")
+  link: "http://www.virtualart.pro/images/rea/2d/chat.jpg",
+  thumbnail: "http://www.virtualart.pro/images/rea/ic 2d/chat.jpg")
 p r22
+#
+r23 = Realisation.create!(
+  course: m2d,
+  user: u3,
+  title: "Montage photos d'un chat qui surf",
+  link: "http://www.virtualart.pro/images/rea/2d/chatsurf.jpg",
+  thumbnail: "http://www.virtualart.pro/images/rea/ic 2d/chatsurf.jpg")
+p r23
+#
+r24 = Realisation.create!(
+  course: m2d,
+  user: u3,
+  title: "Cheval de feu",
+  link: "http://www.virtualart.pro/images/rea/2d/cheval.jpg",
+  thumbnail: "http://www.virtualart.pro/images/rea/ic 2d/cheval.jpg")
+p r24
+#
+r25 = Realisation.create!(
+  course: m2d,
+  user: u3,
+  title: "Joggeuse dans un parc",
+  link: "http://www.virtualart.pro/images/rea/2d/cours.jpg",
+  thumbnail: "http://www.virtualart.pro/images/rea/ic 2d/cours.jpg")
+p r25
+#
+r26 = Realisation.create!(
+  course: m2d,
+  user: u3,
+  title: "Dame et ses chiens : dessin incrusté dans une photo",
+  link: "http://www.virtualart.pro/images/rea/2d/dame1.jpg",
+  thumbnail: "http://www.virtualart.pro/images/rea/ic 2d/dame1.jpg")
+p r26
+#
+r27 = Realisation.create!(
+  course: m2d,
+  user: u3,
+  title: "Décor en montage photo pour un projet d'animation",
+  link: "http://www.virtualart.pro/images/rea/2d/decor1.jpg",
+  thumbnail: "http://www.virtualart.pro/images/rea/ic 2d/decor1.jpg")
+p r27
+#
+r28 = Realisation.create!(
+  course: m2d,
+  user: u3,
+  title: "Désert",
+  link: "http://www.virtualart.pro/images/rea/2d/desert1.jpg",
+  thumbnail: "http://www.virtualart.pro/images/rea/ic 2d/desert1.jpg")
+p r28
+#
+r29 = Realisation.create!(
+  course: m2d,
+  user: u3,
+  title: "Femme et son dragon, croquis et finition sur photoshop",
+  link: "http://www.virtualart.pro/images/rea/2d/dragon.jpg",
+  thumbnail: "http://www.virtualart.pro/images/rea/ic 2d/dragon.jpg")
+p r29
+#
+r30 = Realisation.create!(
+  course: m2d,
+  user: u3,
+  title: "planète en peinture numérique",
+  link: "http://www.virtualart.pro/images/rea/2d/drawing.jpg",
+  thumbnail: "http://www.virtualart.pro/images/rea/ic 2d/drawing.jpg")
+p r30
+#
+r31 = Realisation.create!(
+  course: m2d,
+  user: u3,
+  title: "Estampe numérique",
+  link: "http://www.virtualart.pro/images/rea/2d/estampe1.jpg",
+  thumbnail: "http://www.virtualart.pro/images/rea/ic 2d/estampe1.jpg")
+p r31
+#
+r32 = Realisation.create!(
+  course: m2d,
+  user: u3,
+  title: "Femme chat",
+  link: "http://www.virtualart.pro/images/rea/2d/femmechat.jpg",
+  thumbnail: "http://www.virtualart.pro/images/rea/ic 2d/femmechat.jpg")
+p r32
+#
+r33 = Realisation.create!(
+  course: m2d,
+  user: u3,
+  title: "Fille style SD",
+  link: "http://www.virtualart.pro/images/rea/2d/fille.jpg",
+  thumbnail: "http://www.virtualart.pro/images/rea/ic 2d/fille.jpg")
+p r33
+#
+r34 = Realisation.create!(
+  course: m2d,
+  user: u3,
+  title: "Fleur en dessin et dégradé",
+  link: "http://www.virtualart.pro/images/rea/2d/fleurs1.jpg",
+  thumbnail: "http://www.virtualart.pro/images/rea/ic 2d/fleurs1.jpg")
+p r34
+#
+r35 = Realisation.create!(
+  course: m2d,
+  user: u3,
+  title: "Croquis numérique de fleurs ",
+  link: "http://www.virtualart.pro/images/rea/2d/fleurs2.jpg",
+  thumbnail: "http://www.virtualart.pro/images/rea/ic 2d/fleurs2.jpg")
+p r35
+#
+r36 = Realisation.create!(
+  course: m2d,
+  user: u3,
+  title: "Exercices de fruits en peinture numérique",
+  link: "http://www.virtualart.pro/images/rea/2d/fruit.jpg",
+  thumbnail: "http://www.virtualart.pro/images/rea/ic 2d/fruit.jpg")
+p r36
+#
+r37 = Realisation.create!(
+  course: m2d,
+  user: u3,
+  title: "Dessin de hibou au stylot et couleur sur Photoshop",
+  link: "http://www.virtualart.pro/images/rea/2d/hibou.jpg",
+  thumbnail: "http://www.virtualart.pro/images/rea/ic 2d/hibou.jpg")
+p r37
+#
+r38 = Realisation.create!(
+  course: m2d,
+  user: u3,
+  title: "Montage photos pour la fête des mères",
+  link: "http://www.virtualart.pro/images/rea/2d/juju.jpg",
+  thumbnail: "http://www.virtualart.pro/images/rea/ic 2d/juju.jpg")
+p r38
+#
+r39 = Realisation.create!(
+  course: m2d,
+  user: u3,
+  title: "Croquis et montage photos d'une femme en kimono ",
+  link: "http://www.virtualart.pro/images/rea/2d/kimono.jpg",
+  thumbnail: "http://www.virtualart.pro/images/rea/ic 2d/kimono.jpg")
+p r39
+#
+r40 = Realisation.create!(
+  course: m2d,
+  user: u3,
+  title: "Dessin en 2 traitements graphique différent sur Photoshop",
+  link: "http://www.virtualart.pro/images/rea/2d/kioko.jpg",
+  thumbnail: "http://www.virtualart.pro/images/rea/ic 2d/kioko.jpg")
+p r40
+#
+r41 = Realisation.create!(
+  course: m2d,
+  user: u3,
+  title: "Evolution du dessin de Link",
+  link: "http://www.virtualart.pro/images/rea/2d/link.jpg",
+  thumbnail: "http://www.virtualart.pro/images/rea/ic 2d/link.jpg")
+p r41
+#
+r42 = Realisation.create!(
+  course: m2d,
+  user: u3,
+  title: "Lionfish au crayon et couleur numérique",
+  link: "http://www.virtualart.pro/images/rea/2d/lionfish.jpg",
+  thumbnail: "http://www.virtualart.pro/images/rea/ic 2d/lionfish.jpg")
+p r42
+#
+r43 = Realisation.create!(
+  course: m2d,
+  user: u3,
+  title: "Etendard de faction",
+  link: "http://www.virtualart.pro/images/rea/2d/logo.jpg",
+  thumbnail: "http://www.virtualart.pro/images/rea/ic 2d/logo.jpg")
+p r43
+#
+r44 = Realisation.create!(
+  course: m2d,
+  user: u3,
+  title: "Luigi et les fantômes, effets de lumière sous Photoshop",
+  link: "http://www.virtualart.pro/images/rea/2d/luigimanson.jpg",
+  thumbnail: "http://www.virtualart.pro/images/rea/ic 2d/luigimanson.jpg")
+p r44
+#
+r45 = Realisation.create!(
+  course: m2d,
+  user: u3,
+  title: "Magicienne",
+  link: "http://www.virtualart.pro/images/rea/2d/mage1.jpg",
+  thumbnail: "http://www.virtualart.pro/images/rea/ic 2d/mage1.jpg")
+p r45
+#
+r46 = Realisation.create!(
+  course: m2d,
+  user: u3,
+  title: "Magicienne et effet de texture",
+  link: "http://www.virtualart.pro/images/rea/2d/mage2.jpg",
+  thumbnail: "http://www.virtualart.pro/images/rea/ic 2d/mage2.jpg")
+p r46
+#
+r47 = Realisation.create!(
+  course: m2d,
+  user: u3,
+  title: "fée",
+  link: "http://www.virtualart.pro/images/rea/2d/mage3.jpg",
+  thumbnail: "http://www.virtualart.pro/images/rea/ic 2d/mage3.jpg")
+p r47
+#
+r48 = Realisation.create!(
+  course: m2d,
+  user: u3,
+  title: "Sort de feu pour travail d'ombres et lumières",
+  link: "http://www.virtualart.pro/images/rea/2d/mage4.jpg",
+  thumbnail: "http://www.virtualart.pro/images/rea/ic 2d/mage4.jpg")
+p r48
+#
+r49 = Realisation.create!(
+  course: m2d,
+  user: u3,
+  title: "Belle maison",
+  link: "http://www.virtualart.pro/images/rea/2d/maison1.jpg",
+  thumbnail: "http://www.virtualart.pro/images/rea/ic 2d/maison1.jpg")
+p r49
+#
+r50 = Realisation.create!(
+  course: m2d,
+  user: u3,
+  title: "Décor d'intérieur de maison pour un projet d'animation",
+  link: "http://www.virtualart.pro/images/rea/2d/maison2.jpg",
+  thumbnail: "http://www.virtualart.pro/images/rea/ic 2d/maison2.jpg")
+p r50
+#
+r51 = Realisation.create!(
+  course: m2d,
+  user: u3,
+  title: "Fiche du personnage Manon",
+  link: "http://www.virtualart.pro/images/rea/2d/manon.jpg",
+  thumbnail: "http://www.virtualart.pro/images/rea/ic 2d/manon.jpg")
+p r51
+#
+r52 = Realisation.create!(
+  course: m2d,
+  user: u3,
+  title: "Dessin de nain au crayon et couleur numérique",
+  link: "http://www.virtualart.pro/images/rea/2d/nain.jpg",
+  thumbnail: "http://www.virtualart.pro/images/rea/ic 2d/nain.jpg")
+p r52
+#
+r53 = Realisation.create!(
+  course: m2d,
+  user: u3,
+  title: "Bonhomme de neige en dessin vectoriel",
+  link: "http://www.virtualart.pro/images/rea/2d/neige.jpg",
+  thumbnail: "http://www.virtualart.pro/images/rea/ic 2d/neige.jpg")
+p r53
+#
+r54 = Realisation.create!(
+  course: m2d,
+  user: u3,
+  title: "Carte de Noël",
+  link: "http://www.virtualart.pro/images/rea/2d/noel.jpg",
+  thumbnail: "http://www.virtualart.pro/images/rea/ic 2d/noel.jpg")
+p r54
+#
+r55 = Realisation.create!(
+  course: m2d,
+  user: u3,
+  title: "Joyeux noël en pixel",
+  link: "http://www.virtualart.pro/images/rea/2d/noelpxl.jpg",
+  thumbnail: "http://www.virtualart.pro/images/rea/ic 2d/noelpxl.jpg")
+p r55
 #
 r56 = Realisation.create!(
   course: m2d,
   user: u3,
   title: "Couverture de CD",
-  link: "http://www.i.virtualart.pro/images/rea/2d/nuitjour.jpg",
-  thumbnail: "http://www.i.virtualart.pro/images/rea/ic 2d/nuitjour.jpg")
+  link: "http://www.virtualart.pro/images/rea/2d/nuitjour.jpg",
+  thumbnail: "http://www.virtualart.pro/images/rea/ic 2d/nuitjour.jpg")
 p r56
 #
 r57 = Realisation.create!(
   course: m2d,
   user: u3,
   title: "Dessin de papillons texturés sur photo",
-  link: "http://www.i.virtualart.pro/images/rea/2d/papillon.jpg",
-  thumbnail: "http://www.i.virtualart.pro/images/rea/ic 2d/papillon.jpg")
+  link: "http://www.virtualart.pro/images/rea/2d/papillon.jpg",
+  thumbnail: "http://www.virtualart.pro/images/rea/ic 2d/papillon.jpg")
 p r57
 #
 r58 = Realisation.create!(
   course: m2d,
   user: u3,
   title: "Personnage pour un projet BD",
-  link: "http://www.i.virtualart.pro/images/rea/2d/perso1.jpg",
-  thumbnail: "http://www.i.virtualart.pro/images/rea/ic 2d/perso1.jpg")
+  link: "http://www.virtualart.pro/images/rea/2d/perso1.jpg",
+  thumbnail: "http://www.virtualart.pro/images/rea/ic 2d/perso1.jpg")
 p r58
+#
+r59 = Realisation.create!(
+  course: m2d,
+  user: u3,
+  title: "Femme Phenix",
+  link: "http://www.virtualart.pro/images/rea/2d/pheniw.jpg",
+  thumbnail: "http://www.virtualart.pro/images/rea/ic 2d/phenix.jpg")
+p r59
 #
 r60 = Realisation.create!(
   course: m2d,
   user: u3,
   title: "Exercice de dessin de rocher en peinture numérique",
-  link: "http://www.i.virtualart.pro/images/rea/2d/pierre.jpg",
-  thumbnail: "http://www.i.virtualart.pro/images/rea/ic 2d/pierre.jpg")
+  link: "http://www.virtualart.pro/images/rea/2d/pierre.jpg",
+  thumbnail: "http://www.virtualart.pro/images/rea/ic 2d/pierre.jpg")
 p r60
 #
 r61 = Realisation.create!(
   course: m2d,
   user: u3,
   title: "Espace et panète entièrement fait avec les filtres et FX Photoshop",
-  link: "http://www.i.virtualart.pro/images/rea/2d/planete.jpg",
-  thumbnail: "http://www.i.virtualart.pro/images/rea/ic 2d/planete.jpg")
+  link: "http://www.virtualart.pro/images/rea/2d/planete.jpg",
+  thumbnail: "http://www.virtualart.pro/images/rea/ic 2d/planete.jpg")
 p r61
 #
 r62 = Realisation.create!(
   course: m2d,
   user: u3,
   title: "Météorite avec effet 3D de Photoshop",
-  link: "http://www.i.virtualart.pro/images/rea/2d/planete3d.jpg",
-  thumbnail: "http://www.i.virtualart.pro/images/rea/ic 2d/planete3d.jpg")
+  link: "http://www.virtualart.pro/images/rea/2d/planete3d.jpg",
+  thumbnail: "http://www.virtualart.pro/images/rea/ic 2d/planete3d.jpg")
 p r62
-#
-r89 = Realisation.create!(
-  course: m2d,
-  user: u1,
-  title: "Exercice d'animation : fille et balle",
-  link: "kumByBFG1vg",
-  thumbnail: "http://www.i.virtualart.pro/images/rea/ic video/anim2d7.jpg")
-p r89
 #
 r63 = Realisation.create!(
   course: m2d,
   user: u3,
   title: "poissons de toutes les couleurs ",
-  link: "http://www.i.virtualart.pro/images/rea/2d/poisson.jpg",
-  thumbnail: "http://www.i.virtualart.pro/images/rea/ic 2d/poisson.jpg")
+  link: "http://www.virtualart.pro/images/rea/2d/poisson.jpg",
+  thumbnail: "http://www.virtualart.pro/images/rea/ic 2d/poisson.jpg")
 p r63
 #
 r64 = Realisation.create!(
   course: m2d,
   user: u3,
   title: "Visage et effet de textures",
-  link: "http://www.i.virtualart.pro/images/rea/2d/portrait.jpg",
-  thumbnail: "http://www.i.virtualart.pro/images/rea/ic 2d/portrait.jpg")
+  link: "http://www.virtualart.pro/images/rea/2d/portrait.jpg",
+  thumbnail: "http://www.virtualart.pro/images/rea/ic 2d/portrait.jpg")
 p r64
 #
 r65 = Realisation.create!(
   course: m2d,
   user: u3,
   title: "Poussin et travail du plumage",
-  link: "http://www.i.virtualart.pro/images/rea/2d/poussin.jpg",
-  thumbnail: "http://www.i.virtualart.pro/images/rea/ic 2d/poussin.jpg")
+  link: "http://www.virtualart.pro/images/rea/2d/poussin.jpg",
+  thumbnail: "http://www.virtualart.pro/images/rea/ic 2d/poussin.jpg")
 p r65
 #
 r66 = Realisation.create!(
   course: m2d,
   user: u3,
   title: "Raton laveur et travail du poil",
-  link: "http://www.i.virtualart.pro/images/rea/2d/raton.jpg",
-  thumbnail: "http://www.i.virtualart.pro/images/rea/ic 2d/raton.jpg")
+  link: "http://www.virtualart.pro/images/rea/2d/raton.jpg",
+  thumbnail: "http://www.virtualart.pro/images/rea/ic 2d/raton.jpg")
 p r66
 #
 r67 = Realisation.create!(
   course: m2d,
   user: u3,
   title: "Pyroman, dessin en sélections et aplat de couleur",
-  link: "http://www.i.virtualart.pro/images/rea/2d/pyro.jpg",
-  thumbnail: "http://www.i.virtualart.pro/images/rea/ic 2d/pyro.jpg")
+  link: "http://www.virtualart.pro/images/rea/2d/pyro.jpg",
+  thumbnail: "http://www.virtualart.pro/images/rea/ic 2d/pyro.jpg")
 p r67
 #
 r68 = Realisation.create!(
   course: m2d,
   user: u3,
   title: "Recherche de personnage",
-  link: "http://www.i.virtualart.pro/images/rea/2d/pyrok.jpg",
-  thumbnail: "http://www.i.virtualart.pro/images/rea/ic 2d/pyrok.jpg")
+  link: "http://www.virtualart.pro/images/rea/2d/pyrok.jpg",
+  thumbnail: "http://www.virtualart.pro/images/rea/ic 2d/pyrok.jpg")
 p r68
-#
-r81 = Realisation.create!(
-  course: m2d,
-  user: u3,
-  title: "Page de Storyboard",
-  link: "http://www.i.virtualart.pro/images/rea/2d/story.jpg",
-  thumbnail: "http://www.i.virtualart.pro/images/rea/ic 2d/story.jpg")
-p r81
 #
 r69 = Realisation.create!(
   course: m2d,
   user: u3,
   title: "Metalleux, mélange de crayons et numérique",
-  link: "http://www.i.virtualart.pro/images/rea/2d/rock.jpg",
-  thumbnail: "http://www.i.virtualart.pro/images/rea/ic 2d/rock.jpg")
+  link: "http://www.virtualart.pro/images/rea/2d/rock.jpg",
+  thumbnail: "http://www.virtualart.pro/images/rea/ic 2d/rock.jpg")
 p r69
-#
-r42 = Realisation.create!(
-  course: m2d,
-  user: u3,
-  title: "Lionfish au crayon et couleur numérique",
-  link: "http://www.i.virtualart.pro/images/rea/2d/lionfish.jpg",
-  thumbnail: "http://www.i.virtualart.pro/images/rea/ic 2d/lionfish.jpg")
-p r42
 #
 r70 = Realisation.create!(
   course: m2d,
   user: u3,
   title: "L'homme dans un désert hostile",
-  link: "http://www.i.virtualart.pro/images/rea/2d/sable.jpg",
-  thumbnail: "http://www.i.virtualart.pro/images/rea/ic 2d/sable.jpg")
+  link: "http://www.virtualart.pro/images/rea/2d/sable.jpg",
+  thumbnail: "http://www.virtualart.pro/images/rea/ic 2d/sable.jpg")
 p r70
+#
+r71 = Realisation.create!(
+  course: m2d,
+  user: u3,
+  title: "Samouraï au feutre et composition numérique",
+  link: "http://www.virtualart.pro/images/rea/2d/samourai.jpg",
+  thumbnail: "http://www.virtualart.pro/images/rea/ic 2d/samourai.jpg")
+p r71
 #
 r72 = Realisation.create!(
   course: m2d,
   user: u3,
   title: "Sirène dans l'eau",
-  link: "http://www.i.virtualart.pro/images/rea/2d/sirene.jpg",
-  thumbnail: "http://www.i.virtualart.pro/images/rea/ic 2d/sirene.jpg")
+  link: "http://www.virtualart.pro/images/rea/2d/sirene.jpg",
+  thumbnail: "http://www.virtualart.pro/images/rea/ic 2d/sirene.jpg")
 p r72
+#
+r73 = Realisation.create!(
+  course: m2d,
+  user: u3,
+  title: "Forêt enchantée",
+  link: "http://www.virtualart.pro/images/rea/2d/sphere.jpg",
+  thumbnail: "http://www.virtualart.pro/images/rea/ic 2d/sphere.jpg")
+p r73
+#
+r74 = Realisation.create!(
+  course: m2d,
+  user: u3,
+  title: "Tak, personnage pour un projet BD",
+  link: "http://www.virtualart.pro/images/rea/2d/tak.jpg",
+  thumbnail: "http://www.virtualart.pro/images/rea/ic 2d/tak.jpg")
+p r74
 #
 r75 = Realisation.create!(
   course: m2d,
   user: u3,
   title: "Dame et fleurs : dessin incrusté dans une photo ",
-  link: "http://www.i.virtualart.pro/images/rea/2d/dame2.jpg",
-  thumbnail: "http://www.i.virtualart.pro/images/rea/ic 2d/dame2.jpg")
+  link: "http://www.virtualart.pro/images/rea/2d/dame2.jpg",
+  thumbnail: "http://www.virtualart.pro/images/rea/ic 2d/dame2.jpg")
 p r75
 #
 r76 = Realisation.create!(
   course: m2d,
   user: u3,
   title: "Viking, travail d'ombres et textures",
-  link: "http://www.i.virtualart.pro/images/rea/2d/viking.jpg",
-  thumbnail: "http://www.i.virtualart.pro/images/rea/ic 2d/viking.jpg")
+  link: "http://www.virtualart.pro/images/rea/2d/viking.jpg",
+  thumbnail: "http://www.virtualart.pro/images/rea/ic 2d/viking.jpg")
 p r76
 #
 r77 = Realisation.create!(
   course: m2d,
   user: u3,
   title: "Histoires dont tu es le héros avec dessin sur Photoshop et navigation sur Powerpoint",
-  link: "http://www.i.virtualart.pro/images/rea/2d/pp.jpg",
-  thumbnail: "http://www.i.virtualart.pro/images/rea/ic 2d/pp.jpg")
+  link: "http://www.virtualart.pro/images/rea/2d/pp.jpg",
+  thumbnail: "http://www.virtualart.pro/images/rea/ic 2d/pp.jpg")
 p r77
 #
 r78 = Realisation.create!(
   course: m2d,
   user: u3,
   title: "Recherche de personnage : turn-around",
-  link: "http://www.i.virtualart.pro/images/rea/2d/turnaround1.jpg",
-  thumbnail: "http://www.i.virtualart.pro/images/rea/ic 2d/turnaround2.jpg")
+  link: "http://www.virtualart.pro/images/rea/2d/turnaround1.jpg",
+  thumbnail: "http://www.virtualart.pro/images/rea/ic 2d/turnaround2.jpg")
 p r78
 #
 r79 = Realisation.create!(
   course: m2d,
   user: u3,
   title: "Page 1 du Storyboard des -Chroniques Yndrawique-",
-  link: "http://www.i.virtualart.pro/images/rea/2d/storyyn1.jpg",
-  thumbnail: "http://www.i.virtualart.pro/images/rea/ic 2d/storyyn1.jpg")
+  link: "http://www.virtualart.pro/images/rea/2d/storyyn1.jpg",
+  thumbnail: "http://www.virtualart.pro/images/rea/ic 2d/storyyn1.jpg")
 p r79
 #
 r80 = Realisation.create!(
   course: m2d,
   user: u3,
   title: "Page 2 du Storyboard des -Chroniques Yndrawique-",
-  link: "http://www.i.virtualart.pro/images/rea/2d/storyyn2.jpg",
-  thumbnail: "http://www.i.virtualart.pro/images/rea/ic 2d/storyyn2.jpg")
+  link: "http://www.virtualart.pro/images/rea/2d/storyyn2.jpg",
+  thumbnail: "http://www.virtualart.pro/images/rea/ic 2d/storyyn2.jpg")
 p r80
+#
+r81 = Realisation.create!(
+  course: m2d,
+  user: u3,
+  title: "Page de Storyboard",
+  link: "http://www.virtualart.pro/images/rea/2d/story.jpg",
+  thumbnail: "http://www.virtualart.pro/images/rea/ic 2d/story.jpg")
+p r81
 #
 r82 = Realisation.create!(
   course: m2d,
   user: u3,
   title: "Page 1 du Storyboard des -Chroniques Yndrawique-",
-  link: "http://www.i.virtualart.pro/images/rea/2d/storyyn1.jpg",
-  thumbnail: "http://www.i.virtualart.pro/images/rea/ic 2d/storyyn1.jpg")
+  link: "http://www.virtualart.pro/images/rea/2d/storyyn1.jpg",
+  thumbnail: "http://www.virtualart.pro/images/rea/ic 2d/storyyn1.jpg")
 p r82
 #
 r83 = Realisation.create!(
@@ -4022,23 +4046,31 @@ r83 = Realisation.create!(
   user: u1,
   title: "Plongeuse animée en 2D",
   link: "lR7n4zTqgX0",
-  thumbnail: "http://www.i.virtualart.pro/images/rea/ic video/anim2d1.jpg")
+  thumbnail: "http://www.virtualart.pro/images/rea/ic video/anim2d1.jpg")
 p r83
 #
-r59 = Realisation.create!(
+r84 = Realisation.create!(
   course: m2d,
-  user: u3,
-  title: "Femme Phenix",
-  link: "http://www.i.virtualart.pro/images/rea/2d/phenix.jpg",
-  thumbnail: "http://www.i.virtualart.pro/images/rea/ic 2d/phenix.jpg")
-p r59
+  user: u1,
+  title: "Animation Star wars en Stickman",
+  link: "mMSPp-E-rsY",
+  thumbnail: "http://www.virtualart.pro/images/rea/ic video/anim2d2.jpg")
+p r84
+#
+r85 = Realisation.create!(
+  course: m2d,
+  user: u1,
+  title: "Animatique des -Chroniques Yndrawiques-",
+  link: "G4888IhW2DE",
+  thumbnail: "http://www.virtualart.pro/images/rea/ic video/anim2d3.jpg")
+p r85
 #
 r86 = Realisation.create!(
   course: m2d,
   user: u1,
   title: "Animation de combat de Stickmen",
-  link: "nBhNwciWfXg",
-  thumbnail: "http://www.i.virtualart.pro/images/rea/ic video/anim2d4.jpg")
+  link: "mMSPp-E-rsY",
+  thumbnail: "http://www.virtualart.pro/images/rea/ic video/anim2d4.jpg")
 p r86
 #
 r87 = Realisation.create!(
@@ -4046,63 +4078,63 @@ r87 = Realisation.create!(
   user: u1,
   title: "Animation de combat de Stickmen",
   link: "WxrHrxrELNU",
-  thumbnail: "http://www.i.virtualart.pro/images/rea/ic video/anim2d5.jpg")
+  thumbnail: "http://www.virtualart.pro/images/rea/ic video/anim2d5.jpg")
 p r87
 #
-r50 = Realisation.create!(
+r88 = Realisation.create!(
   course: m2d,
-  user: u3,
-  title: "Décor d'intérieur de maison pour un projet d'animation",
-  link: "http://www.i.virtualart.pro/images/rea/2d/maison2.jpg",
-  thumbnail: "http://www.i.virtualart.pro/images/rea/ic 2d/maison2.jpg")
-p r50
+  user: u1,
+  title: "Petite animation pour la fête des mères",
+  link: "bTeRLROCdNw",
+  thumbnail: "http://www.virtualart.pro/images/rea/ic video/anim2d6.jpg")
+p r88
+#
+r89 = Realisation.create!(
+  course: m2d,
+  user: u1,
+  title: "Exercice d'animation : fille et balle",
+  link: "kumByBFG1vg",
+  thumbnail: "http://www.virtualart.pro/images/rea/ic video/anim2d7.jpg")
+p r89
 #
 r90 = Realisation.create!(
   course: m2d,
   user: u1,
   title: "Petit tour en forêt",
   link: "7YJun3zuLi4",
-  thumbnail: "http://www.i.virtualart.pro/images/rea/ic video/anim2d8.jpg")
+  thumbnail: "http://www.virtualart.pro/images/rea/ic video/anim2d8.jpg")
 p r90
 #
 r91 = Realisation.create!(
   course: m2d,
   user: u1,
   title: "Petit film d'animation coopératif sur l'histoire d'un chat",
-  link: "dyXpKgjgL28",
-  thumbnail: "http://www.i.virtualart.pro/images/rea/ic video/anim2d9.jpg")
+  link: "mMSPp-E-rsY",
+  thumbnail: "http://www.virtualart.pro/images/rea/ic video/anim2d9.jpg")
 p r91
 #
-r73 = Realisation.create!(
+r92 = Realisation.create!(
   course: m2d,
-  user: u3,
-  title: "Forêt enchantée",
-  link: "http://www.i.virtualart.pro/images/rea/2d/sphere.jpg",
-  thumbnail: "http://www.i.virtualart.pro/images/rea/ic 2d/sphere.jpg")
-p r73
+  user: u1,
+  title: "Animation stickmen et photos",
+  link: "mMSPp-E-rsY",
+  thumbnail: "http://www.virtualart.pro/images/rea/ic video/anim2d10.jpg")
+p r92
 #
-r74 = Realisation.create!(
+r93 = Realisation.create!(
   course: m2d,
-  user: u3,
-  title: "Tak, personnage pour un projet BD",
-  link: "http://www.i.virtualart.pro/images/rea/2d/tak.jpg",
-  thumbnail: "http://www.i.virtualart.pro/images/rea/ic 2d/tak.jpg")
-p r74
-#
-r71 = Realisation.create!(
-  course: m2d,
-  user: u3,
-  title: "Samouraï au feutre et composition numérique",
-  link: "http://www.i.virtualart.pro/images/rea/2d/samourai.jpg",
-  thumbnail: "http://www.i.virtualart.pro/images/rea/ic 2d/samourai.jpg")
-p r71
+  user: u1,
+  title: "Petit poisson rouge 2D",
+  link: "FNcKIwuuI1k",
+  thumbnail: "http://www.virtualart.pro/images/rea/ic video/anim2d11.jpg")
+p r93
 #
 r94 = Realisation.create!(
   course: m2d,
   user: u1,
   title: "Début d'animation pour chaîne youtube",
   link: "SGP5mBWThdc",
-  thumbnail: "http://www.i.virtualart.pro/images/rea/ic video/anim2d12.jpg")
+  thumbnail: "http://www.virtualart.pro/images/rea/ic video/anim2d12.jpg")
 p r94
 #
 r95 = Realisation.create!(
@@ -4110,200 +4142,168 @@ r95 = Realisation.create!(
   user: u1,
   title: "Exercice d'animation 2D et camera avec parallax",
   link: "QBqI4htNqiw",
-  thumbnail: "http://www.i.virtualart.pro/images/rea/ic video/anim2d13.jpg")
+  thumbnail: "http://www.virtualart.pro/images/rea/ic video/anim2d13.jpg")
 p r95
 #
-r7 = Realisation.create!(
-  course: m2d,
-  user: u1,
-  title: "Guerre contre les robots",
-  link: "http://www.i.virtualart.pro/images/rea/2d/combat.jpg",
-  thumbnail: "http://www.i.virtualart.pro/images/rea/ic 2d/combat.jpg")
-p r7
-#
+#----------------------------------------------------------------------------- MULTIMEDIA 3D
 r1 = Realisation.create!(
-  course: m2d,
+  course: m3d,
   user: u1,
-  title: "Zepplin, univers en montage photos",
-  link: "http://www.i.virtualart.pro/images/rea/2d/zepplin.jpg",
-  thumbnail: "http://www.i.virtualart.pro/images/rea/ic 2d/zepplin.jpg")
+  title: "Engrenages 3D",
+  link: "http://www.virtualart.pro/images/rea/3d/eng.jpg",
+  thumbnail: "http://www.virtualart.pro/images/rea/ic 3d/eng.jpg")
 p r1
 #
-r85 = Realisation.create!(
-  course: m2d,
-  user: u1,
-  title: "Animatique des -Chroniques Yndrawiques-",
-  link: "G4888IhW2DE",
-  thumbnail: "http://www.i.virtualart.pro/images/rea/ic video/anim2d3.jpg")
-p r85
-#
 r2 = Realisation.create!(
-  course: m2d,
-  user: u1,
-  title: "Décor de jour et nuit pour l'animation des -Chroniques Yndrawiques-",
-  link: "http://www.i.virtualart.pro/images/rea/2d/yn1.jpg",
-  thumbnail: "http://www.i.virtualart.pro/images/rea/ic 2d/yn1.jpg")
+  course: m3d,
+  user: u2,
+  title: "Port de nuit",
+  link: "http://www.virtualart.pro/images/rea/3d/port.jpg",
+  thumbnail: "http://www.virtualart.pro/images/rea/ic 3d/port.jpg")
 p r2
 #
 r3 = Realisation.create!(
-  course: m2d,
-  user: u1,
-  title: "Décor de la taverne pour l'animation des -Chroniques Yndrawiques-",
-  link: "http://www.i.virtualart.pro/images/rea/2d/yn2.jpg",
-  thumbnail: "http://www.i.virtualart.pro/images/rea/ic 2d/yn2.jpg")
+  course: m3d,
+  user: u2,
+  title: "Robot",
+  link: "http://www.virtualart.pro/images/rea/3d/crobot1.jpg",
+  thumbnail: "http://www.virtualart.pro/images/rea/ic 3d/robot1.jpg")
 p r3
 #
 r4 = Realisation.create!(
-  course: m2d,
-  user: u1,
-  title: "Décor des îles pour l'animation des -Chroniques Yndrawiques-",
-  link: "http://www.i.virtualart.pro/images/rea/2d/yn3.jpg",
-  thumbnail: "http://www.i.virtualart.pro/images/rea/ic 2d/yn3.jpg")
+  course: m3d,
+  user: u2,
+  title: "Moulin à eau",
+  link: "http://www.virtualart.pro/images/rea/3d/moulin3.jpg",
+  thumbnail: "http://www.virtualart.pro/images/rea/ic 3d/moulin3.jpg")
 p r4
-#
-r5 = Realisation.create!(
-  course: m2d,
-  user: u1,
-  title: "Décor pour l'animation des -Chroniques Yndrawiques-",
-  link: "http://www.i.virtualart.pro/images/rea/2d/yn4.jpg",
-  thumbnail: "http://www.i.virtualart.pro/images/rea/ic 2d/yn4.jpg")
-p r5
-#
-r6 = Realisation.create!(
-  course: m2d,
-  user: u1,
-  title: "Extraits de l'animation des -Chroniques Yndrawiques-",
-  link: "http://www.i.virtualart.pro/images/rea/2d/yn5.jpg",
-  thumbnail: "http://www.i.virtualart.pro/images/rea/ic 2d/yn5.jpg")
-p r6
-#
-#----------------------------------------------------------------------------- MULTIMEDIA 3D
-r8 = Realisation.create!(
-  course: m3d,
-  user: u2,
-  title: "Modélisation de champignon",
-  link: "http://www.i.virtualart.pro/images/rea/3d/champi.jpg",
-  thumbnail: "http://www.i.virtualart.pro/images/rea/ic 3d/champi.jpg")
-p r8
-#
-r9 = Realisation.create!(
-  course: m3d,
-  user: u2,
-  title: "Modélisation d'un décor d'amphi pour projet d'animation",
-  link: "http://www.i.virtualart.pro/images/rea/3d/ecole.jpg",
-  thumbnail: "http://www.i.virtualart.pro/images/rea/ic 3d/ecole.jpg")
-p r9
-#
-r10 = Realisation.create!(
-  course: m3d,
-  user: u2,
-  title: "Modélisation de fleurs pour la fête des mères",
-  link: "http://www.i.virtualart.pro/images/rea/3d/fleurs1.jpg",
-  thumbnail: "http://www.i.virtualart.pro/images/rea/ic 3d/fleurs1.jpg")
-p r10
-#
-r12 = Realisation.create!(
-  course: m3d,
-  user: u2,
-  title: "Moulin à vent",
-  link: "http://www.i.virtualart.pro/images/rea/3d/moulin2.jpg",
-  thumbnail: "http://www.i.virtualart.pro/images/rea/ic 3d/moulin2.jpg")
-p r12
-#
-r13 = Realisation.create!(
-  course: m3d,
-  user: u2,
-  title: "Carte de Noël",
-  link: "http://www.i.virtualart.pro/images/rea/3d/noel.jpg",
-  thumbnail: "http://www.i.virtualart.pro/images/rea/ic 3d/noel.jpg")
-p r13
-#
-r14 = Realisation.create!(
-  course: m3d,
-  user: u2,
-  title: "Oeufs de pâques",
-  link: "http://www.i.virtualart.pro/images/rea/3d/paque.jpg",
-  thumbnail: "http://www.i.virtualart.pro/images/rea/ic 3d/paque.jpg")
-p r14
-#
-r17 = Realisation.create!(
-  course: m3d,
-  user: u2,
-  title: "Modélisation en cours d'arbre",
-  link: "http://www.i.virtualart.pro/images/rea/3d/arbre2.jpg",
-  thumbnail: "http://www.i.virtualart.pro/images/rea/ic 3d/arbre2.jpg")
-p r17
-#
-r11 = Realisation.create!(
-  course: m3d,
-  user: u2,
-  title: "Halloween",
-  link: "http://www.i.virtualart.pro/images/rea/3d/halloween.jpg",
-  thumbnail: "http://www.i.virtualart.pro/images/rea/ic 3d/halloween.jpg")
-p r11
-#
-r18 = Realisation.create!(
-  course: m3d,
-  user: u2,
-  title: "Modélisation d'arbres pour jeu vidéo",
-  link: "http://www.i.virtualart.pro/images/rea/3d/arbre1.jpg",
-  thumbnail: "http://www.i.virtualart.pro/images/rea/ic 3d/arbre1.jpg")
-p r18
 #
 r5 = Realisation.create!(
   course: m3d,
   user: u2,
   title: "Recherche d'architecture",
-  link: "http://www.i.virtualart.pro/images/rea/3d/archi3d1.jpg",
-  thumbnail: "http://www.i.virtualart.pro/images/rea/ic 3d/archi3d1.jpg")
+  link: "http://www.virtualart.pro/images/rea/3d/archi3d1.jpg",
+  thumbnail: "http://www.virtualart.pro/images/rea/ic 3d/archi3d1.jpg")
 p r5
 #
 r6 = Realisation.create!(
   course: m3d,
   user: u2,
   title: "architecture d'intérieur",
-  link: "http://www.i.virtualart.pro/images/rea/3d/archi3d2.jpg",
-  thumbnail: "http://www.i.virtualart.pro/images/rea/ic 3d/archi3d2.jpg")
+  link: "http://www.virtualart.pro/images/rea/3d/archi3d2.jpg",
+  thumbnail: "http://www.virtualart.pro/images/rea/ic 3d/archi3d2.jpg")
 p r6
-#
-r22 = Realisation.create!(
-  course: m3d,
-  user: u2,
-  title: "Interieur de maison 3D en exercice d'architecture",
-  link: "SlPYhAjLEeA",
-  thumbnail: "http://www.i.virtualart.pro/images/rea/ic video/anim3d3.jpg")
-p r22
 #
 r7 = Realisation.create!(
   course: m3d,
   user: u2,
   title: "Chalet",
-  link: "http://www.i.virtualart.pro/images/rea/3d/chalet.jpg",
-  thumbnail: "http://www.i.virtualart.pro/images/rea/ic 3d/chalet.jpg")
+  link: "http://www.virtualart.pro/images/rea/3d/chalet.jpg",
+  thumbnail: "http://www.virtualart.pro/images/rea/ic 3d/chalet.jpg")
 p r7
 #
-r16 = Realisation.create!(
+r8 = Realisation.create!(
   course: m3d,
   user: u2,
-  title: "Tour",
-  link: "http://www.i.virtualart.pro/images/rea/3d/tour.jpg",
-  thumbnail: "http://www.i.virtualart.pro/images/rea/ic 3d/tour.jpg")
-p r16
+  title: "Modélisation de champignon",
+  link: "http://www.virtualart.pro/images/rea/3d/champi.jpg",
+  thumbnail: "http://www.virtualart.pro/images/rea/ic 3d/champi.jpg")
+p r8
+#
+r9 = Realisation.create!(
+  course: m3d,
+  user: u2,
+  title: "Modélisation d'un décor d'amphi pour projet d'animation",
+  link: "http://www.virtualart.pro/images/rea/3d/ecole.jpg",
+  thumbnail: "http://www.virtualart.pro/images/rea/ic 3d/ecole.jpg")
+p r9
+#
+r10 = Realisation.create!(
+  course: m3d,
+  user: u2,
+  title: "Modélisation de fleurs pour la fête des mères",
+  link: "http://www.virtualart.pro/images/rea/3d/fleurs1.jpg",
+  thumbnail: "http://www.virtualart.pro/images/rea/ic 3d/fleurs1.jpg")
+p r10
+#
+r11 = Realisation.create!(
+  course: m3d,
+  user: u2,
+  title: "Halloween",
+  link: "http://www.virtualart.pro/images/rea/3d/halloween.jpg",
+  thumbnail: "http://www.virtualart.pro/images/rea/ic 3d/halloween.jpg")
+p r11
+#
+r12 = Realisation.create!(
+  course: m3d,
+  user: u2,
+  title: "Moulin à vent",
+  link: "http://www.virtualart.pro/images/rea/3d/moulin2.jpg",
+  thumbnail: "http://www.virtualart.pro/images/rea/ic 3d/moulin2.jpg")
+p r12
+#
+r13 = Realisation.create!(
+  course: m3d,
+  user: u2,
+  title: "Carte de Noël",
+  link: "http://www.virtualart.pro/images/rea/3d/noel.jpg",
+  thumbnail: "http://www.virtualart.pro/images/rea/ic 3d/noel.jpg")
+p r13
+#
+r14 = Realisation.create!(
+  course: m3d,
+  user: u2,
+  title: "Oeufs de pâques",
+  link: "http://www.virtualart.pro/images/rea/3d/paque.jpg",
+  thumbnail: "http://www.virtualart.pro/images/rea/ic 3d/paque.jpg")
+p r14
 #
 r15 = Realisation.create!(
   course: m3d,
   user: u2,
   title: "Renard",
-  link: "http://www.i.virtualart.pro/images/rea/3d/renard.jpg",
-  thumbnail: "http://www.i.virtualart.pro/images/rea/ic 3d/renard.jpg")
+  link: "http://www.virtualart.pro/images/rea/3d/renard.jpg",
+  thumbnail: "http://www.virtualart.pro/images/rea/ic 3d/renard.jpg")
 p r15
+#
+r16 = Realisation.create!(
+  course: m3d,
+  user: u2,
+  title: "Tour",
+  link: "http://www.virtualart.pro/images/rea/3d/tour.jpg",
+  thumbnail: "http://www.virtualart.pro/images/rea/ic 3d/tour.jpg")
+p r16
+#
+r17 = Realisation.create!(
+  course: m3d,
+  user: u2,
+  title: "Modélisation en cours d'arbre",
+  link: "http://www.virtualart.pro/images/rea/3d/arbre2.jpg",
+  thumbnail: "http://www.virtualart.pro/images/rea/ic 3d/arbre2.jpg")
+p r17
+#
+r18 = Realisation.create!(
+  course: m3d,
+  user: u2,
+  title: "Modélisation d'arbres pour jeu vidéo",
+  link: "http://www.virtualart.pro/images/rea/3d/arbre1.jpg",
+  thumbnail: "http://www.virtualart.pro/images/rea/ic 3d/arbre1.jpg")
+p r18
+#
+r19 = Realisation.create!(
+  course: m3d,
+  user: u2,
+  title: "Image de Robot tiré d'une petite animation",
+  link: "http://www.virtualart.pro/images/rea/3d/robot.jpg",
+  thumbnail: "http://www.virtualart.pro/images/rea/ic 3d/robot.jpg")
+p r19
 #
 r20 = Realisation.create!(
   course: m3d,
   user: u2,
   title: "Renard et tour",
   link: "5q6Fg3R6ACg",
-  thumbnail: "http://www.i.virtualart.pro/images/rea/ic video/anim3d1.jpg")
+  thumbnail: "http://www.virtualart.pro/images/rea/ic video/anim3d1.jpg")
 p r20
 #
 r21 = Realisation.create!(
@@ -4311,490 +4311,466 @@ r21 = Realisation.create!(
   user: u2,
   title: "Monstre et petite fille",
   link: "xSeRMVsNPG4",
-  thumbnail: "http://www.i.virtualart.pro/images/rea/ic video/anim3d2.jpg")
+  thumbnail: "http://www.virtualart.pro/images/rea/ic video/anim3d2.jpg")
 p r21
 #
-r24 = Realisation.create!(
+r22 = Realisation.create!(
   course: m3d,
   user: u2,
-  title: "Eolienne en bord de mer 3D",
-  link: "SjufAKFCxcc",
-  thumbnail: "http://www.i.virtualart.pro/images/rea/ic video/anim3d5.jpg")
-p r24
-#
-r26 = Realisation.create!(
-  course: m3d,
-  user: u2,
-  title: "Salon 3D cell-shading",
-  link: "4ezzLj50fxk",
-  thumbnail: "http://www.i.virtualart.pro/images/rea/ic video/anim3d7.jpg")
-p r26
-#
-r1 = Realisation.create!(
-  course: m3d,
-  user: u1,
-  title: "Engrenages 3D",
-  link: "http://www.i.virtualart.pro/images/rea/3d/eng.jpg",
-  thumbnail: "http://www.i.virtualart.pro/images/rea/ic 3d/eng.jpg")
-p r1
-#
-r19 = Realisation.create!(
-  course: m3d,
-  user: u2,
-  title: "Image de Robot tiré d'une petite animation",
-  link: "http://www.i.virtualart.pro/images/rea/3d/robot.jpg",
-  thumbnail: "http://www.i.virtualart.pro/images/rea/ic 3d/robot.jpg")
-p r19
-#
-r25 = Realisation.create!(
-  course: m3d,
-  user: u2,
-  title: "Mignon robot 3D, animation de marche et lipsync",
-  link: "tET7ITl5RWw",
-  thumbnail: "http://www.i.virtualart.pro/images/rea/ic video/anim3d6.jpg")
-p r25
-#
-r2 = Realisation.create!(
-  course: m3d,
-  user: u2,
-  title: "Port de nuit",
-  link: "http://www.i.virtualart.pro/images/rea/3d/port.jpg",
-  thumbnail: "http://www.i.virtualart.pro/images/rea/ic 3d/port.jpg")
-p r2
-#
-r4 = Realisation.create!(
-  course: m3d,
-  user: u2,
-  title: "Moulin à eau",
-  link: "http://www.i.virtualart.pro/images/rea/3d/moulin3.jpg",
-  thumbnail: "http://www.i.virtualart.pro/images/rea/ic 3d/moulin3.jpg")
-p r4
+  title: "Interieur de maison 3D en exercice d'architecture",
+  link: "SlPYhAjLEeA",
+  thumbnail: "http://www.virtualart.pro/images/rea/ic video/anim3d3.jpg")
+p r22
 #
 r23 = Realisation.create!(
   course: m3d,
   user: u2,
   title: "Moulin à eau 3D",
   link: "YnKkQQ7XqzU",
-  thumbnail: "http://www.i.virtualart.pro/images/rea/ic video/anim3d4.jpg")
+  thumbnail: "http://www.virtualart.pro/images/rea/ic video/anim3d4.jpg")
 p r23
 #
+r24 = Realisation.create!(
+  course: m3d,
+  user: u2,
+  title: "Eolienne en bord de mer 3D",
+  link: "SjufAKFCxcc",
+  thumbnail: "http://www.virtualart.pro/images/rea/ic video/anim3d5.jpg")
+p r24
+#
+r25 = Realisation.create!(
+  course: m3d,
+  user: u2,
+  title: "Mignon robot 3D, animation de marche et lipsync",
+  link: "tET7ITl5RWw",
+  thumbnail: "http://www.virtualart.pro/images/rea/ic video/anim3d6.jpg")
+p r25
+#
+r26 = Realisation.create!(
+  course: m3d,
+  user: u2,
+  title: "Salon 3D cell-shading",
+  link: "4ezzLj50fxk",
+  thumbnail: "http://www.virtualart.pro/images/rea/ic video/anim3d7.jpg")
+p r26
+#
 #----------------------------------------------------------------------------- BD NUMERIQUE
-r34 = Realisation.create!(
+r1 = Realisation.create!(
   course: bd,
   user: u1,
-  title: "Une vache en ville",
-  link: "http://www.i.virtualart.pro/images/rea/bd/bd1.jpg",
-  thumbnail: "http://www.i.virtualart.pro/images/rea/ic bd/bd1.jpg")
-p r34
+  title: "Histoire Noire, travail de tramage",
+  link: "http://www.virtualart.pro/images/rea/bd/bd34.jpg",
+  thumbnail: "http://www.virtualart.pro/images/rea/ic bd/bd34.jpg")
+p r1
 #
 r2 = Realisation.create!(
   course: bd,
   user: u1,
   title: "Ellipse, écureuil d'or du festival d'Angoulême 2016",
-  link: "http://www.i.virtualart.pro/images/rea/bd/bd33.jpg",
-  thumbnail: "http://www.i.virtualart.pro/images/rea/ic bd/bd33.jpg")
+  link: "http://www.virtualart.pro/images/rea/bd/bd33.jpg",
+  thumbnail: "http://www.virtualart.pro/images/rea/ic bd/bd33.jpg")
 p r2
 #
 r3 = Realisation.create!(
   course: bd,
   user: u1,
   title: "Début de BD héroic fantasy",
-  link: "http://www.i.virtualart.pro/images/rea/bd/bd32.jpg",
-  thumbnail: "http://www.i.virtualart.pro/images/rea/ic bd/bd32.jpg")
+  link: "http://www.virtualart.pro/images/rea/bd/bd32.jpg",
+  thumbnail: "http://www.virtualart.pro/images/rea/ic bd/bd32.jpg")
 p r3
 #
 r4 = Realisation.create!(
   course: bd,
   user: u1,
   title: "Aperçu du processus de travail",
-  link: "http://www.i.virtualart.pro/images/rea/bd/bd31.jpg",
-  thumbnail: "http://www.i.virtualart.pro/images/rea/ic bd/bd31.jpg")
+  link: "http://www.virtualart.pro/images/rea/bd/bd31.jpg",
+  thumbnail: "http://www.virtualart.pro/images/rea/ic bd/bd31.jpg")
 p r4
+#
+r5 = Realisation.create!(
+  course: bd,
+  user: u1,
+  title: "La fille et le piaf",
+  link: "http://www.virtualart.pro/images/rea/bd/bd30.jpg",
+  thumbnail: "http://www.virtualart.pro/images/rea/ic bd/bd30.jpg")
+p r5
 #
 r6 = Realisation.create!(
   course: bd,
   user: u1,
   title: "Page 1",
-  link: "http://www.i.virtualart.pro/images/rea/bd/bd29.jpg",
-  thumbnail: "http://www.i.virtualart.pro/images/rea/ic bd/bd29.jpg")
+  link: "http://www.virtualart.pro/images/rea/bd/bd29.jpg",
+  thumbnail: "http://www.virtualart.pro/images/rea/ic bd/bd29.jpg")
 p r6
 #
 r7 = Realisation.create!(
   course: bd,
   user: u1,
   title: "Carte d'invitation en BD montage photos",
-  link: "http://www.i.virtualart.pro/images/rea/bd/bd28.jpg",
-  thumbnail: "http://www.i.virtualart.pro/images/rea/ic bd/bd28.jpg")
+  link: "http://www.virtualart.pro/images/rea/bd/bd28.jpg",
+  thumbnail: "http://www.virtualart.pro/images/rea/ic bd/bd28jpg")
 p r7
+#
+r8 = Realisation.create!(
+  course: bd,
+  user: u1,
+  title: "Les Aventures en Ethiopie",
+  link: "http://www.virtualart.pro/images/rea/bd/bd27.jpg",
+  thumbnail: "http://www.virtualart.pro/images/rea/ic bd/bd27.jpg")
+p r8
 #
 r9 = Realisation.create!(
   course: bd,
   user: u1,
   title: "Détournement du Cri d'Edvard Munch",
-  link: "http://www.i.virtualart.pro/images/rea/bd/bd26.jpg",
-  thumbnail: "http://www.i.virtualart.pro/images/rea/ic bd/bd26.jpg")
+  link: "http://www.virtualart.pro/images/rea/bd/bd26.jpg",
+  thumbnail: "http://www.virtualart.pro/images/rea/ic bd/bd26.jpg")
 p r9
 #
 r10 = Realisation.create!(
   course: bd,
   user: u1,
   title: "Lemonator",
-  link: "http://www.i.virtualart.pro/images/rea/bd/bd25.jpg",
-  thumbnail: "http://www.i.virtualart.pro/images/rea/ic bd/bd25.jpg")
+  link: "http://www.virtualart.pro/images/rea/bd/bd25.jpg",
+  thumbnail: "http://www.virtualart.pro/images/rea/ic bd/bd25.jpg")
 p r10
 #
 r11 = Realisation.create!(
   course: bd,
   user: u1,
   title: "La boulangerie en folie, page 1",
-  link: "http://www.i.virtualart.pro/images/rea/bd/bd24.jpg",
-  thumbnail: "http://www.i.virtualart.pro/images/rea/ic bd/bd24.jpg")
+  link: "http://www.virtualart.pro/images/rea/bd/bd24.jpg",
+  thumbnail: "http://www.virtualart.pro/images/rea/ic bd/bd24.jpg")
 p r11
 #
 r12 = Realisation.create!(
   course: bd,
   user: u1,
   title: "BD pour lecture Web",
-  link: "http://www.i.virtualart.pro/images/rea/bd/bd23.jpg",
-  thumbnail: "http://www.i.virtualart.pro/images/rea/ic bd/bd23.jpg")
+  link: "http://www.virtualart.pro/images/rea/bd/bd23.jpg",
+  thumbnail: "http://www.virtualart.pro/images/rea/ic bd/bd23.jpg")
 p r12
 #
 r13 = Realisation.create!(
   course: bd,
   user: u1,
   title: "Gernator, page 1",
-  link: "http://www.i.virtualart.pro/images/rea/bd/bd22.jpg",
-  thumbnail: "http://www.i.virtualart.pro/images/rea/ic bd/bd22.jpg")
+  link: "http://www.virtualart.pro/images/rea/bd/bd22.jpg",
+  thumbnail: "http://www.virtualart.pro/images/rea/ic bd/bd22.jpg")
 p r13
 #
 r14 = Realisation.create!(
   course: bd,
   user: u1,
   title: "Gernator, page 2",
-  link: "http://www.i.virtualart.pro/images/rea/bd/bd21.jpg",
-  thumbnail: "http://www.i.virtualart.pro/images/rea/ic bd/bd21.jpg")
+  link: "http://www.virtualart.pro/images/rea/bd/bd21.jpg",
+  thumbnail: "http://www.virtualart.pro/images/rea/ic bd/bd21.jpg")
 p r14
 #
 r15 = Realisation.create!(
   course: bd,
   user: u1,
   title: "Gernator, page 3",
-  link: "http://www.i.virtualart.pro/images/rea/bd/bd20.jpg",
-  thumbnail: "http://www.i.virtualart.pro/images/rea/ic bd/bd20.jpg")
+  link: "http://www.virtualart.pro/images/rea/bd/bd20.jpg",
+  thumbnail: "http://www.virtualart.pro/images/rea/ic bd/bd20.jpg")
 p r15
 #
 r16 = Realisation.create!(
   course: bd,
   user: u1,
   title: "Gernator, page 4",
-  link: "http://www.i.virtualart.pro/images/rea/bd/bd19.jpg",
-  thumbnail: "http://www.i.virtualart.pro/images/rea/ic bd/bd19.jpg")
+  link: "http://www.virtualart.pro/images/rea/bd/bd19.jpg",
+  thumbnail: "http://www.virtualart.pro/images/rea/ic bd/bd19.jpg")
 p r16
 #
 r17 = Realisation.create!(
   course: bd,
   user: u1,
   title: "Gernator, page 5",
-  link: "http://www.i.virtualart.pro/images/rea/bd/bd18.jpg",
-  thumbnail: "http://www.i.virtualart.pro/images/rea/ic bd/bd18.jpg")
+  link: "http://www.virtualart.pro/images/rea/bd/bd18.jpg",
+  thumbnail: "http://www.virtualart.pro/images/rea/ic bd/bd18.jpg")
 p r17
 #
 r18 = Realisation.create!(
   course: bd,
   user: u1,
   title: "Gernator, page 6",
-  link: "http://www.i.virtualart.pro/images/rea/bd/bd17.jpg",
-  thumbnail: "http://www.i.virtualart.pro/images/rea/ic bd/bd17.jpg")
+  link: "http://www.virtualart.pro/images/rea/bd/bd17.jpg",
+  thumbnail: "http://www.virtualart.pro/images/rea/ic bd/bd17.jpg")
 p r18
 #
 r19 = Realisation.create!(
   course: bd,
   user: u1,
   title: "Gernator, page 7",
-  link: "http://www.i.virtualart.pro/images/rea/bd/bd16.jpg",
-  thumbnail: "http://www.i.virtualart.pro/images/rea/ic bd/bd16.jpg")
+  link: "http://www.virtualart.pro/images/rea/bd/bd16.jpg",
+  thumbnail: "http://www.virtualart.pro/images/rea/ic bd/bd16.jpg")
 p r19
 #
 r20 = Realisation.create!(
   course: bd,
   user: u1,
   title: "Gernator, page 8",
-  link: "http://www.i.virtualart.pro/images/rea/bd/bd15.jpg",
-  thumbnail: "http://www.i.virtualart.pro/images/rea/ic bd/bd15.jpg")
+  link: "http://www.virtualart.pro/images/rea/bd/bd15.jpg",
+  thumbnail: "http://www.virtualart.pro/images/rea/ic bd/bd15.jpg")
 p r20
+#
+r21 = Realisation.create!(
+  course: bd,
+  user: u1,
+  title: "Le pauvre Lutin",
+  link: "http://www.virtualart.pro/images/rea/bd/bd14.jpg",
+  thumbnail: "http://www.virtualart.pro/images/rea/ic bd/bd14.jpg")
+p r21
 #
 r22 = Realisation.create!(
   course: bd,
   user: u1,
   title: "BD de SF, page 1",
-  link: "http://www.i.virtualart.pro/images/rea/bd/bd13.jpg",
-  thumbnail: "http://www.i.virtualart.pro/images/rea/ic bd/bd13.jpg")
+  link: "http://www.virtualart.pro/images/rea/bd/bd13.jpg",
+  thumbnail: "http://www.virtualart.pro/images/rea/ic bd/bd13.jpg")
 p r22
 #
 r23 = Realisation.create!(
   course: bd,
   user: u1,
   title: "L'asticot",
-  link: "http://www.i.virtualart.pro/images/rea/bd/bd12.jpg",
-  thumbnail: "http://www.i.virtualart.pro/images/rea/ic bd/bd12.jpg")
+  link: "http://www.virtualart.pro/images/rea/bd/bd12.jpg",
+  thumbnail: "http://www.virtualart.pro/images/rea/ic bd/bd12.jpg")
 p r23
 #
 r24 = Realisation.create!(
   course: bd,
   user: u1,
   title: "Les devoirs",
-  link: "http://www.i.virtualart.pro/images/rea/bd/bd11.jpg",
-  thumbnail: "http://www.i.virtualart.pro/images/rea/ic bd/bd11.jpg")
+  link: "http://www.virtualart.pro/images/rea/bd/bd11.jpg",
+  thumbnail: "http://www.virtualart.pro/images/rea/ic bd/bd11.jpg")
 p r24
 #
 r25 = Realisation.create!(
   course: bd,
   user: u1,
   title: "Petite histoire de résistance durant la guerre, page 1",
-  link: "http://www.i.virtualart.pro/images/rea/bd/bd10.jpg",
-  thumbnail: "http://www.i.virtualart.pro/images/rea/ic bd/bd10.jpg")
+  link: "http://www.virtualart.pro/images/rea/bd/bd10.jpg",
+  thumbnail: "http://www.virtualart.pro/images/rea/ic bd/bd10.jpg")
 p r25
 #
 r26 = Realisation.create!(
   course: bd,
   user: u1,
   title: "Univers Dragon Ball, page 1",
-  link: "http://www.i.virtualart.pro/images/rea/bd/bd9.jpg",
-  thumbnail: "http://www.i.virtualart.pro/images/rea/ic bd/bd9.jpg")
+  link: "http://www.virtualart.pro/images/rea/bd/bd9.jpg",
+  thumbnail: "http://www.virtualart.pro/images/rea/ic bd/bd9.jpg")
 p r26
 #
 r27 = Realisation.create!(
   course: bd,
   user: u1,
   title: "La libération de Nyoghta, page 1",
-  link: "http://www.i.virtualart.pro/images/rea/bd/bd8.jpg",
-  thumbnail: "http://www.i.virtualart.pro/images/rea/ic bd/bd8.jpg")
+  link: "http://www.virtualart.pro/images/rea/bd/bd8.jpg",
+  thumbnail: "http://www.virtualart.pro/images/rea/ic bd/bd8.jpg")
 p r27
 #
 r28 = Realisation.create!(
   course: bd,
   user: u1,
   title: "Univers parallèle, page1",
-  link: "http://www.i.virtualart.pro/images/rea/bd/bd7.jpg",
-  thumbnail: "http://www.i.virtualart.pro/images/rea/ic bd/bd7.jpg")
+  link: "http://www.virtualart.pro/images/rea/bd/bd7.jpg",
+  thumbnail: "http://www.virtualart.pro/images/rea/ic bd/bd7.jpg")
 p r28
+#
+r29 = Realisation.create!(
+  course: bd,
+  user: u1,
+  title: "BD en marionnette",
+  link: "http://www.virtualart.pro/images/rea/bd/bd6.jpg",
+  thumbnail: "http://www.virtualart.pro/images/rea/ic bd/bd6.jpg")
+p r29
 #
 r30 = Realisation.create!(
   course: bd,
   user: u1,
   title: "Ebauche de BD SF",
-  link: "http://www.i.virtualart.pro/images/rea/bd/bd5.jpg",
-  thumbnail: "http://www.i.virtualart.pro/images/rea/ic bd/bd5.jpg")
+  link: "http://www.virtualart.pro/images/rea/bd/bd5.jpg",
+  thumbnail: "http://www.virtualart.pro/images/rea/ic bd/bd5.jpg")
 p r30
 #
 r31 = Realisation.create!(
   course: bd,
   user: u1,
   title: "Les Goopis, page1",
-  link: "http://www.i.virtualart.pro/images/rea/bd/bd4.jpg",
-  thumbnail: "http://www.i.virtualart.pro/images/rea/ic bd/bd4.jpg")
+  link: "http://www.virtualart.pro/images/rea/bd/bd4.jpg",
+  thumbnail: "http://www.virtualart.pro/images/rea/ic bd/bd4.jpg")
 p r31
 #
 r32 = Realisation.create!(
   course: bd,
   user: u1,
   title: "Les Goopis, page 2",
-  link: "http://www.i.virtualart.pro/images/rea/bd/bd3.jpg",
-  thumbnail: "http://www.i.virtualart.pro/images/rea/ic bd/bd3.jpg")
+  link: "http://www.virtualart.pro/images/rea/bd/bd3.jpg",
+  thumbnail: "http://www.virtualart.pro/images/rea/ic bd/bd3.jpg")
 p r32
 #
 r33 = Realisation.create!(
   course: bd,
   user: u1,
   title: "BD noir et blanc",
-  link: "http://www.i.virtualart.pro/images/rea/bd/bd2.jpg",
-  thumbnail: "http://www.i.virtualart.pro/images/rea/ic bd/bd2.jpg")
+  link: "http://www.virtualart.pro/images/rea/bd/bd2.jpg",
+  thumbnail: "http://www.virtualart.pro/images/rea/ic bd/bd2.jpg")
 p r33
 #
-r29 = Realisation.create!(
+r34 = Realisation.create!(
   course: bd,
   user: u1,
-  title: "BD en marionnette",
-  link: "http://www.i.virtualart.pro/images/rea/bd/bd6.jpg",
-  thumbnail: "http://www.i.virtualart.pro/images/rea/ic bd/bd6.jpg")
-p r29
-#
-r5 = Realisation.create!(
-  course: bd,
-  user: u1,
-  title: "La fille et le piaf",
-  link: "http://www.i.virtualart.pro/images/rea/bd/bd30.jpg",
-  thumbnail: "http://www.i.virtualart.pro/images/rea/ic bd/bd30.jpg")
-p r5
-#
-r8 = Realisation.create!(
-  course: bd,
-  user: u1,
-  title: "Les Aventures en Ethiopie",
-  link: "http://www.i.virtualart.pro/images/rea/bd/bd27.jpg",
-  thumbnail: "http://www.i.virtualart.pro/images/rea/ic bd/bd27.jpg")
-p r8
-#
-r1 = Realisation.create!(
-  course: bd,
-  user: u1,
-  title: "Histoire Noire, travail de tramage",
-  link: "http://www.i.virtualart.pro/images/rea/bd/bd34.jpg",
-  thumbnail: "http://www.i.virtualart.pro/images/rea/ic bd/bd34.jpg")
-p r1
-#
-r21 = Realisation.create!(
-  course: bd,
-  user: u1,
-  title: "Le pauvre Lutin",
-  link: "http://www.i.virtualart.pro/images/rea/bd/bd14.jpg",
-  thumbnail: "http://www.i.virtualart.pro/images/rea/ic bd/bd14.jpg")
-p r21
+  title: "Une vache en ville",
+  link: "http://www.virtualart.pro/images/rea/bd/bd1.jpg",
+  thumbnail: "http://www.virtualart.pro/images/rea/ic bd/bd1.jpg")
+p r34
 #
 #----------------------------------------------------------------------------- INFOGRAPHIE PRINT
 r1 = Realisation.create!(
   course: pr,
   user: u1,
   title: "Afiche pour l'école La Prairie",
-  link: "http://www.i.virtualart.pro/images/rea/print/affiche.jpg",
-  thumbnail: "http://www.i.virtualart.pro/images/rea/ic print/affiche.jpg")
+  link: "http://www.virtualart.pro/images/rea/print/affiche.jpg",
+  thumbnail: "http://www.virtualart.pro/images/rea/ic print/affiche.jpg")
 p r1
 #
 r2 = Realisation.create!(
   course: pr,
   user: u1,
   title: "Recherche de colorimétrie d'une couverture de livre",
-  link: "http://www.i.virtualart.pro/images/rea/print/couverture1.jpg",
-  thumbnail: "http://www.i.virtualart.pro/images/rea/ic print/couverture1.jpg")
+  link: "http://www.virtualart.pro/images/rea/print/couverture1.jpg",
+  thumbnail: "http://www.virtualart.pro/images/rea/ic print/couverture1.jpg")
 p r2
 #
 r3 = Realisation.create!(
   course: pr,
   user: u1,
   title: "Couverture de dossier",
-  link: "http://www.i.virtualart.pro/images/rea/print/couverture2.jpg",
-  thumbnail: "http://www.i.virtualart.pro/images/rea/ic print/couverture2.jpg")
+  link: "http://www.virtualart.pro/images/rea/print/couverture2.jpg",
+  thumbnail: "http://www.virtualart.pro/images/rea/ic print/couverture2.jpg")
 p r3
-#
-r6 = Realisation.create!(
-  course: pr,
-  user: u1,
-  title: "Flyer carte postale pour une agence de voyage fictive",
-  link: "http://www.i.virtualart.pro/images/rea/print/econatur1.jpg",
-  thumbnail: "http://www.i.virtualart.pro/images/rea/ic print/econatur1.jpg")
-p r6
-#
-r7 = Realisation.create!(
-  course: pr,
-  user: u1,
-  title: "Logo de l'agence fictive Econatur'",
-  link: "http://www.i.virtualart.pro/images/rea/print/econatur2.jpg",
-  thumbnail: "http://www.i.virtualart.pro/images/rea/ic print/econatur2.jpg")
-p r7
-#
-r8 = Realisation.create!(
-  course: pr,
-  user: u1,
-  title: "Recherche de Flyer pour concert fictif des Daft Punk",
-  link: "http://www.i.virtualart.pro/images/rea/print/flyer1.jpg",
-  thumbnail: "http://www.i.virtualart.pro/images/rea/ic print/flyer1.jpg")
-p r8
-#
-r10 = Realisation.create!(
-  course: pr,
-  user: u1,
-  title: "Flyer pour une exposition",
-  link: "http://www.i.virtualart.pro/images/rea/print/flyer3.jpg",
-  thumbnail: "http://www.i.virtualart.pro/images/rea/ic print/flyer3.jpg")
-p r10
-#
-r11 = Realisation.create!(
-  course: pr,
-  user: u1,
-  title: "Logo pour l'agence fictive Joz",
-  link: "http://www.i.virtualart.pro/images/rea/print/joz1.jpg",
-  thumbnail: "http://www.i.virtualart.pro/images/rea/ic print/joz1.jpg")
-p r11
-#
-r12 = Realisation.create!(
-  course: pr,
-  user: u1,
-  title: "Flyer pour l'agence fictive Joz",
-  link: "http://www.i.virtualart.pro/images/rea/print/joz2.jpg",
-  thumbnail: "http://www.i.virtualart.pro/images/rea/ic print/joz2.jpg")
-p r12
-#
-r13 = Realisation.create!(
-  course: pr,
-  user: u1,
-  title: "Mise en page de livre d'artiste, Jane Darmanthé",
-  link: "http://www.i.virtualart.pro/images/rea/print/livre1.jpg",
-  thumbnail: "http://www.i.virtualart.pro/images/rea/ic print/livre1.jpg")
-p r13
-#
-r14 = Realisation.create!(
-  course: pr,
-  user: u1,
-  title: "Recherche de logo pour un véhicule écologique",
-  link: "http://www.i.virtualart.pro/images/rea/print/logo1.jpg",
-  thumbnail: "http://www.i.virtualart.pro/images/rea/ic print/logo1.jpg")
-p r14
-#
-r18 = Realisation.create!(
-  course: pr,
-  user: u1,
-  title: "Affiche pour un évènement de bateaux Pop-pop",
-  link: "http://www.i.virtualart.pro/images/rea/print/steamcup.jpg",
-  thumbnail: "http://www.i.virtualart.pro/images/rea/ic print/steamcup.jpg")
-p r18
-#
-r17 = Realisation.create!(
-  course: pr,
-  user: u1,
-  title: "Création d'une signature/marque d'élève et ses différents supports",
-  link: "http://www.i.virtualart.pro/images/rea/print/print1.jpg",
-  thumbnail: "http://www.i.virtualart.pro/images/rea/ic print/print1.jpg")
-p r17
-#
-r15 = Realisation.create!(
-  course: pr,
-  user: u1,
-  title: "Logo pour Luncho, gourmandise fictive",
-  link: "http://www.i.virtualart.pro/images/rea/print/luncho1.jpg",
-  thumbnail: "http://www.i.virtualart.pro/images/rea/ic print/luncho1.jpg")
-p r15
-#
-r16 = Realisation.create!(
-  course: pr,
-  user: u1,
-  title: "Charte graphique de Luncho, gourmandise fictive",
-  link: "http://www.i.virtualart.pro/images/rea/print/luncho2.jpg",
-  thumbnail: "http://www.i.virtualart.pro/images/rea/ic print/luncho2.jpg")
-p r16
 #
 r4 = Realisation.create!(
   course: pr,
   user: u1,
   title: "Logo Crep's, restaurant fictif",
-  link: "http://www.i.virtualart.pro/images/rea/print/creps1.jpg",
-  thumbnail: "http://www.i.virtualart.pro/images/rea/ic print/creps1.jpg")
+  link: "http://www.virtualart.pro/images/rea/print/creps1.jpg",
+  thumbnail: "http://www.virtualart.pro/images/rea/ic print/creps1.jpg")
 p r4
 #
 r5 = Realisation.create!(
   course: pr,
   user: u1,
   title: "Flyer Crep's, restaurant fictif",
-  link: "http://www.i.virtualart.pro/images/rea/print/creps2.jpg",
-  thumbnail: "http://www.i.virtualart.pro/images/rea/ic print/creps2.jpg")
+  link: "http://www.virtualart.pro/images/rea/print/creps2.jpg",
+  thumbnail: "http://www.virtualart.pro/images/rea/ic print/creps2.jpg")
 p r5
+#
+r6 = Realisation.create!(
+  course: pr,
+  user: u1,
+  title: "Flyer carte postale pour une agence de voyage fictive",
+  link: "http://www.virtualart.pro/images/rea/print/econatur1.jpg",
+  thumbnail: "http://www.virtualart.pro/images/rea/ic print/econatur1.jpg")
+p r6
+#
+r7 = Realisation.create!(
+  course: pr,
+  user: u1,
+  title: "Logo de l'agence fictive Econatur'",
+  link: "http://www.virtualart.pro/images/rea/print/econatur2.jpg",
+  thumbnail: "http://www.virtualart.pro/images/rea/ic print/econatur2.jpg")
+p r7
+#
+r8 = Realisation.create!(
+  course: pr,
+  user: u1,
+  title: "Recherche de Flyer pour concert fictif des Daft Punk",
+  link: "http://www.virtualart.pro/images/rea/print/flyer1.jpg",
+  thumbnail: "http://www.virtualart.pro/images/rea/ic print/flyer1.jpg")
+p r8
 #
 r9 = Realisation.create!(
   course: pr,
   user: u1,
   title: "Logo, carte de visite et Flyer pour un cabinet de thérapie",
-  link: "http://www.i.virtualart.pro/images/rea/print/flyer2.jpg",
-  thumbnail: "http://www.i.virtualart.pro/images/rea/ic print/flyer2.jpg")
+  link: "http://www.virtualart.pro/images/rea/print/flyer2.jpg",
+  thumbnail: "http://www.virtualart.pro/images/rea/ic print/flyer2.jpg")
 p r9
+#
+r10 = Realisation.create!(
+  course: pr,
+  user: u1,
+  title: "Flyer pour une exposition",
+  link: "http://www.virtualart.pro/images/rea/print/flyer3.jpg",
+  thumbnail: "http://www.virtualart.pro/images/rea/ic print/flyer3.jpg")
+p r10
+#
+r11 = Realisation.create!(
+  course: pr,
+  user: u1,
+  title: "Logo pour l'agence fictive Joz",
+  link: "http://www.virtualart.pro/images/rea/print/joz1.jpg",
+  thumbnail: "http://www.virtualart.pro/images/rea/ic print/joz1.jpg")
+p r11
+#
+r12 = Realisation.create!(
+  course: pr,
+  user: u1,
+  title: "Flyer pour l'agence fictive Joz",
+  link: "http://www.virtualart.pro/images/rea/print/joz2.jpg",
+  thumbnail: "http://www.virtualart.pro/images/rea/ic print/joz2.jpg")
+p r12
+#
+r13 = Realisation.create!(
+  course: pr,
+  user: u1,
+  title: "Mise en page de livre d'artiste, Jane Darmanthé",
+  link: "http://www.virtualart.pro/images/rea/print/livre1.jpg",
+  thumbnail: "http://www.virtualart.pro/images/rea/ic print/livre1.jpg")
+p r13
+#
+r14 = Realisation.create!(
+  course: pr,
+  user: u1,
+  title: "Recherche de logo pour un véhicule écologique",
+  link: "http://www.virtualart.pro/images/rea/print/logo1.jpg",
+  thumbnail: "http://www.virtualart.pro/images/rea/ic print/logo1.jpg")
+p r14
+#
+r15 = Realisation.create!(
+  course: pr,
+  user: u1,
+  title: "Logo pour Luncho, gourmandise fictive",
+  link: "http://www.virtualart.pro/images/rea/print/luncho1.jpg",
+  thumbnail: "http://www.virtualart.pro/images/rea/ic print/luncho1.jpg")
+p r15
+#
+r16 = Realisation.create!(
+  course: pr,
+  user: u1,
+  title: "Charte graphique de Luncho, gourmandise fictive",
+  link: "http://www.virtualart.pro/images/rea/print/luncho2.jpg",
+  thumbnail: "http://www.virtualart.pro/images/rea/ic print/luncho2.jpg")
+p r16
+#
+r17 = Realisation.create!(
+  course: pr,
+  user: u1,
+  title: "Création d'une signature/marque d'élève et ses différents supports",
+  link: "http://www.virtualart.pro/images/rea/print/print1.jpg",
+  thumbnail: "http://www.virtualart.pro/images/rea/ic print/print1.jpg")
+p r17
+#
+r18 = Realisation.create!(
+  course: pr,
+  user: u1,
+  title: "Affiche pour un évènement de bateaux Pop-pop",
+  link: "http://www.virtualart.pro/images/rea/print/steamcup.jpg",
+  thumbnail: "http://www.virtualart.pro/images/rea/ic print/steamcup.jpg")
+p r18
 #
 
 # ==================== Stagetype ====================
@@ -4810,10 +4786,10 @@ st1 = Stagetype.create!(
 - Techniques de Cel-shading
 - Techniques aux pinceaux numérique
 - Ajout de textures et motifs",
-  picture: "http://www.i.virtualart.pro/images/interface/ic-stageillu.jpg",
+  picture: "http://www.virtualart.pro/images/interface/ic-stageillu.jpg",
   visible: true,
   color: "153, 255, 153",
-  puce: "http://www.i.virtualart.pro/images/interface/puce-2d.png")
+  puce: "http://www.virtualart.pro/images/interface/puce-2d.png")
 p st1
 #
 st2 = Stagetype.create!(
@@ -4826,10 +4802,10 @@ st2 = Stagetype.create!(
 - Suppression des défault
 - Corrections (colorimétrie, déformation ...)
 - Création d’un matte Painting",
-  picture: "http://www.i.virtualart.pro/images/interface/ic-stagephoto.jpg",
+  picture: "http://www.virtualart.pro/images/interface/ic-stagephoto.jpg",
   visible: true,
   color: "81, 178, 99",
-  puce: "http://www.i.virtualart.pro/images/interface/puce-3d.png")
+  puce: "http://www.virtualart.pro/images/interface/puce-3d.png")
 p st2
 #
 st3 = Stagetype.create!(
@@ -4843,10 +4819,10 @@ Photoshop : préparation d'éléments photos
 Illustrator : dessin vectoriel (logo)
 InDesign : mise en page
 - Création d’une petite plaquette",
-  picture: "http://www.i.virtualart.pro/images/interface/ic-stageprint.jpg",
+  picture: "http://www.virtualart.pro/images/interface/ic-stageprint.jpg",
   visible: true,
   color: "248, 241, 153",
-  puce: "http://www.i.virtualart.pro/images/interface/puce-print.png")
+  puce: "http://www.virtualart.pro/images/interface/puce-print.png")
 p st3
 #
 st4 = Stagetype.create!(
@@ -4860,10 +4836,10 @@ st4 = Stagetype.create!(
 - encrage numérique ou sur tablette lumineuse
 - Mise en couleur ou en trames de la planche
 - Ajout des bulles et texte sur ordinateur",
-  picture: "http://www.i.virtualart.pro/images/interface/ic-stagebd.jpg",
+  picture: "http://www.virtualart.pro/images/interface/ic-stagebd.jpg",
   visible: true,
   color: "253, 203, 104",
-  puce: "http://www.i.virtualart.pro/images/interface/puce-bd.png")
+  puce: "http://www.virtualart.pro/images/interface/puce-bd.png")
 p st4
 
 #
@@ -5035,7 +5011,7 @@ carousel1 = Block.create!(
   tag: "carousel1",
   title: "Carousel",
   description: "",
-  picture: "http://www.i.virtualart.pro/images/interface/carousel1.jpg",
+  picture: "http://www.virtualart.pro/images/interface/carousel1.jpg",
   link: "active",
   visible: true,
   footer: false)
@@ -5045,7 +5021,7 @@ carousel2 = Block.create!(
   tag: "carousel2",
   title: "Carousel",
   description: "",
-  picture: "http://www.i.virtualart.pro/images/interface/carousel2.jpg",
+  picture: "http://i.imgur.com/gXQCx4d.jpg",
   link: "",
   visible: true,
   footer: false)
@@ -5055,7 +5031,7 @@ carousel3 = Block.create!(
   tag: "carousel3",
   title: "Carousel",
   description: "",
-  picture: "http://www.i.virtualart.pro/images/interface/carousel3.jpg",
+  picture: "http://www.virtualart.pro/images/interface/carousel2.jpg",
   link: "",
   visible: true,
   footer: false)
@@ -5065,7 +5041,7 @@ carousel4 = Block.create!(
   tag: "carousel4",
   title: "Carousel",
   description: "",
-  picture: "http://www.i.virtualart.pro/images/interface/carousel4.jpg",
+  picture: "http://www.virtualart.pro/images/interface/carousel4.jpg",
   link: "",
   visible: true,
   footer: false)
@@ -5075,7 +5051,7 @@ carousel5 = Block.create!(
   tag: "carousel5",
   title: "Carousel",
   description: "",
-  picture: "http://www.i.virtualart.pro/images/interface/carousel5.jpg",
+  picture: "http://www.virtualart.pro/images/interface/carousel5.jpg",
   link: "",
   visible: true,
   footer: false)
@@ -5085,7 +5061,7 @@ carousel6 = Block.create!(
   tag: "carousel6",
   title: "Carousel",
   description: "",
-  picture: "http://www.i.virtualart.pro/images/interface/carousel6.jpg",
+  picture: "http://i.imgur.com/kfZEM3X.png",
   link: "",
   visible: true,
   footer: false)
@@ -5114,8 +5090,8 @@ p accueil_video
 accueil_espace = Block.create!(
   tag: "accueil_espace",
   title: "Un espace convivial",
-  description: "Nous vous accueillons dans un atelier extra scolaire dans le coeur de Toulouse à 2 pas du métro Jean Jaurès. Tout humanoïde entre 8 et 888 ans peut venir apprendre les arcanes de l'infographie et donner vie à son imagination !",
-  picture: "http://www.i.virtualart.pro/images/interface/local.jpg",
+  description: "Nous vous accueillons dans un atelier extra scolaire dans le coeur de Toulouse à 2 pas du métro Jean Jaurès. Tout humanoïde entre 8 et 888ans peut venir apprendre les arcanes de l'infographie et donner vie à son imagination !",
+  picture: "http://www.virtualart.pro/images/interface/local.jpg",
   link: "",
   visible: true,
   footer: false)
@@ -5125,7 +5101,7 @@ accueil_materiel = Block.create!(
   tag: "accueil_materiel",
   title: "Sur place, nous sommes équipés d'un matériel pro :",
   description: "Vous aurez à votre disposition des PCs et logiciels, avec des tablettes graphiques de gamme professionnelle, un scanner A3 pour ceux qui voient grand, plusieurs tablettes lumineuses, un micro pour les bruitages de vos films, et un fond vert. Pour les croquis préparatoires sur papier, le matériel de dessin se trouve également sur place.",
-  picture: "http://www.i.virtualart.pro/images/interface/materiels.png",
+  picture: "http://www.virtualart.pro/images/interface/materiels.png",
   link: "",
   visible: true,
   footer: false)
@@ -5145,8 +5121,8 @@ post = Block.create!(
   tag: "post",
   title: "Dernière réalisation",
   description: "Montage 2D réalisé par mes soins, pour illustrer les techniques du cursus Multimédia 2D.",
-  picture: "http://www.i.virtualart.pro/images/divers/inu.jpg",
-  link: "http://www.i.virtualart.pro/images/divers/inu.jpg",
+  picture: "http://www.virtualart.pro/images/divers/inu.jpg",
+  link: "http://www.virtualart.pro/images/divers/inu.jpg",
   visible: true,
   footer: false)
 p post
@@ -5176,7 +5152,7 @@ lieu = Block.create!(
   tag: "lieu",
   title: "Lieu",
   description: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2888.975507931656!2d1.4466251153027123!3d43.607051563431874!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12aebc98d76ab2fb%3A0x41b1a06b33777d2d!2sAtelier+Virtual+Art!5e0!3m2!1sfr!2sfr!4v1502106928893',
-  picture: "http://www.i.virtualart.pro/images/interface/local.jpg",
+  picture: "http://www.virtualart.pro/images/interface/local.jpg",
   link: "https://www.google.fr/maps/place/Atelier+Virtual+Art/@43.6070516,1.4466251,17z/data=!3m1!4b1!4m5!3m4!1s0x12aebc98d76ab2fb:0x41b1a06b33777d2d!8m2!3d43.6070477!4d1.4488138",
   visible: true,
   footer: false)
@@ -5226,13 +5202,15 @@ planning = Block.create!(
   description: "Choisissez un de ces créneaux, au choix !
 
   Mercredi :
- - 13h30 à 15h - 15h à 16h30 - 16h30 à 18h - 18h à 19h30
+  / 13h30 - 15h / 15h - 16h30 /
+  / 16h30 - 18h / 18h - 19h30 /
 
   Vendredi :
-- 18h à 19h30
+  / 18h - 19h30 /
 
   Samedi :
- - 13h30 à 15h - 15h à 16h30 - 16h30 à 18h",
+  / 13h30 - 15h / 15h - 16h30 /
+  / 16h30 - 18h /",
   picture: "",
   link: "",
   visible: true,
@@ -5242,7 +5220,8 @@ p planning
 tarifs1 = Block.create!(
   tag: "tarifs1",
   title: "Mes cours à l'atelier",
-  description: "VIDEOS + SEANCES 1H30 PAR SEMAINE :",
+  description: "VIDEOS + SEANCES 1H30
+  PAR SEMAINE :",
   picture: "http://www.virtualart.pro/images/interface/prixseances.png",
   link: "",
   visible: true,
@@ -5253,7 +5232,7 @@ tarifs2 = Block.create!(
   tag: "tarifs2",
   title: "Accéder uniquement aux vidéos",
   description: "Si vous n'êtes pas sur Toulouse ou si vous préférez vous former à domicile, cette solution est pour vous : consultez toutes les vidéos du programme choisi pendant le nombre de mois que vous souhaitez.",
-  picture: "http://www.i.virtualart.pro/images/interface/prixvideos.png",
+  picture: "http://www.virtualart.pro/images/interface/prixvideos.png",
   link: "",
   visible: true,
   footer: false)
@@ -5264,7 +5243,7 @@ profil = Block.create!(
   tag:"profil",
   title:"Qui suis-je ?", # faire un blox texte + image a chaque fois x4
   description:"Mon parcours et mes projets...",
-  picture: "http://www.i.virtualart.pro/images/interface/profil3.jpg",
+  picture:"http://www.virtualart.pro/images/interface/profil3.jpg",
   link: "",
   visible: true,
   footer: false)
@@ -5274,7 +5253,7 @@ prof1 = Block.create!(
   tag:"prof1",
   title:"Professeur", # faire un blox texte + image a chaque fois x4
   description:"Estelle BOUSSOT",
-  picture: "http://www.i.virtualart.pro/images/interface/profil1.jpg",
+  picture:"http://www.virtualart.pro/images/interface/profil1.jpg",
   link: "",
   visible: true,
   footer: false)
@@ -5284,7 +5263,7 @@ prof2 = Block.create!(
   tag:"prof2",
   title:"",
   description:"Passionnée par le dessin, j'ai intégré après le baccalauréat L'Institut Supérieur des Arts Appliqués (LISAA) à Paris, dont j'ai été diplômée en animation 2D avec mention. Puis, pour compléter mes connaissances, j'ai poursuivi mes études aux Arts et Technologies de l'Image (ATI) où j'ai appris la 3D et les bases de la programmation.",
-  picture: "http://www.i.virtualart.pro/images/interface/profil2.jpg",
+  picture:"http://www.virtualart.pro/images/interface/profil2.jpg",
   link: "",
   visible: true,
   footer: false)
@@ -5294,7 +5273,7 @@ prof3 = Block.create!(
   tag:"prof3",
   title:"",
   description:"Après avoir travaillé dans une agence de communication, puis en freelance, j'ai découvert l’enseignement en animant des ateliers de bandes dessinées et de flip book en école primaire puis en école d’art appliqué.",
-  picture: "http://www.i.virtualart.pro/images/interface/profil3.jpg",
+  picture:"http://www.virtualart.pro/images/interface/profil3.jpg",
   link: "",
   visible: true,
   footer: false)
@@ -5304,7 +5283,7 @@ prof4 = Block.create!(
   tag:"prof4",
   title:"",
   description:"J’ai naturellement voulu continuer dans cette voie en créant Virtual Art. Je vous propose, sous forme de cours extra-scolaires et de stages, des formations sur les logiciels d’infographie et un accompagnement dans la mise en place de projets personnels. L’art et l’infographie sont pour moi étroitement liés : le choix du média étant au service d’une idée, et non l’inverse. ",
-  picture: "http://www.i.virtualart.pro/images/interface/profil4.jpg",
+  picture:"http://www.virtualart.pro/images/interface/profil4.jpg",
   link: "",
   visible: true,
   footer: false)
@@ -5407,7 +5386,7 @@ twitter = Block.create!(
   tag: "twitter",
   title: "Mon fil Twitter",
   description: "",
-  picture: "http://www.i.virtualart.pro/images/interface/twitter.jpg",
+  picture: "http://www.iconsdb.com/icons/preview/silver/twitter-xxl.png",
   link: "https://twitter.com/LydieArt31",
   visible: true,
   footer: true)
@@ -5417,7 +5396,7 @@ facebook = Block.create!(
   tag: "facebook",
   title: "Ma page facebook",
   description: "",
-  picture:"http://www.i.virtualart.pro/images/interface/facebook.jpg",
+  picture:"http://www.iconsdb.com/icons/preview/silver/facebook-3-xxl.png",
   link: "https://www.facebook.com/Virtual-Art-199584596815296",
   visible: true,
   footer: true)
@@ -5427,7 +5406,7 @@ youtube = Block.create!(
   tag: "youtube",
   title: "Ma chaîne Youtube",
   description: "",
-  picture:"http://www.i.virtualart.pro/images/interface/youtube.jpg",
+  picture:"http://www.montelvini.it/wp-content/uploads/revslider/home-FS/youtube-grigio.png",
   link: "https://www.youtube.com/user/VirtualArtToulouse",
   visible: true,
   footer: true)
@@ -5486,7 +5465,7 @@ form = Block.create!(
   tag: "form",
   title: "Infos formulaire",
   description: "Pour vous inscrire à mes cours ou à mes stages, complétez cette fiche de renseignements, je vous contacterai alors pour confirmer votre inscription, à bientôt !",
-  picture: "http://www.i.virtualart.pro/images/interface/bulle.jpg",
+  picture: "http://www.virtualart.pro/images/interface/bulle.jpg",
   link: "",
   visible: true,
   footer: false)
@@ -5496,7 +5475,7 @@ logo_xs = Block.create!(
   tag: "logo_xs",
   title: "",
   description: "",
-  picture: "http://www.i.virtualart.pro/images/interface/burger.jpg",
+  picture: "http://www.virtualart.pro/images/interface/burger.jpg",
   link: "",
   visible: true,
   footer: false)
