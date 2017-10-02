@@ -4,7 +4,7 @@ class UsersCourse < ApplicationRecord
   belongs_to :timeslot
 
   def name
-    user.email+"/"+course.title
+    course.title
   end
 
   rails_admin do
