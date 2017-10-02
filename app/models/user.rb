@@ -20,7 +20,6 @@ class User < ApplicationRecord
 
   rails_admin do
     list do
-      field :id
       field :email
       field :courses
       field :stages
