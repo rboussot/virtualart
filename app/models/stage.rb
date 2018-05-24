@@ -4,7 +4,9 @@ class Stage < ApplicationRecord
   has_many :users, through: :users_stages
 
   def name
-    stagetype.title+" - "+timeslot
+    if stagetype
+      stagetype.title+" - "+timeslot
+    end
   end
 
   rails_admin do
